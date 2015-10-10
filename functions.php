@@ -6,6 +6,12 @@
  *
  * @packageNicholls 2015 Core
  */
+ 
+// Define theme core file location and uri using the current script file location
+$nicholls_core_theme_dir_src = explode( '/' , dirname( __FILE__ ) ); // Limit some pass by reference errors.
+$nicholls_core_theme_dir = array_pop( $jesse_james_core_theme_dir_src );
+define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/' . $jesse_james_core_theme_dir );
+define( 'NICHOLLS_CORE_URL', get_theme_root_uri() . '/' . $jesse_james_core_theme_dir );
 
 if ( ! function_exists( 'nicholls_core_setup' ) ) :
 /**
@@ -151,6 +157,77 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+* ----- Nicholls Core Starts Here ------
+*/
+
+/**
+* FNBX HTML Tag
+*
+* Core utility function for the writing and manipulation of HTML tags.
+*
+* @since 1.0
+* @echo string
+*/
+if ( !function_exists( 'fnbx_html_tag' ) ) {
+	function fnbx_html_tag( $html = array() ) {
+	
+		if ( empty( $html ) ) return;
+		
+		$attributes = '';
+		$composite = '';
+		$spacer = '';
+		if ( !isset( $html['return'] ) ) $html['return'] = false;
+		$reserved = array(
+			'tag', 'tag_type', 'attributes', 'tag_content', 'tag_content_before', 'tag_content_after', 'return'
+		);
+	
+		foreach ( $html as $name => $option ) {
+			if ( in_array( $name, $reserved ) ) continue;
+			$attributes .= $name . '="' . $option . '" ';
+		}
+		
+		if ( isset( $html['attributes'] ) ) $attributes .= $html['attributes'] . ' ' . $attributes;
+		
+		if ( $attributes != '' ) {
+			$attributes = rtrim( $attributes );
+			$spacer = ' ';
+		}
+		
+		if ( !isset( $html['tag_type'] ) ) $html['tag_type'] = 'default';
+		
+		if ( isset( $html['tag_content_before'] ) ) $composite .= $html['tag_content_before'];
+		
+		switch ( $html['tag_type'] ) {
+			case 'single':
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
+				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '/>';
+				break;
+			case 'open':
+				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];			
+				break;
+			case 'close':
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];		
+				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';
+				break;
+			case 'attributes':
+				$composite = $attributes;
+				break;			
+			case 'default':
+				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
+				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';			
+				break;
+		}
+		
+		if ( isset( $html['tag_content_after'] ) ) $composite .= $html['tag_content_after'];	
+		
+		if ( $html['return'] == true ) return $composite ;
+	
+		echo $composite;
+	}
+}
 
 add_action( 'wp_head', 'nicholls_core_fonts_google' );
 /**
