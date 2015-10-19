@@ -50,7 +50,7 @@ function nicholls_core_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', nicholls_core ),
+		'primary' => esc_html__( 'Primary Menu', 'nicholls_core' ),
 	) );
 
 	/*
@@ -105,7 +105,7 @@ add_action( 'after_setup_theme', 'nicholls_core_content_width', 0 );
  */
 function nicholls_core_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', nicholls_core ),
+		'name'          => esc_html__( 'Sidebar', 'nicholls_core' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',

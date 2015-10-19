@@ -18,7 +18,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', nicholls_core ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nicholls_core' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -29,7 +29,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', nicholls_core ),
+					esc_html__( 'Edit %s', 'nicholls_core' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',
