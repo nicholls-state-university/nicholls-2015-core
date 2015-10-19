@@ -9,9 +9,9 @@
  
 // Define theme core file location and uri using the current script file location
 $nicholls_core_theme_dir_src = explode( '/' , dirname( __FILE__ ) ); // Limit some pass by reference errors.
-$nicholls_core_theme_dir = array_pop( $jesse_james_core_theme_dir_src );
-define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/' . $jesse_james_core_theme_dir );
-define( 'NICHOLLS_CORE_URL', get_theme_root_uri() . '/' . $jesse_james_core_theme_dir );
+$nicholls_core_theme_dir = array_pop( $nicholls_core_theme_dir_src );
+define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/' . $nicholls_core_theme_dir );
+define( 'NICHOLLS_CORE_URL', get_theme_root_uri() . '/' . $nicholls_core_theme_dir );
 
 if ( ! function_exists( 'nicholls_core_setup' ) ) :
 /**
@@ -227,6 +227,88 @@ if ( !function_exists( 'fnbx_html_tag' ) ) {
 	
 		echo $composite;
 	}
+}
+
+/**
+* FNBX Date Class Function
+*
+* Taken from the old Sandbox Theme. The function provides date classes 
+* message pandering for donations for FNBX. Drop a dime in the bucket if you like, but it's really 
+* a ridiculous message to urge you to find or develop a child theme. Laugh, cry, or remove the code!
+*
+* @since 1.0
+*/
+function nicholls_core_date_classes( $t, $p = '' ) {
+	$c = array();
+	$t = $t + ( get_option('gmt_offset') * 3600 );
+	$c[] = $p . 'y' . gmdate( 'Y', $t ); // Year
+	$c[] = $p . 'm' . gmdate( 'm', $t ); // Month
+	$c[] = $p . 'd' . gmdate( 'd', $t ); // Day
+	$c[] = $p . 'h' . gmdate( 'H', $t ); // Hour
+	return $c;
+}
+
+add_filter( 'body_class', 'nicholls_core_body_class_filter' );
+/**
+* Body Class Filter
+*
+* Adds various sematic classes the BODY tag.
+*
+* @since 1.0
+* @return array
+*/
+function nicholls_core_body_class_filter( $classes ) {
+	global $wp_query, $current_user;
+
+	// It's surely WordPress, right?
+	$classes[] = 'wordpress';
+
+	// Applies the time- and date-based classes (below) to BODY element
+	//$date_classes = fnbx_date_classes( time() );
+	$classes = array_merge( $classes, nicholls_core_date_classes( time() ) );
+
+	// Special classes for BODY element when a single post
+	if ( is_single() ) {
+		the_post();
+
+		// Adds classes for the month, day, and hour when the post was published
+		if ( isset( $wp_query->post->post_date ) )
+			$classes = array_merge( $classes, nicholls_core_date_classes( mysql2date( 'U', $wp_query->post->post_date ), 's-' ) );
+
+		// Adds category classes for each category on single posts
+		if ( $cats = get_the_category() )
+			foreach ( $cats as $cat )
+				$classes[] = 's-category-' . $cat->slug;
+
+		// Adds tag classes for each tags on single posts
+		if ( $tags = get_the_tags() )
+			foreach ( $tags as $tag )
+				$classes[] = 's-tag-' . $tag->slug;
+
+		// Adds author class for the post author
+		$classes[] = 's-author-' . sanitize_title_with_dashes( strtolower( get_the_author_meta( 'login' ) ) );
+
+		rewind_posts();
+	// Page author for BODY on 'pages'
+	} elseif ( is_page() ) {
+		the_post();
+		$classes[] = 'page pageid-' . $wp_query->post->ID;
+		$classes[] = 'page-author-' . sanitize_title_with_dashes( strtolower( get_the_author_meta('login') ) );
+
+		rewind_posts();
+	}
+
+	if ( is_singular() ) $classes[] = 's-' . str_ireplace( '/', '', get_page_uri( $wp_query->post->ID ) );
+
+	$widget_groups = wp_get_sidebars_widgets();
+	foreach ( $widget_groups as $widget_group => $widget_elements ) {
+		if ( $widget_group == 'wp_inactive_widgets' ) continue;
+		$classes[] =  'widgets-' . sanitize_title_with_dashes( $widget_group ) . ( empty( $widget_elements ) ? '-inactive' : '-active' );
+	}
+	
+	$classes = apply_filters( 'fnbx_body_class',  $classes );
+
+	return $classes;
 }
 
 add_action( 'wp_head', 'nicholls_core_fonts_google' );
