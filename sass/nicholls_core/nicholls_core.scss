@@ -423,18 +423,15 @@ h1, h2, h3, h4, h5, h6 {
   text-indent: -9999px;
   width: 2em;
   height: 2em;
-  background-image: url( 'images/logo-planck-dark.svg' );
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
 
-.site-title-.background--light a {
-	  background-image: url( 'images/logo-planck-dark.svg' );
-}
-
-.site-title-.background--dark a {
-	  background-image: url( 'images/logo-planck-light.svg' );
+.site-title a {
+  background: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
+  background: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
+  linear-gradient(transparent, transparent);
 }
 
 .site-title a:hover {

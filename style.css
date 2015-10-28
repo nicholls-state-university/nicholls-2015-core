@@ -1033,13 +1033,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   clear: both;
 }
-/* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 .site:after, .site-header:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 65, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 65, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head {
   display: block;
   position: fixed;
@@ -1049,7 +1049,7 @@ head {
   color: #333;
   background: rgba(255, 255, 255, 0.25);
 }
-/* line 66, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 66, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:before {
   content: "|||";
   display: block;
@@ -1058,16 +1058,16 @@ head:before {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 67, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 67, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:hover {
   background: rgba(255, 255, 255, 0.5);
   color: red;
 }
-/* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:hover ~ .site, head:hover ~ body .site, head:hover ~ .site-header, head:hover ~ body .site-header {
   position: relative;
 }
-/* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-header:before, head:hover ~ body .site-header:before {
   position: absolute;
   top: 0;
@@ -1115,17 +1115,17 @@ head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-he
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 .widgets-sidebar-1-inactive .content-area:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:hover ~ .widgets-sidebar-1-inactive .content-area, head:hover ~ body .widgets-sidebar-1-inactive .content-area {
   position: relative;
 }
-/* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+/* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
 head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body .widgets-sidebar-1-inactive .content-area:before {
   position: absolute;
   top: 0;
@@ -1154,17 +1154,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .site:after, .site-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site, head:hover ~ body .site, head:hover ~ .site-header, head:hover ~ body .site-header {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-header:before, head:hover ~ body .site-header:before {
     position: absolute;
     top: 0;
@@ -1205,17 +1205,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .widgets-sidebar-1-inactive .content-area:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area, head:hover ~ body .widgets-sidebar-1-inactive .content-area {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body .widgets-sidebar-1-inactive .content-area:before {
     position: absolute;
     top: 0;
@@ -1244,17 +1244,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .site:after, .site-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site, head:hover ~ body .site, head:hover ~ .site-header, head:hover ~ body .site-header {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-header:before, head:hover ~ body .site-header:before {
     position: absolute;
     top: 0;
@@ -1289,17 +1289,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .widgets-sidebar-1-inactive .content-area:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area, head:hover ~ body .widgets-sidebar-1-inactive .content-area {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body .widgets-sidebar-1-inactive .content-area:before {
     position: absolute;
     top: 0;
@@ -1328,17 +1328,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .site:after, .site-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site, head:hover ~ body .site, head:hover ~ .site-header, head:hover ~ body .site-header {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-header:before, head:hover ~ body .site-header:before {
     position: absolute;
     top: 0;
@@ -1373,17 +1373,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .widgets-sidebar-1-inactive .content-area:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area, head:hover ~ body .widgets-sidebar-1-inactive .content-area {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body .widgets-sidebar-1-inactive .content-area:before {
     position: absolute;
     top: 0;
@@ -1412,17 +1412,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .site:after, .site-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site, head:hover ~ body .site, head:hover ~ .site-header, head:hover ~ body .site-header {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .site:before, head:hover ~ body .site:before, head:hover ~ .site-header:before, head:hover ~ body .site-header:before {
     position: absolute;
     top: 0;
@@ -1457,17 +1457,17 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   .widgets-sidebar-1-inactive .content-area:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 71, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 71, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area, head:hover ~ body .widgets-sidebar-1-inactive .content-area {
     position: relative;
   }
-  /* line 74, ../../../../../../../../../Users/nichweb/.rvm/gems/ruby-1.9.3-p194/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  /* line 74, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
   head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body .widgets-sidebar-1-inactive .content-area:before {
     position: absolute;
     top: 0;
@@ -1539,7 +1539,7 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   text-indent: -9999px;
   width: 2em;
   height: 2em;
-  background-image: url("images/logo-planck-dark.svg");
+  background-image: url("images/logo/Nicholls-N-Sword-w-text.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
