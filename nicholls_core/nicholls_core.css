@@ -564,8 +564,18 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
 /* Print */
 /* Compatibility - IE and other compatibility issues */
 /* Header ,Branding, & Navigation */
-/* line 405, ../sass/nicholls_core/nicholls_core.scss */
-.site-branding {
+/*
+We will need to move breakpoint modifications into other breakpoint blocks as needed.
+*/
+/* line 409, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-header-wrapper- {
+  width: 100%;
+  background-color: #000;
+}
+
+/* Logo */
+/* line 419, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-site-branding {
   width: 10em;
   margin: 0 auto;
   text-align: center;
@@ -573,48 +583,34 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   z-index: 102;
 }
 
-/* line 413, ../sass/nicholls_core/nicholls_core.scss */
-.site-title {
+/* line 427, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-site-title {
   width: auto;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* line 420, ../sass/nicholls_core/nicholls_core.scss */
-.site-title a {
+/* line 434, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-site-title a {
+  background: url("images/logo/Nicholls-N-Sword-w-text.png");
+  background: url("images/logo/Nicholls-N-Sword-w-text.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* line 440, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-site-title a {
   display: block;
   font-size: 2rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
-  background-image: url("images/logo/Nicholls-N-Sword-w-text.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
 
-/* line 432, ../sass/nicholls_core/nicholls_core.scss */
-.site-title-.background--light a {
-  background-image: url("images/logo-planck-dark.svg");
-}
-
-/* line 436, ../sass/nicholls_core/nicholls_core.scss */
-.site-title-.background--dark a {
-  background-image: url("images/logo-planck-light.svg");
-}
-
-/* line 440, ../sass/nicholls_core/nicholls_core.scss */
-.site-title a:hover {
-  transform: rotate(52deg);
-  -webkit-transform: rotate(52deg);
-  -moz-transform: rotate(52deg);
-  -ms-transform: rotate(52deg);
-  -o-transform: rotate(52deg);
-}
-
-/* line 448, ../sass/nicholls_core/nicholls_core.scss */
-.site-description {
+/* line 452, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-site-description {
   position: absolute;
   width: auto;
   font-size: 80%;
@@ -626,17 +622,19 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   text-align: center;
 }
 
-/* line 461, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation {
+/* Navigation */
+/* line 467, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- {
   width: auto;
-  margin: -4em auto 0 auto;
+  margin: 0 auto;
   position: relative;
   float: none;
   z-index: 100;
+  text-align: left;
 }
 
-/* line 469, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation .menu {
+/* line 476, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
   margin: 0 auto;
@@ -645,8 +643,8 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   /* centers IE6/7 */
 }
 
-/* line 475, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul, .main-navigation ul ul {
+/* line 482, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
   list-style-image: none;
@@ -654,31 +652,46 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 483, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul {
+/* line 489, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul {
   display: inline-block;
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 487, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul li {
+/* line 493, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul li {
   display: inline;
   padding: .2em;
-  margin-right: 2em;
+  border-bottom: 1px solid #ccc;
 }
 
-/* line 494, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul li:nth-child(3) {
-  margin-left: 8em;
+/* line 500, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul li:last-child {
+  border-right: 1px solid #ccc;
+  border-bottom-right-radius: 1em;
 }
 
-/* line 498, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul li a {
-  float: left;
+/* line 506, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* line 502, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul ul {
+/* line 511, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul li a:link,
+.nicholls-secondary-navigation- ul li a:active,
+.nicholls-secondary-navigation- ul li a:hover,
+.nicholls-secondary-navigation- ul li a:visited {
+  color: #fff;
+}
+
+/* line 518, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul li a:hover {
+  color: #fff;
+}
+
+/* line 522, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul ul {
   box-shadow: none;
   float: left;
   left: -999em;
@@ -689,22 +702,20 @@ head:hover ~ .widgets-sidebar-1-inactive .content-area:before, head:hover ~ body
   padding: 0;
 }
 
-/* line 513, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul ul li {
+/* line 533, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul ul li {
   margin: 0;
   padding: 0;
 }
 
-/* line 518, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation ul ul a {
+/* line 538, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- ul ul a {
   width: auto;
 }
 
-/* line 522, ../sass/nicholls_core/nicholls_core.scss */
-.main-navigation .menu-item a {
+/* line 542, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-secondary-navigation- .menu-item a {
   padding: 0 .4em;
   /* variable width */
-  font-family: 'Noto Serif', serif;
   font-weight: 700;
-  font-style: italic;
 }

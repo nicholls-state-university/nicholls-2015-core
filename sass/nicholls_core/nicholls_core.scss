@@ -402,7 +402,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header ,Branding, & Navigation */
 
-.site-branding {
+/*
+We will need to move breakpoint modifications into other breakpoint blocks as needed.
+*/
+
+.nicholls-header-wrapper- {
+	width: 100%;
+	background-color: #000;
+}
+
+
+
+
+/* Logo */
+
+.nicholls-site-branding {
 	width: 10em;
 	margin: 0 auto;
 	text-align: center;
@@ -410,14 +424,20 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 102;
 }
 
-.site-title {
+.nicholls-site-title {
 	width: auto;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
 
-.site-title a {
+.nicholls-site-title a {
+  background: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
+  background: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
+  linear-gradient(transparent, transparent);
+}
+
+.nicholls-site-title a {
   display: block;
   font-size: 2rem;
   text-indent: -9999px;
@@ -428,21 +448,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.site-title a {
-  background: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
-  background: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
-  linear-gradient(transparent, transparent);
-}
 
-.site-title a:hover {
-	transform: rotate(52deg);
-	-webkit-transform: rotate(52deg);
-	-moz-transform: rotate(52deg);
-	-ms-transform: rotate(52deg);
-	-o-transform: rotate(52deg);
-}
-
-.site-description {
+.nicholls-site-description {
 	position: absolute;
 	width: auto;
 	
@@ -455,48 +462,64 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.main-navigation {
+/* Navigation */
+
+.nicholls-secondary-navigation- {
 	width: auto;
-	margin: -4em auto 0 auto;
+	margin: 0 auto;
 	position: relative;
 	float: none;
 	z-index: 100;
+	text-align: left;
 }
 
-.main-navigation .menu {
+.nicholls-secondary-navigation- .menu {
 	display: inline-block; /* centers modern browsers */
 	margin: 0 auto; /* centers modern browsers */
 	text-align: center; /* centers IE6/7 */
 }
 
-.main-navigation ul, .main-navigation ul ul {
+.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
 	 list-style-type: none;
 	 list-style-position: inside;
 	 list-style-image: none;
 	 display: block; /* IE6/7 haslayout trip-switch */     
-	 
  }
 
-.main-navigation ul {
+.nicholls-secondary-navigation- ul {
 	display: inline-block; /* IE6/7 haslayout trip-switch */     
 }
 
-.main-navigation ul li {
+.nicholls-secondary-navigation- ul li {
 	display: inline;
 	padding: .2em;
-	margin-right: 2em;
 
+	border-bottom: 1px solid #ccc;
 }
 
-.main-navigation ul li:nth-child(3) {
-	margin-left: 8em;
+.nicholls-secondary-navigation- ul li:last-child {
+	border-right: 1px solid #ccc;
+
+	border-bottom-right-radius: 1em;
 }
 
-.main-navigation ul li a {
-	float: left;
+.nicholls-secondary-navigation- ul li a {
+	color: #fff;
+	text-decoration: none;
 }
 
-.main-navigation ul ul {
+.nicholls-secondary-navigation- ul li a:link,
+.nicholls-secondary-navigation- ul li a:active,
+.nicholls-secondary-navigation- ul li a:hover,
+.nicholls-secondary-navigation- ul li a:visited {
+	color: #fff;
+}
+
+.nicholls-secondary-navigation- ul li a:hover {
+	color: #fff;
+}
+
+.nicholls-secondary-navigation- ul ul {
 	box-shadow: none;
 	float: left;
 	left: -999em;
@@ -507,18 +530,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-.main-navigation ul ul li {
+.nicholls-secondary-navigation- ul ul li {
 	margin: 0;
 	padding: 0;
 }
 
-.main-navigation ul ul a {
+.nicholls-secondary-navigation- ul ul a {
 	width: auto;
 }
 
-.main-navigation .menu-item a {
+.nicholls-secondary-navigation- .menu-item a {
 	padding: 0 .4em; /* variable width */
-	font-family: 'Noto Serif', serif;
 	font-weight: 700;
-	font-style: italic;
 }
