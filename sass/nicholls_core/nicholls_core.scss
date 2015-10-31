@@ -9,7 +9,7 @@
 @import "compass/css3";
 
 /* Susy - Configuration */
-/*
+
 $susy: (
 	// the basics
 	columns: 26,
@@ -18,10 +18,10 @@ $susy: (
 	// advanced
 	math: static
 );
-*/
+
 
 /* Susy - Configuration - Debug */
-
+/*
 // Use this in configuration to setup debugging
 $susy: (
 	// the basics
@@ -38,7 +38,7 @@ $susy: (
 	)
 );
 // Use this in container areas to show grids
-
+*/
 /* Global Defaults */
 /*
 $susy: (
@@ -411,9 +411,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-color: #000;
 }
 
-
-
-
 /* Logo */
 
 .nicholls-site-branding {
@@ -429,6 +426,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	float: left;
 }
 
 .nicholls-site-title a {
@@ -464,6 +462,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* Navigation */
 
+/* secondary */ 
+
 .nicholls-secondary-navigation- {
 	width: auto;
 	margin: 0 auto;
@@ -487,39 +487,88 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
  }
 
 .nicholls-secondary-navigation- ul {
-	display: inline-block; /* IE6/7 haslayout trip-switch */     
+	display: inline-block; /* IE6/7 haslayout trip-switch */ 
+	margin: 0;
+	padding: 0;    
 }
 
 .nicholls-secondary-navigation- ul li {
 	display: inline;
 	padding: .2em;
 
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #999;
 }
 
 .nicholls-secondary-navigation- ul li:last-child {
-	border-right: 1px solid #ccc;
 
-	border-bottom-right-radius: 1em;
+	border-bottom-right-radius: 1.5em;
+
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+
 }
 
 .nicholls-secondary-navigation- ul li a {
-	color: #fff;
-	text-decoration: none;
+	display: inline-block;
+	padding: 0 1em .4em 1em;
+	font-size: 80%;
+	font-weight: 600;
 }
 
-.nicholls-secondary-navigation- ul li a:link,
-.nicholls-secondary-navigation- ul li a:active,
-.nicholls-secondary-navigation- ul li a:hover,
-.nicholls-secondary-navigation- ul li a:visited {
-	color: #fff;
+/* primary */ 
+
+.nicholls-primary-navigation- {
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	float: none;
+	clear: both;
+	z-index: 100;
+	text-align: center;
+	background-color: #cc3333;
 }
 
-.nicholls-secondary-navigation- ul li a:hover {
-	color: #fff;
+.nicholls-primary-navigation- .menu {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+
+	@include container(31);
+
 }
 
-.nicholls-secondary-navigation- ul ul {
+.nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+	
+	margin: 0;
+	padding: 0;
+	
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	width: 100%;
+	display: table;
+	
+	/* display: block; */ /* IE6/7 haslayout trip-switch */     
+ }
+
+.nicholls-primary-navigation- ul {
+	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */     
+}
+
+.nicholls-primary-navigation- ul li {
+	display: inline-block;
+	padding: .2em;
+	margin: 0;
+	
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	display: table-cell;
+	width: auto;
+	text-align: center;
+	
+}
+
+.nicholls-primary-navigation- ul ul {
 	box-shadow: none;
 	float: left;
 	left: -999em;
@@ -530,16 +579,72 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	padding: 0;
 }
 
-.nicholls-secondary-navigation- ul ul li {
+.nicholls-primary-navigation- ul ul li {
 	margin: 0;
 	padding: 0;
 }
 
-.nicholls-secondary-navigation- ul ul a {
+.nicholls-primary-navigation- ul ul a {
 	width: auto;
 }
 
-.nicholls-secondary-navigation- .menu-item a {
+.nicholls-primary-navigation- .menu-item a {
 	padding: 0 .4em; /* variable width */
 	font-weight: 700;
+}
+
+
+/* primary & secondary */
+
+.nicholls-primary-navigation- ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-primary-navigation- ul li a:link,
+.nicholls-primary-navigation- ul li a:active,
+.nicholls-primary-navigation- ul li a:visited {
+	color: #fff;
+}
+
+.nicholls-primary-navigation- ul li a:hover {
+	color: #fff;
+}
+
+.nicholls-secondary-navigation- ul li a,
+.nicholls-secondary-navigation- ul li a:link,
+.nicholls-secondary-navigation- ul li a:active,
+.nicholls-secondary-navigation- ul li a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+.nicholls-secondary-navigation- ul li a:hover {
+	color: #999;
+}
+
+/* Call to Action Buttons */
+
+.nicholls-cta-secondary {
+	width: 20em;
+	display: block;
+	float: left;
+}
+
+.nicholls-cta-primary {
+	width: 20em;
+	display: block;
+	float: right;
+}
+
+.nicholls-cta-secondary a {
+	display: block;
+	background-color: #999;
+	clear: both;
+}
+
+.nicholls-cta-primary a {
+	display: block;
+	background-color: #cc3333;
+	margin-top: -2em;
 }
