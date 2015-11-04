@@ -411,7 +411,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-color: #000;
 }
 
-/* Logo */
+/* Logo - sword */
 
 .nicholls-site-branding {
 	width: 10em;
@@ -446,6 +446,32 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   margin: 0 auto;
 }
 
+/* Logo - wordmark */
+
+.nicholls-logo-wordmark {
+	width: auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nicholls-logo-wordmark a {
+  background: url( 'images/logo/Nicholls-Wordmark-white.png' );
+  background: url( 'images/logo/Nicholls-Wordmark-white.svg' ),
+  linear-gradient(transparent, transparent);
+}
+
+.nicholls-logo-wordmark a {
+  display: block;
+  font-size: 2rem;
+  text-indent: -9999px;
+  width: 2em;
+  height: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 
 .nicholls-site-description {
 	position: absolute;
@@ -647,4 +673,37 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	display: block;
 	background-color: #cc3333;
 	margin-top: -2em;
+}
+
+/* Footer */
+
+.nicholls-footer-wrapper- {
+	background-color: #000;
+}
+
+/* Louisiana map */
+
+.nicholls-la-state-map {
+	width: auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nicholls-la-state-map a {
+  background: url( 'images/louisiana-map-thibodaux.png' );
+  background: url( 'images/louisiana-map-thibodaux.svg' ),
+  linear-gradient(transparent, transparent);
+}
+
+.nicholls-la-state-map a {
+  display: block;
+  font-size: 2rem;
+  text-indent: -9999px;
+  width: 2em;
+  height: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
