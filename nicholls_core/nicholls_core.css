@@ -382,22 +382,9 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   margin: 0 auto;
 }
 
-/* line 476, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-site-description {
-  position: absolute;
-  width: auto;
-  font-size: 80%;
-  font-weight: 100;
-  padding: 0 .2em;
-  margin: 0;
-  position: relative;
-  color: #000;
-  text-align: center;
-}
-
 /* Navigation */
 /* secondary */
-/* line 493, ../sass/nicholls_core/nicholls_core.scss */
+/* line 480, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -407,7 +394,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: left;
 }
 
-/* line 502, ../sass/nicholls_core/nicholls_core.scss */
+/* line 489, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -417,7 +404,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* centers IE6/7 */
 }
 
-/* line 508, ../sass/nicholls_core/nicholls_core.scss */
+/* line 495, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -426,7 +413,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 515, ../sass/nicholls_core/nicholls_core.scss */
+/* line 502, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul {
   display: inline-block;
   /* IE6/7 haslayout trip-switch */
@@ -434,21 +421,21 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 521, ../sass/nicholls_core/nicholls_core.scss */
+/* line 508, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li {
   display: inline;
   padding: .2em;
   border-bottom: 1px solid #999;
 }
 
-/* line 528, ../sass/nicholls_core/nicholls_core.scss */
+/* line 515, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li:last-child {
   border-bottom-right-radius: 1.5em;
   border-bottom: 1px solid #999;
   border-right: 1px solid #999;
 }
 
-/* line 537, ../sass/nicholls_core/nicholls_core.scss */
+/* line 524, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a {
   display: inline-block;
   padding: 0 1em .4em 1em;
@@ -457,7 +444,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary */
-/* line 546, ../sass/nicholls_core/nicholls_core.scss */
+/* line 533, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -469,7 +456,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   background-color: #cc3333;
 }
 
-/* line 557, ../sass/nicholls_core/nicholls_core.scss */
+/* line 544, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -488,7 +475,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   clear: both;
 }
 
-/* line 566, ../sass/nicholls_core/nicholls_core.scss */
+/* line 553, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -502,13 +489,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 581, ../sass/nicholls_core/nicholls_core.scss */
+/* line 568, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul {
   /* display: inline-block; */
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 585, ../sass/nicholls_core/nicholls_core.scss */
+/* line 572, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li {
   display: inline-block;
   padding: .2em;
@@ -519,7 +506,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: center;
 }
 
-/* line 597, ../sass/nicholls_core/nicholls_core.scss */
+/* line 584, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul {
   box-shadow: none;
   float: left;
@@ -531,18 +518,18 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 608, ../sass/nicholls_core/nicholls_core.scss */
+/* line 595, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul li {
   margin: 0;
   padding: 0;
 }
 
-/* line 613, ../sass/nicholls_core/nicholls_core.scss */
+/* line 600, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul a {
   width: auto;
 }
 
-/* line 617, ../sass/nicholls_core/nicholls_core.scss */
+/* line 604, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- .menu-item a {
   padding: 0 .4em;
   /* variable width */
@@ -550,25 +537,25 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary & secondary */
-/* line 625, ../sass/nicholls_core/nicholls_core.scss */
+/* line 612, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 630, ../sass/nicholls_core/nicholls_core.scss */
+/* line 617, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:link,
 .nicholls-primary-navigation- ul li a:active,
 .nicholls-primary-navigation- ul li a:visited {
   color: #fff;
 }
 
-/* line 636, ../sass/nicholls_core/nicholls_core.scss */
+/* line 623, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:hover {
   color: #fff;
 }
 
-/* line 640, ../sass/nicholls_core/nicholls_core.scss */
+/* line 627, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a,
 .nicholls-secondary-navigation- ul li a:link,
 .nicholls-secondary-navigation- ul li a:active,
@@ -577,34 +564,34 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 648, ../sass/nicholls_core/nicholls_core.scss */
+/* line 635, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a:hover {
   color: #999;
 }
 
 /* Call to Action Buttons */
-/* line 654, ../sass/nicholls_core/nicholls_core.scss */
+/* line 641, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-secondary {
   width: 20em;
   display: block;
   float: left;
 }
 
-/* line 660, ../sass/nicholls_core/nicholls_core.scss */
+/* line 647, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-primary {
   width: 20em;
   display: block;
   float: right;
 }
 
-/* line 666, ../sass/nicholls_core/nicholls_core.scss */
+/* line 653, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-secondary a {
   display: block;
   background-color: #999;
   clear: both;
 }
 
-/* line 672, ../sass/nicholls_core/nicholls_core.scss */
+/* line 659, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-primary a {
   display: block;
   background-color: #cc3333;
@@ -612,13 +599,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer */
-/* line 680, ../sass/nicholls_core/nicholls_core.scss */
+/* line 667, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-wrapper- {
   background-color: #000;
 }
 
 /* Louisiana map */
-/* line 686, ../sass/nicholls_core/nicholls_core.scss */
+/* line 673, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-la-state-map {
   width: auto;
   text-align: center;
@@ -627,13 +614,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   float: left;
 }
 
-/* line 694, ../sass/nicholls_core/nicholls_core.scss */
+/* line 681, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-la-state-map a {
   background: url("images/louisiana-map-thibodaux.png");
   background: url("images/louisiana-map-thibodaux.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 700, ../sass/nicholls_core/nicholls_core.scss */
+/* line 687, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-la-state-map a {
   display: block;
   font-size: 2rem;
