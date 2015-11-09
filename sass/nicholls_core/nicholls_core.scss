@@ -243,6 +243,37 @@ $funroe-colors-grey-values: (
 	}		
 }
 
+/* Social Media Icons Mixin */
+
+@mixin nicholls-social-icon-footer( $network ) {
+
+	.nicholls-social-media-footer-#{$network} {
+		width: auto;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+
+	.nicholls-social-media-footer-#{$network} a {
+	  background: url( 'images/icons/social-media/#{$network}.png' );
+	  background: url( 'images/icons/social-media/#{$network}.svg' ),
+	  linear-gradient(transparent, transparent);
+	}
+
+	.nicholls-social-media-footer-#{$network} a {
+	  display: block;
+	  font-size: 5.6rem;
+	  text-indent: -9999px;
+	  width: 2em;
+	  height: 2em;
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  margin: 0 auto;
+	}
+}
+
+
 @import 'breakpoint';
 
 /* -- Jess's madness starts here -- */
@@ -694,3 +725,11 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   background-repeat: no-repeat;
   margin: 0 auto;
 }
+
+/* Footer - Social Media Icons */
+
+@include nicholls-social-icon-footer( 'facebook' );
+@include nicholls-social-icon-footer( 'instagram' );
+@include nicholls-social-icon-footer( 'twitter' );
+@include nicholls-social-icon-footer( 'linkedin' );
+@include nicholls-social-icon-footer( 'youtube' );
