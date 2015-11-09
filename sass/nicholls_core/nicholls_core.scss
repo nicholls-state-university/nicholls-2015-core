@@ -263,7 +263,7 @@ $funroe-colors-grey-values: (
 
 	.nicholls-social-media-footer-#{$network} a {
 	  display: block;
-	  font-size: 5.6rem;
+	  font-size: 1rem;
 	  text-indent: -9999px;
 	  width: 2em;
 	  height: 2em;
@@ -727,6 +727,12 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer - Social Media Icons */
+
+footer .nicholls-social-media ul {
+	 list-style-type: none;
+	 list-style-position: inside;
+	 list-style-image: none;
+}
 
 @include nicholls-social-icon-footer( 'facebook' );
 @include nicholls-social-icon-footer( 'instagram' );
