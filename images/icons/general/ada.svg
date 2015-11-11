@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px"
+	 height="21px" viewBox="0 0 19 21" enable-background="new 0 0 19 21" xml:space="preserve">
+<g id="Layer_1" display="none">
+	<rect display="inline" fill="#5EC4C8" width="19" height="21"/>
+</g>
+<g id="mail" display="none">
+	<g display="inline">
+		<polygon fill="none" stroke="#FFFFFF" points="9.499,2.421 16.966,8.476 16.966,18.579 9.499,18.579 2.034,18.579 2.034,8.476 		
+			"/>
+		<line fill="none" stroke="#FFFFFF" x1="2.034" y1="8.476" x2="16.966" y2="18.579"/>
+		<polyline fill="none" stroke="#FFFFFF" points="16.966,8.476 9.499,13.528 2.034,18.579 		"/>
+		<polyline fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" points="16.966,8.476 9.499,13.528 2.034,8.476 9.499,2.421 
+			16.966,8.476 		"/>
+	</g>
+</g>
+<g id="ADA_-_wheelchair">
+	<g>
+		<path fill="#FFFFFF" d="M10.459,17.158c-0.734,0.408-1.5,0.613-2.297,0.613c-0.803,0-1.572-0.201-2.305-0.607
+			s-1.303-0.973-1.707-1.703c-0.406-0.729-0.609-1.5-0.609-2.311c0-0.807,0.209-1.576,0.625-2.316
+			c0.211-0.389,0.473-0.732,0.777-1.029l0.389,2.111c-0.162,0.389-0.25,0.801-0.264,1.234c0,0.537,0.137,1.055,0.406,1.547
+			c0.268,0.494,0.648,0.875,1.141,1.143c0.494,0.268,1.008,0.406,1.547,0.406s1.055-0.139,1.543-0.406s0.871-0.648,1.143-1.143
+			l0.672,1.643C11.221,16.666,10.869,16.938,10.459,17.158z M7.055,3.229c0.99,0,1.486,0.459,1.486,1.381
+			C8.537,5.666,8.117,6.201,7.287,6.215l0.234,2.234h2.676c0.076,0,0.168,0.477,0.271,1.422L10.43,9.91H7.754l0.115,0.982h4.328
+			c0.08,0.039,0.578,1.35,1.492,3.932l1.301-0.391l0.469,1.373c-0.031,0.051-0.938,0.365-2.715,0.943
+			c-0.104-0.154-0.639-1.625-1.605-4.406H6.498c-0.076,0-0.391-2.607-0.943-7.822C5.555,3.658,6.053,3.229,7.055,3.229z"/>
+	</g>
+</g>
+<g id="question-square" display="none">
+	<g display="inline">
+		<polygon fill="none" stroke="#FFFFFF" points="15.232,16.706 9.5,16.706 3.768,16.706 3.768,8.944 3.768,4.294 9.5,4.294 
+			15.232,4.294 15.232,8.944 		"/>
+		<polyline fill="none" stroke="#FFFFFF" points="5.797,8.7 7.195,6.933 11.969,6.933 13.229,8.7 11.926,10.005 9.396,10.612 
+			9.396,12.446 		"/>
+		<line fill="none" stroke="#FFFFFF" x1="9.396" y1="13.515" x2="9.396" y2="14.772"/>
+	</g>
+</g>
+<g id="document" display="none">
+	<g display="inline">
+		<polygon fill="none" stroke="#FFFFFF" points="16.066,8.72 16.066,17.608 9.498,17.608 2.934,17.608 2.934,10.499 2.934,3.392 
+			11.146,3.392 		"/>
+		<polyline fill="none" stroke="#FFFFFF" points="11.146,3.392 11.146,8.72 16.066,8.72 		"/>
+		<line fill="none" stroke="#FFFFFF" x1="4.787" y1="11.69" x2="14.104" y2="11.69"/>
+		<line fill="none" stroke="#FFFFFF" x1="4.787" y1="15.009" x2="14.104" y2="15.009"/>
+		<rect x="5.361" y="5.667" fill="none" stroke="#FFFFFF" width="3.051" height="3.053"/>
+	</g>
+</g>
+</svg>
