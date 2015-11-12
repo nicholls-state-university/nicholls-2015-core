@@ -243,9 +243,9 @@ $funroe-colors-grey-values: (
 	}		
 }
 
-/* Social Media Icons Mixin */
+/* Mixin - Icons - Social Media Icons */
 
-@mixin nicholls-social-icon-footer( $network ) {
+@mixin nicholls-icon-footer-social( $network ) {
 
 	.nicholls-social-media-footer-#{$network} {
 		width: auto;
@@ -273,6 +273,22 @@ $funroe-colors-grey-values: (
 	}
 }
 
+/* Mixin - Icons - Small Inline Icons */
+
+@mixin nicholls-icon-inline-small( $name ) {
+
+	.icon-inline-small-#{$name}:before {
+		content: "";
+		display: block;
+		background: url( 'images/icons/general/#{$name}.png' );
+		background: url( 'images/icons/general/#{$name}.svg' ),
+		linear-gradient(transparent, transparent);
+		width: 20px;
+		height: 20px;
+		float: left;
+		margin: 0 6px 0 0;
+	}
+}
 
 @import 'breakpoint';
 
@@ -734,8 +750,16 @@ footer .nicholls-social-media ul {
 	 list-style-image: none;
 }
 
-@include nicholls-social-icon-footer( 'facebook' );
-@include nicholls-social-icon-footer( 'instagram' );
-@include nicholls-social-icon-footer( 'twitter' );
-@include nicholls-social-icon-footer( 'linkedin' );
-@include nicholls-social-icon-footer( 'youtube' );
+@include nicholls-icon-footer-social( 'facebook' );
+@include nicholls-icon-footer-social( 'instagram' );
+@include nicholls-icon-footer-social( 'twitter' );
+@include nicholls-icon-footer-social( 'linkedin' );
+@include nicholls-icon-footer-social( 'youtube' );
+
+@include nicholls-icon-inline-small( 'blank' );
+
+@include nicholls-icon-inline-small( 'mail' );
+@include nicholls-icon-inline-small( 'document' );
+@include nicholls-icon-inline-small( 'question' );
+@include nicholls-icon-inline-small( 'ada' );
+
