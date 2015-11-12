@@ -501,23 +501,28 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	margin: 0;
 	padding: 0;
 	float: left;
+	
+	border: 1px solid green;
 }
 
 .nicholls-logo-wordmark a {
-  background: url( 'images/logo/Nicholls-Wordmark-white.png' );
-  background: url( 'images/logo/Nicholls-Wordmark-white.svg' ),
-  linear-gradient(transparent, transparent);
+	background: url( 'images/logo/Nicholls-Wordmark-white.png' );
+	background: url( 'images/logo/Nicholls-Wordmark-white.svg' ),
+	linear-gradient(transparent, transparent);
 }
 
 .nicholls-logo-wordmark a {
-  display: block;
-  font-size: 2rem;
-  text-indent: -9999px;
-  width: 2em;
-  height: 2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+	display: block;
+	font-size: 6rem;
+	text-indent: -9999px;
+	width: 2em;
+	line-height: .8em;
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+
+	border: 1px solid red;
 }
 
 /* Navigation */
@@ -713,6 +718,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 .nicholls-footer-wrapper- {
 	background-color: #000;
+	color: #cccccc;
 }
 
 /* Louisiana map */
@@ -723,6 +729,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	margin: 0;
 	padding: 0;
 	float: left;
+	width: 12em;
+	height: 10em;
 }
 
 .nicholls-la-state-map a {
@@ -733,13 +741,74 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 .nicholls-la-state-map a {
   display: block;
-  font-size: 2rem;
+  font-size: 4rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+
+/* Footer - Information */
+
+.nicholls-phone-number {
+	display: block;
+	float: right;
+}
+
+/* Footer Info Navigation */ 
+
+.nicholls-footer-info-navigation- {
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+	
+	margin: 0;
+	padding: 0;
+	
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	width: 100%;
+	display: block;
+	
+	/* display: block; */ /* IE6/7 haslayout trip-switch */     
+ }
+
+.nicholls-footer-info-navigation- {
+	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */     
+}
+
+.nicholls-footer-info-navigation- li {
+	display: inline-block;
+	padding: .2em;
+	margin: 0;
+	
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	display: table-cell;
+	width: auto;
+	text-align: center;
+	
+}
+
+
+.nicholls-footer-info-navigation- li a {
+	padding: 0 .4em; /* variable width */
+	font-weight: 700;
+}
+
+.nicholls-footer-info-navigation- li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-footer-info-navigation- li a:link,
+.nicholls-footer-info-navigation- li a:active,
+.nicholls-footer-info-navigation- li a:visited {
+	color: #fff;
+}
+
+.nicholls-footer-info-navigation- li a:hover {
+	color: #fff;
 }
 
 /* Footer - Social Media Icons */
