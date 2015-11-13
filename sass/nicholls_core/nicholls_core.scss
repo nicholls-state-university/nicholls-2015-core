@@ -283,11 +283,22 @@ $funroe-colors-grey-values: (
 		background: url( 'images/icons/general/#{$name}.png' );
 		background: url( 'images/icons/general/#{$name}.svg' ),
 		linear-gradient(transparent, transparent);
-		width: 20px;
-		height: 20px;
+		width: 1.2em;
+		height: 1.2em;
 		float: left;
-		margin: 0 6px 0 0;
+		margin: 0 .5em 0 0;
 	}
+}
+
+/* Small Inline Icon - Blank */
+
+.icon-inline-small-blank:before {
+	content: "";
+	display: block;
+	width: 1.2em;
+	height: 1.2em;
+	float: left;
+	margin: 0 .5em 0 0;
 }
 
 @import 'breakpoint';
@@ -501,8 +512,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	margin: 0;
 	padding: 0;
 	float: left;
-	
-	border: 1px solid green;
 }
 
 .nicholls-logo-wordmark a {
@@ -521,8 +530,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0 auto;
-
-	border: 1px solid red;
 }
 
 /* Navigation */
@@ -721,6 +728,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	color: #cccccc;
 }
 
+.nicholls-footer-column {
+	width: 30%;
+	float: left;
+}
+
+.nicholls-info-copyright {
+	clear: both;
+}
 /* Louisiana map */
 
 .nicholls-la-state-map {
@@ -734,32 +749,42 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 .nicholls-la-state-map a {
-  background: url( 'images/louisiana-map-thibodaux.png' );
-  background: url( 'images/louisiana-map-thibodaux.svg' ),
-  linear-gradient(transparent, transparent);
+	background: url( 'images/louisiana-map-thibodaux.png' );
+	background: url( 'images/louisiana-map-thibodaux.svg' ),
+	linear-gradient(transparent, transparent);
 }
 
 .nicholls-la-state-map a {
-  display: block;
-  font-size: 4rem;
-  text-indent: -9999px;
-  width: 2em;
-  height: 2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+	display: block;
+	font-size: 4rem;
+	text-indent: -9999px;
+	width: 2em;
+	height: 2em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 
 /* Footer - Information */
 
 .nicholls-phone-number {
 	display: block;
-	float: right;
+	float: left;
+}
+
+.nicholls-address {
+	display: block;
+	float: left;
 }
 
 /* Footer Info Navigation */ 
 
-.nicholls-footer-info-navigation- {
+.nicholls-footer-info-navigation {
+	display: block;
+	float: left;
+}
+
+.nicholls-footer-info-navigation ul {
 	list-style-type: none;
 	list-style-position: inside;
 	list-style-image: none;
@@ -774,41 +799,47 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	/* display: block; */ /* IE6/7 haslayout trip-switch */     
  }
 
-.nicholls-footer-info-navigation- {
+.nicholls-footer-info-navigation ul {
 	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */     
 }
 
-.nicholls-footer-info-navigation- li {
-	display: inline-block;
+.nicholls-footer-info-navigation ul li {
+	display: block;
+	float: left;
 	padding: .2em;
 	margin: 0;
 	
-	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
-	display: table-cell;
 	width: auto;
 	text-align: center;
 	
 }
 
-
-.nicholls-footer-info-navigation- li a {
-	padding: 0 .4em; /* variable width */
-	font-weight: 700;
-}
-
-.nicholls-footer-info-navigation- li a {
+.nicholls-footer-info-navigation ul li a,
+.nicholls-footer-info-navigation ul li a:link,
+.nicholls-footer-info-navigation ul li a:active,
+.nicholls-footer-info-navigation ul li a:visited {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: none;	
 }
 
-.nicholls-footer-info-navigation- li a:link,
-.nicholls-footer-info-navigation- li a:active,
-.nicholls-footer-info-navigation- li a:visited {
+.nicholls-footer-info-navigation ul li a:hover {
 	color: #fff;
 }
 
-.nicholls-footer-info-navigation- li a:hover {
-	color: #fff;
+/* Footer Links Menu */
+
+.nicholls-footer-menu ul {
+	 list-style-type: none;
+	 list-style-position: inside;
+	 list-style-image: none;
+	 display: block; /* IE6/7 haslayout trip-switch */ 
+}
+
+.nicholls-footer-menu ul li {
+		width: auto;
+		text-align: left;
+		margin: 0;
+		padding: 0;
 }
 
 /* Footer - Social Media Icons */
@@ -832,3 +863,4 @@ footer .nicholls-social-media ul {
 @include nicholls-icon-inline-small( 'question' );
 @include nicholls-icon-inline-small( 'ada' );
 
+/* Debug */
