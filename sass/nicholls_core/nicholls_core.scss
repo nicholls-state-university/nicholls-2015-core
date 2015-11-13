@@ -250,7 +250,7 @@ $funroe-colors-grey-values: (
 	.nicholls-social-media-footer-#{$network} {
 		width: auto;
 		text-align: center;
-		margin: 0;
+		margin: 0 2.2em 0 0;
 		padding: 0;
 		float: left;
 	}
@@ -283,6 +283,8 @@ $funroe-colors-grey-values: (
 		background: url( 'images/icons/general/#{$name}.png' );
 		background: url( 'images/icons/general/#{$name}.svg' ),
 		linear-gradient(transparent, transparent);
+		background-size: 90%;
+		background-repeat: no-repeat;
 		width: 1.2em;
 		height: 1.2em;
 		float: left;
@@ -525,7 +527,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	font-size: 6rem;
 	text-indent: -9999px;
 	width: 2em;
-	line-height: .8em;
+	line-height: .7em;
 	
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -731,10 +733,18 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-footer-column {
 	width: 30%;
 	float: left;
+	font-size: 90%;
+	line-height: 1.2em;
+	padding-top: 1em;
 }
 
+.nicholls-footer-column div {
+	margin: 0;
+	padding: 0;
+}
 .nicholls-info-copyright {
 	clear: both;
+	font-size: 86%;	
 }
 /* Louisiana map */
 
@@ -756,7 +766,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 .nicholls-la-state-map a {
 	display: block;
-	font-size: 4rem;
+	font-size: 4.6rem;
 	text-indent: -9999px;
 	width: 2em;
 	height: 2em;
@@ -775,6 +785,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-address {
 	display: block;
 	float: left;
+	white-space: nowrap;
+	font-size: 86%;
 }
 
 /* Footer Info Navigation */ 
@@ -806,12 +818,22 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-footer-info-navigation ul li {
 	display: block;
 	float: left;
-	padding: .2em;
+	padding: 0 .2em;
 	margin: 0;
 	
 	width: auto;
 	text-align: center;
 	
+}
+
+.nicholls-footer-info-navigation ul li:after {
+	content: "|";
+	margin-left: .2em;
+}
+
+.nicholls-footer-info-navigation ul li:last-child:after {
+	content: "";
+	margin-left: 0;
 }
 
 .nicholls-footer-info-navigation ul li a,
@@ -824,6 +846,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 .nicholls-footer-info-navigation ul li a:hover {
 	color: #fff;
+	text-decoration: underline;		
 }
 
 /* Footer Links Menu */
@@ -855,6 +878,31 @@ footer .nicholls-social-media ul {
 @include nicholls-icon-footer-social( 'twitter' );
 @include nicholls-icon-footer-social( 'linkedin' );
 @include nicholls-icon-footer-social( 'youtube' );
+
+.nicholls-footer-menu {
+	font-size: 90%;;
+}
+
+.nicholls-footer-menu ul li a,
+.nicholls-footer-menu ul li a:link,
+.nicholls-footer-menu ul li a:active,
+.nicholls-footer-menu ul li a:visited {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.nicholls-footer-menu ul li a:hover {
+	color: #fff;
+	text-decoration: underline;		
+}
+
+.nicholls-footer-menu ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 0;
+    padding: 0;
+}
 
 @include nicholls-icon-inline-small( 'blank' );
 
