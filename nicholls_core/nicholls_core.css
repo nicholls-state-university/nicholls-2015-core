@@ -69,7 +69,7 @@ $susy: (
 /* Mixin - Icons - Social Media Icons */
 /* Mixin - Icons - Small Inline Icons */
 /* Small Inline Icon - Blank */
-/* line 297, ../sass/nicholls_core/nicholls_core.scss */
+/* line 310, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-blank:before {
   content: "";
   display: block;
@@ -81,19 +81,19 @@ $susy: (
 
 /* -- Jess's madness starts here -- */
 /* Layout - Default breakpoint is 945 */
-/* line 314, ../sass/nicholls_core/nicholls_core.scss */
+/* line 327, ../sass/nicholls_core/nicholls_core.scss */
 body {
   width: 100%;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
-/* line 320, ../sass/nicholls_core/nicholls_core.scss */
+/* line 333, ../sass/nicholls_core/nicholls_core.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif', serif;
 }
 
-/* line 324, ../sass/nicholls_core/nicholls_core.scss */
+/* line 337, ../sass/nicholls_core/nicholls_core.scss */
 .site, .site-header {
   width: 63.84em;
   margin-left: auto;
@@ -110,20 +110,37 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 332, ../sass/nicholls_core/nicholls_core.scss */
+/* line 345, ../sass/nicholls_core/nicholls_core.scss */
 .site-header {
   text-align: center;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 337, ../sass/nicholls_core/nicholls_core.scss */
+/* line 350, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-footer-wrapper- footer {
+  width: 63.84em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  clear: both;
+}
+/* line 12, ../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.nicholls-footer-wrapper- footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 358, ../sass/nicholls_core/nicholls_core.scss */
 .content-area {
   width: 42.96em;
   float: left;
   margin-right: 0.888em;
 }
 
-/* line 341, ../sass/nicholls_core/nicholls_core.scss */
+/* line 362, ../sass/nicholls_core/nicholls_core.scss */
 .widget-area {
   width: 19.992em;
   float: right;
@@ -131,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* see jesse_james_body_class_filter() */
-/* line 346, ../sass/nicholls_core/nicholls_core.scss */
+/* line 367, ../sass/nicholls_core/nicholls_core.scss */
 .widgets-sidebar-1-inactive .content-area {
   width: 63.84em;
   margin-left: auto;
@@ -146,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Layout - Large Screen breakpoint is 1166 */
 @media (min-width: 80em) {
-  /* line 353, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 374, ../sass/nicholls_core/nicholls_core.scss */
   .site, .site-header {
     width: 76.368em;
     margin-left: auto;
@@ -159,21 +176,34 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 357, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 378, ../sass/nicholls_core/nicholls_core.scss */
+  .nicholls-footer-wrapper- footer {
+    width: 76.368em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .nicholls-footer-wrapper- footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 382, ../sass/nicholls_core/nicholls_core.scss */
   .content-area {
     width: 53.4em;
     float: left;
     margin-right: 0.888em;
   }
 
-  /* line 361, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 386, ../sass/nicholls_core/nicholls_core.scss */
   .widget-area {
     width: 19.992em;
     float: right;
     margin-right: 0;
   }
 
-  /* line 365, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 390, ../sass/nicholls_core/nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 76.368em;
     margin-left: auto;
@@ -188,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Tablet Screen breakpoint is  */
 @media (min-width: 46em) and (max-width: 62em) {
-  /* line 374, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 399, ../sass/nicholls_core/nicholls_core.scss */
   .site, .site-header {
     width: 47.136em;
     margin-left: auto;
@@ -201,7 +231,20 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 378, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 403, ../sass/nicholls_core/nicholls_core.scss */
+  .nicholls-footer-wrapper- footer {
+    width: 47.136em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .nicholls-footer-wrapper- footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 407, ../sass/nicholls_core/nicholls_core.scss */
   .content-area, .widget-area {
     width: 47.136em;
     float: left;
@@ -209,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 382, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 411, ../sass/nicholls_core/nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 47.136em;
     margin-left: auto;
@@ -224,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Phone Screen Landscape breakpoint is  */
 @media (min-width: 31em) and (max-width: 46em) {
-  /* line 391, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 420, ../sass/nicholls_core/nicholls_core.scss */
   .site, .site-header {
     width: 34.608em;
     margin-left: auto;
@@ -237,7 +280,20 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 395, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 424, ../sass/nicholls_core/nicholls_core.scss */
+  .nicholls-footer-wrapper- footer {
+    width: 34.608em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .nicholls-footer-wrapper- footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 428, ../sass/nicholls_core/nicholls_core.scss */
   .content-area, .widget-area {
     width: 34.608em;
     float: left;
@@ -245,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 399, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 432, ../sass/nicholls_core/nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 34.608em;
     margin-left: auto;
@@ -260,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Phone Screen Portrait breakpoint is  */
 @media (min-width: 0em) and (max-width: 31em) {
-  /* line 408, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 441, ../sass/nicholls_core/nicholls_core.scss */
   .site, .site-header {
     width: 22.08em;
     margin-left: auto;
@@ -273,7 +329,20 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 412, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 445, ../sass/nicholls_core/nicholls_core.scss */
+  .nicholls-footer-wrapper- footer {
+    width: 22.08em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .nicholls-footer-wrapper- footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 449, ../sass/nicholls_core/nicholls_core.scss */
   .content-area, .widget-area {
     width: 22.08em;
     float: left;
@@ -281,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 416, ../sass/nicholls_core/nicholls_core.scss */
+  /* line 453, ../sass/nicholls_core/nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 22.08em;
     margin-left: auto;
@@ -324,14 +393,20 @@ h1, h2, h3, h4, h5, h6 {
 /*
 We will need to move breakpoint modifications into other breakpoint blocks as needed.
 */
-/* line 469, ../sass/nicholls_core/nicholls_core.scss */
+/* line 506, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-header-wrapper- {
   width: 100%;
   background-color: #000;
 }
 
+/* line 511, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-footer-wrapper- {
+  width: 100%;
+  background-color: #000;
+}
+
 /* Logo - sword */
-/* line 476, ../sass/nicholls_core/nicholls_core.scss */
+/* line 518, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-site-branding {
   width: 10em;
   margin: 0 auto;
@@ -340,7 +415,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   z-index: 102;
 }
 
-/* line 484, ../sass/nicholls_core/nicholls_core.scss */
+/* line 526, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-site-title {
   width: auto;
   text-align: center;
@@ -349,26 +424,23 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   float: left;
 }
 
-/* line 492, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-site-title a {
-  background: url("images/logo/Nicholls-N-Sword-w-text.png");
-  background: url("images/logo/Nicholls-N-Sword-w-text.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 498, ../sass/nicholls_core/nicholls_core.scss */
+/* line 534, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-site-title a {
   display: block;
+  font-size: 5.6em;
   font-size: 5.6rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  background-image: url("images/logo/Nicholls-N-Sword-w-text.png");
+  background-image: url("images/logo/Nicholls-N-Sword-w-text.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* Logo - wordmark */
-/* line 511, ../sass/nicholls_core/nicholls_core.scss */
+/* line 556, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-logo-wordmark {
   width: auto;
   text-align: center;
@@ -377,13 +449,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   float: left;
 }
 
-/* line 519, ../sass/nicholls_core/nicholls_core.scss */
+/* line 564, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-logo-wordmark a {
   background: url("images/logo/Nicholls-Wordmark-white.png");
   background: url("images/logo/Nicholls-Wordmark-white.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 525, ../sass/nicholls_core/nicholls_core.scss */
+/* line 570, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-logo-wordmark a {
   display: block;
   font-size: 6rem;
@@ -397,7 +469,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* Navigation */
 /* secondary */
-/* line 541, ../sass/nicholls_core/nicholls_core.scss */
+/* line 586, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -407,7 +479,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: left;
 }
 
-/* line 550, ../sass/nicholls_core/nicholls_core.scss */
+/* line 595, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -417,7 +489,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* centers IE6/7 */
 }
 
-/* line 556, ../sass/nicholls_core/nicholls_core.scss */
+/* line 601, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -426,7 +498,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 563, ../sass/nicholls_core/nicholls_core.scss */
+/* line 608, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul {
   display: inline-block;
   /* IE6/7 haslayout trip-switch */
@@ -434,21 +506,21 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 569, ../sass/nicholls_core/nicholls_core.scss */
+/* line 614, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li {
   display: inline;
   padding: .2em;
   border-bottom: 1px solid #999;
 }
 
-/* line 576, ../sass/nicholls_core/nicholls_core.scss */
+/* line 621, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li:last-child {
   border-bottom-right-radius: 1.5em;
   border-bottom: 1px solid #999;
   border-right: 1px solid #999;
 }
 
-/* line 585, ../sass/nicholls_core/nicholls_core.scss */
+/* line 630, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a {
   display: inline-block;
   padding: 0 1em .4em 1em;
@@ -457,7 +529,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary */
-/* line 594, ../sass/nicholls_core/nicholls_core.scss */
+/* line 639, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -469,7 +541,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   background-color: #cc3333;
 }
 
-/* line 605, ../sass/nicholls_core/nicholls_core.scss */
+/* line 650, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -488,7 +560,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   clear: both;
 }
 
-/* line 614, ../sass/nicholls_core/nicholls_core.scss */
+/* line 659, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -502,13 +574,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 629, ../sass/nicholls_core/nicholls_core.scss */
+/* line 674, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul {
   /* display: inline-block; */
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 633, ../sass/nicholls_core/nicholls_core.scss */
+/* line 678, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li {
   display: inline-block;
   padding: .2em;
@@ -519,7 +591,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: center;
 }
 
-/* line 645, ../sass/nicholls_core/nicholls_core.scss */
+/* line 690, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul {
   box-shadow: none;
   float: left;
@@ -531,18 +603,18 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 656, ../sass/nicholls_core/nicholls_core.scss */
+/* line 701, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul li {
   margin: 0;
   padding: 0;
 }
 
-/* line 661, ../sass/nicholls_core/nicholls_core.scss */
+/* line 706, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul ul a {
   width: auto;
 }
 
-/* line 665, ../sass/nicholls_core/nicholls_core.scss */
+/* line 710, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- .menu-item a {
   padding: 0 .4em;
   /* variable width */
@@ -550,25 +622,25 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary & secondary */
-/* line 673, ../sass/nicholls_core/nicholls_core.scss */
+/* line 718, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 678, ../sass/nicholls_core/nicholls_core.scss */
+/* line 723, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:link,
 .nicholls-primary-navigation- ul li a:active,
 .nicholls-primary-navigation- ul li a:visited {
   color: #fff;
 }
 
-/* line 684, ../sass/nicholls_core/nicholls_core.scss */
+/* line 729, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:hover {
   color: #fff;
 }
 
-/* line 688, ../sass/nicholls_core/nicholls_core.scss */
+/* line 733, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a,
 .nicholls-secondary-navigation- ul li a:link,
 .nicholls-secondary-navigation- ul li a:active,
@@ -577,48 +649,82 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 696, ../sass/nicholls_core/nicholls_core.scss */
+/* line 741, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a:hover {
   color: #999;
 }
 
 /* Call to Action Buttons */
-/* line 702, ../sass/nicholls_core/nicholls_core.scss */
+/* line 747, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-secondary {
   width: 20em;
   display: block;
   float: left;
+  margin-top: 2em;
+  margin-left: 2em;
 }
 
-/* line 708, ../sass/nicholls_core/nicholls_core.scss */
+/* line 755, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-primary {
   width: 20em;
   display: block;
   float: right;
+  margin-top: 2em;
+  margin-right: 2em;
 }
 
-/* line 714, ../sass/nicholls_core/nicholls_core.scss */
+/* line 763, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-secondary a {
   display: block;
   background-color: #999;
   clear: both;
 }
 
-/* line 720, ../sass/nicholls_core/nicholls_core.scss */
+/* line 769, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-cta-primary a {
   display: block;
   background-color: #cc3333;
   margin-top: -2em;
 }
 
+/* line 775, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-cta-primary a,
+.nicholls-cta-primary a:link,
+.nicholls-cta-primary a:active,
+.nicholls-cta-primary a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 783, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-cta-primary a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 788, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-cta-secondary a,
+.nicholls-cta-secondary a:link,
+.nicholls-cta-secondary a:active,
+.nicholls-cta-secondary a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 796, ../sass/nicholls_core/nicholls_core.scss */
+.nicholls-cta-secondary a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* Footer */
-/* line 728, ../sass/nicholls_core/nicholls_core.scss */
+/* line 803, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-wrapper- {
   background-color: #000;
   color: #cccccc;
 }
 
-/* line 733, ../sass/nicholls_core/nicholls_core.scss */
+/* line 808, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-column {
   width: 30%;
   float: left;
@@ -627,56 +733,54 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding-top: 1em;
 }
 
-/* line 741, ../sass/nicholls_core/nicholls_core.scss */
+/* line 816, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-column div {
   margin: 0;
   padding: 0;
 }
 
-/* line 745, ../sass/nicholls_core/nicholls_core.scss */
+/* line 820, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-info-copyright {
   clear: both;
   font-size: 86%;
 }
 
 /* Louisiana map */
-/* line 751, ../sass/nicholls_core/nicholls_core.scss */
+/* line 827, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-la-state-map {
   width: auto;
   text-align: center;
   margin: 0;
   padding: 0;
   float: left;
-  width: 12em;
+  width: 9.6em;
   height: 10em;
 }
 
-/* line 761, ../sass/nicholls_core/nicholls_core.scss */
+/* line 837, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-la-state-map a {
-  background: url("images/louisiana-map-thibodaux.png");
-  background: url("images/louisiana-map-thibodaux.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 767, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-la-state-map a {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/louisiana-map-thibodaux.png");
+  background-image: url("images/louisiana-map-thibodaux.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   display: block;
   font-size: 4.6rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
-  background-size: contain;
-  background-repeat: no-repeat;
   margin: 0 auto;
+  /* IE8 background-size polyfil */
+  -ms-behavior: url("src/ie/background-size-polyfill-gh-pages/backgroundsize.min.htc");
 }
 
 /* Footer - Information */
-/* line 780, ../sass/nicholls_core/nicholls_core.scss */
+/* line 858, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-phone-number {
   display: block;
   float: left;
 }
 
-/* line 785, ../sass/nicholls_core/nicholls_core.scss */
+/* line 863, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-address {
   display: block;
   float: left;
@@ -685,13 +789,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer Info Navigation */
-/* line 794, ../sass/nicholls_core/nicholls_core.scss */
+/* line 872, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation {
   display: block;
   float: left;
 }
 
-/* line 799, ../sass/nicholls_core/nicholls_core.scss */
+/* line 877, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul {
   list-style-type: none;
   list-style-position: inside;
@@ -705,13 +809,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 814, ../sass/nicholls_core/nicholls_core.scss */
+/* line 892, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul {
   /* display: inline-block; */
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 818, ../sass/nicholls_core/nicholls_core.scss */
+/* line 896, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul li {
   display: block;
   float: left;
@@ -721,19 +825,19 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: center;
 }
 
-/* line 829, ../sass/nicholls_core/nicholls_core.scss */
+/* line 907, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul li:after {
   content: "|";
   margin-left: .2em;
 }
 
-/* line 834, ../sass/nicholls_core/nicholls_core.scss */
+/* line 912, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul li:last-child:after {
   content: "";
   margin-left: 0;
 }
 
-/* line 839, ../sass/nicholls_core/nicholls_core.scss */
+/* line 917, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul li a,
 .nicholls-footer-info-navigation ul li a:link,
 .nicholls-footer-info-navigation ul li a:active,
@@ -742,14 +846,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 847, ../sass/nicholls_core/nicholls_core.scss */
+/* line 925, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-info-navigation ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
 /* Footer Links Menu */
-/* line 854, ../sass/nicholls_core/nicholls_core.scss */
+/* line 932, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu ul {
   list-style-type: none;
   list-style-position: inside;
@@ -758,7 +862,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 861, ../sass/nicholls_core/nicholls_core.scss */
+/* line 939, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu ul li {
   width: auto;
   text-align: left;
@@ -767,7 +871,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer - Social Media Icons */
-/* line 870, ../sass/nicholls_core/nicholls_core.scss */
+/* line 948, ../sass/nicholls_core/nicholls_core.scss */
 footer .nicholls-social-media ul {
   list-style-type: none;
   list-style-position: inside;
@@ -783,22 +887,27 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 258, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-social-media-footer-facebook a {
-  background: url("images/icons/social-media/facebook.png");
-  background: url("images/icons/social-media/facebook.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 264, ../sass/nicholls_core/nicholls_core.scss */
+/* line 259, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-social-media-footer-facebook a {
   display: block;
+  font-size: 1em;
   font-size: 1rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  border: none;
+  background-color: transparent;
+  background-size: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-image: url("images/icons/social-media/facebook.png");
+  background-image: url("images/icons/social-media/facebook.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* line 283, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-social-media-footer-facebook a {
+  background: url("images/icons/social-media/facebook-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, ../sass/nicholls_core/nicholls_core.scss */
@@ -810,22 +919,27 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 258, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-social-media-footer-instagram a {
-  background: url("images/icons/social-media/instagram.png");
-  background: url("images/icons/social-media/instagram.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 264, ../sass/nicholls_core/nicholls_core.scss */
+/* line 259, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-social-media-footer-instagram a {
   display: block;
+  font-size: 1em;
   font-size: 1rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  border: none;
+  background-color: transparent;
+  background-size: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-image: url("images/icons/social-media/instagram.png");
+  background-image: url("images/icons/social-media/instagram.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* line 283, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-social-media-footer-instagram a {
+  background: url("images/icons/social-media/instagram-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, ../sass/nicholls_core/nicholls_core.scss */
@@ -837,22 +951,27 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 258, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-social-media-footer-twitter a {
-  background: url("images/icons/social-media/twitter.png");
-  background: url("images/icons/social-media/twitter.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 264, ../sass/nicholls_core/nicholls_core.scss */
+/* line 259, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-social-media-footer-twitter a {
   display: block;
+  font-size: 1em;
   font-size: 1rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  border: none;
+  background-color: transparent;
+  background-size: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-image: url("images/icons/social-media/twitter.png");
+  background-image: url("images/icons/social-media/twitter.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* line 283, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-social-media-footer-twitter a {
+  background: url("images/icons/social-media/twitter-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, ../sass/nicholls_core/nicholls_core.scss */
@@ -864,22 +983,27 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 258, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-social-media-footer-linkedin a {
-  background: url("images/icons/social-media/linkedin.png");
-  background: url("images/icons/social-media/linkedin.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 264, ../sass/nicholls_core/nicholls_core.scss */
+/* line 259, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-social-media-footer-linkedin a {
   display: block;
+  font-size: 1em;
   font-size: 1rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  border: none;
+  background-color: transparent;
+  background-size: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-image: url("images/icons/social-media/linkedin.png");
+  background-image: url("images/icons/social-media/linkedin.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* line 283, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-social-media-footer-linkedin a {
+  background: url("images/icons/social-media/linkedin-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, ../sass/nicholls_core/nicholls_core.scss */
@@ -891,30 +1015,35 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 258, ../sass/nicholls_core/nicholls_core.scss */
-.nicholls-social-media-footer-youtube a {
-  background: url("images/icons/social-media/youtube.png");
-  background: url("images/icons/social-media/youtube.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-/* line 264, ../sass/nicholls_core/nicholls_core.scss */
+/* line 259, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-social-media-footer-youtube a {
   display: block;
+  font-size: 1em;
   font-size: 1rem;
   text-indent: -9999px;
   width: 2em;
   height: 2em;
+  border: none;
+  background-color: transparent;
+  background-size: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-image: url("images/icons/social-media/youtube.png");
+  background-image: url("images/icons/social-media/youtube.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 882, ../sass/nicholls_core/nicholls_core.scss */
+/* line 283, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-social-media-footer-youtube a {
+  background: url("images/icons/social-media/youtube-ie8.png") no-repeat center 20% scroll;
+}
+
+/* line 960, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu {
   font-size: 90%;
 }
 
-/* line 886, ../sass/nicholls_core/nicholls_core.scss */
+/* line 964, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu ul li a,
 .nicholls-footer-menu ul li a:link,
 .nicholls-footer-menu ul li a:active,
@@ -923,13 +1052,13 @@ footer .nicholls-social-media ul {
   text-decoration: none;
 }
 
-/* line 894, ../sass/nicholls_core/nicholls_core.scss */
+/* line 972, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 899, ../sass/nicholls_core/nicholls_core.scss */
+/* line 977, ../sass/nicholls_core/nicholls_core.scss */
 .nicholls-footer-menu ul {
   columns: 2;
   -webkit-columns: 2;
@@ -938,7 +1067,7 @@ footer .nicholls-social-media ul {
   padding: 0;
 }
 
-/* line 280, ../sass/nicholls_core/nicholls_core.scss */
+/* line 293, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-blank:before {
   content: "";
   display: block;
@@ -952,7 +1081,7 @@ footer .nicholls-social-media ul {
   margin: 0 .5em 0 0;
 }
 
-/* line 280, ../sass/nicholls_core/nicholls_core.scss */
+/* line 293, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-mail:before {
   content: "";
   display: block;
@@ -966,7 +1095,7 @@ footer .nicholls-social-media ul {
   margin: 0 .5em 0 0;
 }
 
-/* line 280, ../sass/nicholls_core/nicholls_core.scss */
+/* line 293, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-document:before {
   content: "";
   display: block;
@@ -980,7 +1109,7 @@ footer .nicholls-social-media ul {
   margin: 0 .5em 0 0;
 }
 
-/* line 280, ../sass/nicholls_core/nicholls_core.scss */
+/* line 293, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-question:before {
   content: "";
   display: block;
@@ -994,7 +1123,7 @@ footer .nicholls-social-media ul {
   margin: 0 .5em 0 0;
 }
 
-/* line 280, ../sass/nicholls_core/nicholls_core.scss */
+/* line 293, ../sass/nicholls_core/nicholls_core.scss */
 .icon-inline-small-ada:before {
   content: "";
   display: block;
@@ -1009,3 +1138,8 @@ footer .nicholls-social-media ul {
 }
 
 /* Debug */
+/* Compatibility: IE8, etc */
+/* line 996, ../sass/nicholls_core/nicholls_core.scss */
+.lt-ie9 .nicholls-site-title a {
+  background: url("images/logo/Nicholls-N-Sword-w-text-ie8.png") no-repeat center 20% scroll;
+}

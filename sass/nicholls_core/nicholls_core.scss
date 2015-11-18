@@ -255,22 +255,35 @@ $funroe-colors-grey-values: (
 		float: left;
 	}
 
-	.nicholls-social-media-footer-#{$network} a {
-	  background: url( 'images/icons/social-media/#{$network}.png' );
-	  background: url( 'images/icons/social-media/#{$network}.svg' ),
-	  linear-gradient(transparent, transparent);
-	}
 
 	.nicholls-social-media-footer-#{$network} a {
-	  display: block;
-	  font-size: 1rem;
-	  text-indent: -9999px;
-	  width: 2em;
-	  height: 2em;
-	  background-size: contain;
-	  background-repeat: no-repeat;
-	  margin: 0 auto;
+		display: block;
+		
+		font-size: 1em;
+			
+		font-size: 1rem;
+		text-indent: -9999px;
+		width: 2em;
+		height: 2em;
+		
+		border: none;
+		background-color: transparent;
+		background-size: 50%;
+
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+
+		background-image: url( 'images/icons/social-media/#{$network}.png' );
+		background-image: url( 'images/icons/social-media/#{$network}.svg' ),
+		linear-gradient(transparent, transparent);
+
 	}
+
+	.lt-ie9 .nicholls-social-media-footer-#{$network} a {
+		background: url( 'images/icons/social-media/#{$network}-ie8.png' ) no-repeat center 20% scroll;
+	}
+	
 }
 
 /* Mixin - Icons - Small Inline Icons */
@@ -334,6 +347,14 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #ccc;
 }
 
+.nicholls-footer-wrapper- footer {
+	@include container(31);
+	text-align: left;
+	padding: 0;
+	position: relative;
+	clear: both;
+}
+
 .content-area {
 	@include span(21 of 31 first);
 }
@@ -351,6 +372,10 @@ h1, h2, h3, h4, h5, h6 {
 @include susy-breakpoint( 80em, 37 ) {
 	
 	.site, .site-header {
+		@include container(37);
+	}
+
+	.nicholls-footer-wrapper- footer {
 		@include container(37);
 	}
 
@@ -374,7 +399,11 @@ h1, h2, h3, h4, h5, h6 {
 	.site, .site-header {
 		@include container(23);
 	}
-	
+
+	.nicholls-footer-wrapper- footer {
+		@include container(23);
+	}
+		
 	.content-area, .widget-area {
 		@include span(23);
 	}
@@ -391,7 +420,11 @@ h1, h2, h3, h4, h5, h6 {
 	.site, .site-header {
 		@include container(17);
 	}
-	
+
+	.nicholls-footer-wrapper- footer {
+		@include container(17);
+	}
+		
 	.content-area, .widget-area {
 		@include span(17);
 	}
@@ -408,7 +441,11 @@ h1, h2, h3, h4, h5, h6 {
 	.site, .site-header {
 		@include container(11);
 	}
-	
+
+	.nicholls-footer-wrapper- footer {
+		@include container(11);
+	}
+		
 	.content-area, .widget-area {
 		@include span(11);
 	}	
@@ -471,6 +508,11 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-color: #000;
 }
 
+.nicholls-footer-wrapper- {
+	width: 100%;
+	background-color: #000;
+}
+
 /* Logo - sword */
 
 .nicholls-site-branding {
@@ -490,20 +532,23 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 .nicholls-site-title a {
-  background: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
-  background: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
-  linear-gradient(transparent, transparent);
-}
+	display: block;
 
-.nicholls-site-title a {
-  display: block;
-  font-size: 5.6rem;
-  text-indent: -9999px;
-  width: 2em;
-  height: 2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+	font-size: 5.6em;
+	font-size: 5.6rem;
+	
+	text-indent: -9999px;
+	width: 2em;
+	height: 2em;
+	margin: 0 auto;
+ 
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	background-image: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
+	background-image: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
+	linear-gradient(transparent, transparent); 
+
 }
 
 /* Logo - wordmark */
@@ -703,12 +748,16 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	width: 20em;
 	display: block;
 	float: left;
+	margin-top: 2em;
+	margin-left: 2em;
 }
 
 .nicholls-cta-primary {
 	width: 20em;
 	display: block;
 	float: right;
+	margin-top: 2em;
+	margin-right: 2em;
 }
 
 .nicholls-cta-secondary a {
@@ -721,6 +770,32 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	display: block;
 	background-color: #cc3333;
 	margin-top: -2em;
+}
+
+.nicholls-cta-primary a,
+.nicholls-cta-primary a:link,
+.nicholls-cta-primary a:active,
+.nicholls-cta-primary a:visited {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.nicholls-cta-primary a:hover {
+	color: #fff;
+	text-decoration: underline;		
+}
+
+.nicholls-cta-secondary a,
+.nicholls-cta-secondary a:link,
+.nicholls-cta-secondary a:active,
+.nicholls-cta-secondary a:visited {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.nicholls-cta-secondary a:hover {
+	color: #fff;
+	text-decoration: underline;		
 }
 
 /* Footer */
@@ -746,6 +821,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	clear: both;
 	font-size: 86%;	
 }
+
 /* Louisiana map */
 
 .nicholls-la-state-map {
@@ -754,25 +830,27 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	margin: 0;
 	padding: 0;
 	float: left;
-	width: 12em;
+	width: 9.6em;
 	height: 10em;
 }
 
 .nicholls-la-state-map a {
-	background: url( 'images/louisiana-map-thibodaux.png' );
-	background: url( 'images/louisiana-map-thibodaux.svg' ),
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url( 'images/louisiana-map-thibodaux.png' );
+	background-image: url( 'images/louisiana-map-thibodaux.svg' ),
 	linear-gradient(transparent, transparent);
-}
-
-.nicholls-la-state-map a {
+	
 	display: block;
 	font-size: 4.6rem;
 	text-indent: -9999px;
 	width: 2em;
 	height: 2em;
-	background-size: contain;
-	background-repeat: no-repeat;
+
 	margin: 0 auto;
+
+	/* IE8 background-size polyfil */
+	-ms-behavior: url('src/ie/background-size-polyfill-gh-pages/backgroundsize.min.htc');	
 }
 
 /* Footer - Information */
@@ -912,3 +990,11 @@ footer .nicholls-social-media ul {
 @include nicholls-icon-inline-small( 'ada' );
 
 /* Debug */
+
+/* Compatibility: IE8, etc */
+
+.lt-ie9 .nicholls-site-title a {
+	background: url( 'images/logo/Nicholls-N-Sword-w-text-ie8.png' ) no-repeat center 20% scroll;
+}
+
+    

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<!--[if lt IE 7]>      <html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-US" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-US" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"> <!--<![endif]-->
 <head>
+
+<!-- ABOVE use in PHP for lang= attribute <?php language_attributes('html'); ?> class="no-js"> -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -40,21 +46,6 @@ img.emoji {
 
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'><style type="text/css" media="screen"></style></head>
 
-<script type="text/javascript">
-/**
-* Configure Campus Connect to work on your site
-* cwl_site - //www.collegeweeklive.com
-* cwl_pageExternalId - set to your page external id.
-* cwl_bgColor - the color to use as the base color for the chat UI background
-* cwl_topPosition – the distance from the top in pixels
-*/
-var cwl_site = "//www.collegeweeklive.com";
-var cwl_pageExternalId = "YourCollegePage"; /** To be provided by CWL */
-var cwl_bgColor = "#cc0000"; /** Color code corresponding to the color you would like to see */
-var cwl_topPosition = "240"; /** Indicate position of the widget */
-</script>
-<script type="text/javascript" src="//www.collegeweeklive.com/js/chat/embed_chat.js"></script>
-
 <body class="home page page-id-4 page-template-default wordpress y2015 m10 d27 h18 page pageid-4 page-author-webmanager s-welcome widgets-sidebar-1-active">
 
 
@@ -64,7 +55,6 @@ var cwl_topPosition = "240"; /** Indicate position of the widget */
 	<header id="nicholls-masthead" class="nicholls-site-header" role="banner">
 
 		<nav id="nicholls-secondary-navigation" class="nicholls-secondary-navigation-" role="navigation">
-			<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false">Secondary Menu</button>
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
@@ -97,7 +87,6 @@ var cwl_topPosition = "240"; /** Indicate position of the widget */
 		</div>
 
 		<nav id="nicholls-primary-navigation" class="nicholls-primary-navigation-" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
@@ -197,23 +186,27 @@ var cwl_topPosition = "240"; /** Indicate position of the widget */
 		<a class="link-nicholls-about-directions" href="http://www.nicholls.edu">Nicholls State University Directions</a>
 		</div>
 
-		<div class="nicholls-logo-wordmark">
-		<a class="link-nicholls-homepage" href="http://www.nicholls.edu">Nicholls State University</a>
-		</div>	
+		<div class="nicholls-info-footer">
+		
+			<div class="nicholls-logo-wordmark">
+			<a class="link-nicholls-homepage" href="http://www.nicholls.edu">Nicholls State University</a>
+			</div>	
 
-		<div class="nicholls-phone-number">1-877-NICHOLLS</div>
+			<div class="nicholls-phone-number">1-877-NICHOLLS</div>
 		
-		<div class="nicholls-footer-info-navigation">
-		<ul>
-			<tr>
-				<li><a href="[footer-menu] Contact">Contact Us</a></li>
-				<li><a href="[footer-menu] Maps">Maps</a></li>
-				<li><a href="[footer-menu] Directions">Directions</a></li>
-			</tr>
-		</ul>
+			<div class="nicholls-footer-info-navigation">
+			<ul>
+				<tr>
+					<li><a href="[footer-menu] Contact">Contact Us</a></li>
+					<li><a href="[footer-menu] Maps">Maps</a></li>
+					<li><a href="[footer-menu] Directions">Directions</a></li>
+				</tr>
+			</ul>
+			</div>
+		
+			<div class="nicholls-address">906 East 1st St. Thibodaux, Louisiana 70310</div>
+		
 		</div>
-		
-		<div class="nicholls-address">906 East 1st St. Thibodaux, Louisiana 70310</div>
 
 	</div>
 
