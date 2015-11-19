@@ -274,14 +274,14 @@ $funroe-colors-grey-values: (
 		background-repeat: no-repeat;
 		margin: 0 auto;
 
-		background-image: url( 'images/icons/social-media/#{$network}.png' );
-		background-image: url( 'images/icons/social-media/#{$network}.svg' ),
+		background-image: url( 'nicholls/images/icons/social-media/#{$network}.png' );
+		background-image: url( 'nicholls/images/icons/social-media/#{$network}.svg' ),
 		linear-gradient(transparent, transparent);
 
 	}
 
 	.lt-ie9 .nicholls-social-media-footer-#{$network} a {
-		background: url( 'images/icons/social-media/#{$network}-ie8.png' ) no-repeat center 20% scroll;
+		background: url( 'nicholls/images/icons/social-media/#{$network}-ie8.png' ) no-repeat center 20% scroll;
 	}
 	
 }
@@ -293,8 +293,8 @@ $funroe-colors-grey-values: (
 	.icon-inline-small-#{$name}:before {
 		content: "";
 		display: block;
-		background: url( 'images/icons/general/#{$name}.png' );
-		background: url( 'images/icons/general/#{$name}.svg' ),
+		background: url( 'nicholls/images/icons/general/#{$name}.png' );
+		background: url( 'nicholls/images/icons/general/#{$name}.svg' ),
 		linear-gradient(transparent, transparent);
 		background-size: 90%;
 		background-repeat: no-repeat;
@@ -545,8 +545,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-size: contain;
 	background-repeat: no-repeat;
 
-	background-image: url( 'images/logo/Nicholls-N-Sword-w-text.png' );
-	background-image: url( 'images/logo/Nicholls-N-Sword-w-text.svg' ),
+	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.png' );
+	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.svg' ),
 	linear-gradient(transparent, transparent); 
 
 }
@@ -562,8 +562,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 .nicholls-logo-wordmark a {
-	background: url( 'images/logo/Nicholls-Wordmark-white.png' );
-	background: url( 'images/logo/Nicholls-Wordmark-white.svg' ),
+	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.png' );
+	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.svg' ),
 	linear-gradient(transparent, transparent);
 }
 
@@ -843,8 +843,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-la-state-map a {
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url( 'images/louisiana-map-thibodaux.png' );
-	background-image: url( 'images/louisiana-map-thibodaux.svg' ),
+	background-image: url( 'nicholls/images/louisiana-map-thibodaux.png' );
+	background-image: url( 'nicholls/images/louisiana-map-thibodaux.svg' ),
 	linear-gradient(transparent, transparent);
 	
 	display: block;
@@ -1002,7 +1002,7 @@ footer .nicholls-social-media ul {
 /* Compatibility: IE8, etc */
 
 .lt-ie9 .nicholls-site-title a {
-	background: url( 'images/logo/Nicholls-N-Sword-w-text-ie8.png' ) no-repeat center 20% scroll;
+	background: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text-ie8.png' ) no-repeat center 20% scroll;
 }
 
     
