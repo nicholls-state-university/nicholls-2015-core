@@ -250,7 +250,7 @@ $funroe-colors-grey-values: (
 	.nicholls-social-media-footer-#{$network} {
 		width: auto;
 		text-align: center;
-		margin: 0 2.2em 0 0;
+		margin: 0 1.2em 0 0;
 		padding: 0;
 		float: left;
 	}
@@ -745,7 +745,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 /* Call to Action Buttons */
 
 .nicholls-cta-secondary {
-	width: 20em;
 	display: block;
 	float: left;
 	margin-top: 2em;
@@ -753,7 +752,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 .nicholls-cta-primary {
-	width: 20em;
 	display: block;
 	float: right;
 	margin-top: 2em;
@@ -769,34 +767,35 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-cta-primary a {
 	display: block;
 	background-color: #cc3333;
-	margin-top: -2em;
+	margin-top: -2em;	
 }
 
-.nicholls-cta-primary a,
-.nicholls-cta-primary a:link,
-.nicholls-cta-primary a:active,
-.nicholls-cta-primary a:visited {
+.nicholls-cta .button {
+	width: 16em;
+	padding: .4em 0;
+	margin: 0;
+	font-weight: 900;
+	font-size: 110%;	
+}
+
+.nicholls-cta .nicholls-cta-request-info {
+	margin-bottom: .6em;		
+}
+
+.nicholls-cta a,
+.nicholls-cta a:link,
+.nicholls-cta a:active,
+.nicholls-cta a:visited {
 	color: #fff;
 	text-decoration: none;	
 }
 
-.nicholls-cta-primary a:hover {
+.nicholls-cta a:hover {
 	color: #fff;
 	text-decoration: underline;		
 }
 
-.nicholls-cta-secondary a,
-.nicholls-cta-secondary a:link,
-.nicholls-cta-secondary a:active,
-.nicholls-cta-secondary a:visited {
-	color: #fff;
-	text-decoration: none;	
-}
 
-.nicholls-cta-secondary a:hover {
-	color: #fff;
-	text-decoration: underline;		
-}
 
 /* Footer */
 
@@ -817,9 +816,16 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	margin: 0;
 	padding: 0;
 }
+
+.nicholls-info-footer {
+	white-space: nowrap;
+}
+
 .nicholls-info-copyright {
 	clear: both;
-	font-size: 86%;	
+	font-size: 82%;
+	text-align: center;
+	margin: .2em 0;
 }
 
 /* Louisiana map */
@@ -864,7 +870,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	display: block;
 	float: left;
 	white-space: nowrap;
-	font-size: 86%;
+	font-size: 82%;
 }
 
 /* Footer Info Navigation */ 
@@ -930,17 +936,17 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 /* Footer Links Menu */
 
 .nicholls-footer-menu ul {
-	 list-style-type: none;
-	 list-style-position: inside;
-	 list-style-image: none;
-	 display: block; /* IE6/7 haslayout trip-switch */ 
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+	display: block; /* IE6/7 haslayout trip-switch */ 
 }
 
 .nicholls-footer-menu ul li {
-		width: auto;
-		text-align: left;
-		margin: 0;
-		padding: 0;
+	width: auto;
+	text-align: left;
+	margin: 0;
+	padding: 0;
 }
 
 /* Footer - Social Media Icons */
@@ -974,12 +980,14 @@ footer .nicholls-social-media ul {
 	text-decoration: underline;		
 }
 
-.nicholls-footer-menu ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+.nicholls-footer-menu ul, .nicholls-footer-menu-column ul {
     margin: 0;
     padding: 0;
+}
+
+.nicholls-footer-menu-column {
+	width: 49%;
+	float: left;
 }
 
 @include nicholls-icon-inline-small( 'blank' );
