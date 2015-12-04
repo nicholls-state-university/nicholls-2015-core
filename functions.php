@@ -330,3 +330,14 @@ function nicholls_core_fonts_google() {
 	*/
 	
 }
+
+add_action( 'nicholls-page-start', 'nicholls_ie_support_classes' );
+/*
+* Add classes to starting HTML DOM to help specify Internet Explorer fixes
+*/
+function nicholls_ie_support_classes() {
+?><!--[if lt IE 7]>      <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><?php
+}

@@ -9,7 +9,7 @@
  * @packageNicholls 2015 Core
  */
 
-?><!DOCTYPE html>
+?><?php do_action( 'nicholls-page-start' ); ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php get_template_part( 'nicholls/header', 'core' ); ?>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nicholls_core' ); ?></a>
 

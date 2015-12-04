@@ -1386,8 +1386,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("images/logo/Nicholls-N-Sword-w-text.png");
-  background-image: url("images/logo/Nicholls-N-Sword-w-text.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/logo/Nicholls-N-Sword-w-text.png");
+  background-image: url("nicholls/images/logo/Nicholls-N-Sword-w-text.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* Logo - wordmark */
@@ -1402,8 +1402,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* line 564, sass/nicholls_core/nicholls_core.scss */
 .nicholls-logo-wordmark a {
-  background: url("images/logo/Nicholls-Wordmark-white.png");
-  background: url("images/logo/Nicholls-Wordmark-white.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/logo/Nicholls-Wordmark-white.png");
+  background: url("nicholls/images/logo/Nicholls-Wordmark-white.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 570, sass/nicholls_core/nicholls_core.scss */
@@ -1716,8 +1716,8 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-la-state-map a {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("images/louisiana-map-thibodaux.png");
-  background-image: url("images/louisiana-map-thibodaux.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/louisiana-map-thibodaux.png");
+  background-image: url("nicholls/images/louisiana-map-thibodaux.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   display: block;
   font-size: 4.6rem;
   text-indent: -9999px;
@@ -1856,13 +1856,13 @@ footer .nicholls-social-media ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url("images/icons/social-media/facebook.png");
-  background-image: url("images/icons/social-media/facebook.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/icons/social-media/facebook.png");
+  background-image: url("nicholls/images/icons/social-media/facebook.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 283, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-facebook a {
-  background: url("images/icons/social-media/facebook-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/icons/social-media/facebook-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, sass/nicholls_core/nicholls_core.scss */
@@ -1888,13 +1888,13 @@ footer .nicholls-social-media ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url("images/icons/social-media/instagram.png");
-  background-image: url("images/icons/social-media/instagram.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/icons/social-media/instagram.png");
+  background-image: url("nicholls/images/icons/social-media/instagram.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 283, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-instagram a {
-  background: url("images/icons/social-media/instagram-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/icons/social-media/instagram-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, sass/nicholls_core/nicholls_core.scss */
@@ -1920,13 +1920,13 @@ footer .nicholls-social-media ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url("images/icons/social-media/twitter.png");
-  background-image: url("images/icons/social-media/twitter.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/icons/social-media/twitter.png");
+  background-image: url("nicholls/images/icons/social-media/twitter.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 283, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-twitter a {
-  background: url("images/icons/social-media/twitter-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/icons/social-media/twitter-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, sass/nicholls_core/nicholls_core.scss */
@@ -1952,13 +1952,13 @@ footer .nicholls-social-media ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url("images/icons/social-media/linkedin.png");
-  background-image: url("images/icons/social-media/linkedin.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/icons/social-media/linkedin.png");
+  background-image: url("nicholls/images/icons/social-media/linkedin.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 283, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-linkedin a {
-  background: url("images/icons/social-media/linkedin-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/icons/social-media/linkedin-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 250, sass/nicholls_core/nicholls_core.scss */
@@ -1984,13 +1984,13 @@ footer .nicholls-social-media ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url("images/icons/social-media/youtube.png");
-  background-image: url("images/icons/social-media/youtube.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: url("nicholls/images/icons/social-media/youtube.png");
+  background-image: url("nicholls/images/icons/social-media/youtube.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 /* line 283, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-youtube a {
-  background: url("images/icons/social-media/youtube-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/icons/social-media/youtube-ie8.png") no-repeat center 20% scroll;
 }
 
 /* line 966, sass/nicholls_core/nicholls_core.scss */
@@ -2029,8 +2029,8 @@ footer .nicholls-social-media ul {
 .icon-inline-small-blank:before {
   content: "";
   display: block;
-  background: url("images/icons/general/blank.png");
-  background: url("images/icons/general/blank.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/icons/general/blank.png");
+  background: url("nicholls/images/icons/general/blank.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 90%;
   background-repeat: no-repeat;
   width: 1.2em;
@@ -2043,8 +2043,8 @@ footer .nicholls-social-media ul {
 .icon-inline-small-mail:before {
   content: "";
   display: block;
-  background: url("images/icons/general/mail.png");
-  background: url("images/icons/general/mail.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/icons/general/mail.png");
+  background: url("nicholls/images/icons/general/mail.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 90%;
   background-repeat: no-repeat;
   width: 1.2em;
@@ -2057,8 +2057,8 @@ footer .nicholls-social-media ul {
 .icon-inline-small-document:before {
   content: "";
   display: block;
-  background: url("images/icons/general/document.png");
-  background: url("images/icons/general/document.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/icons/general/document.png");
+  background: url("nicholls/images/icons/general/document.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 90%;
   background-repeat: no-repeat;
   width: 1.2em;
@@ -2071,8 +2071,8 @@ footer .nicholls-social-media ul {
 .icon-inline-small-question:before {
   content: "";
   display: block;
-  background: url("images/icons/general/question.png");
-  background: url("images/icons/general/question.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/icons/general/question.png");
+  background: url("nicholls/images/icons/general/question.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 90%;
   background-repeat: no-repeat;
   width: 1.2em;
@@ -2085,8 +2085,8 @@ footer .nicholls-social-media ul {
 .icon-inline-small-ada:before {
   content: "";
   display: block;
-  background: url("images/icons/general/ada.png");
-  background: url("images/icons/general/ada.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: url("nicholls/images/icons/general/ada.png");
+  background: url("nicholls/images/icons/general/ada.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 90%;
   background-repeat: no-repeat;
   width: 1.2em;
@@ -2099,5 +2099,5 @@ footer .nicholls-social-media ul {
 /* Compatibility: IE8, etc */
 /* line 1004, sass/nicholls_core/nicholls_core.scss */
 .lt-ie9 .nicholls-site-title a {
-  background: url("images/logo/Nicholls-N-Sword-w-text-ie8.png") no-repeat center 20% scroll;
+  background: url("nicholls/images/logo/Nicholls-N-Sword-w-text-ie8.png") no-repeat center 20% scroll;
 }

@@ -21,7 +21,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<?php get_template_part( 'nicholls/footer', 'core' ); ?>
 <?php wp_footer(); ?>
 
 </body>
