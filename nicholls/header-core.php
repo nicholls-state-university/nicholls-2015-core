@@ -6,9 +6,6 @@
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
-						<a href="[secondary-menu] Parents">Parents</a>
-					</li>
-					<li class="menu-item">
 						<a href="[secondary-menu] Current">Current Students</a>
 					</li>
 					<li class="menu-item">
@@ -17,6 +14,9 @@
 					<li class="menu-item">
 						<a href="[secondary-menu] Alumni">Alumni &amp; Friends</a>
 					</li>
+					<li class="menu-item">
+						<a href="[secondary-menu] Parents">Parents</a>
+					</li>					
 				</ul>
 			</div>
 		</nav><!-- #site-secondary-navigation -->
