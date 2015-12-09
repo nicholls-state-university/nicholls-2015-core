@@ -6,24 +6,24 @@
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
-						<a href="[secondary-menu] Current">Current Students</a>
+						<a href="http://www.nicholls.edu/parents">Parents</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Faculty">Faculty &amp; Staff</a>
+						<a href="http://www.nicholls.edu/current-students">Current Students</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Alumni">Alumni &amp; Friends</a>
+						<a href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Parents">Parents</a>
-					</li>					
+						<a href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
+					</li>
 				</ul>
 			</div>
 		</nav><!-- #site-secondary-navigation -->
 		
 		<div class="nicholls-cta-secondary nicholls-cta">
-			<a class="button nicholls-cta-request-info" href="[secondary-cta] Request Info">Request Information</a>
-			<a class="button nicholls-cta-tours" href="[secondary-cta] Request Info">Tour Campus</a>
+			<a class="button nicholls-cta-request-info" href="http://www.nicholls.edu/request-info/">Request Information</a>
+			<a class="button nicholls-cta-tours" href="http://www.nicholls.edu/tours">Tour Campus</a>
 		</div>
 	
 		<div class="nicholls-site-branding">
@@ -31,26 +31,26 @@
 		</div><!-- .nicholls-site-branding -->
 		
 		<div class="nicholls-cta-primary nicholls-cta">
-			<a class="button nicholls-cta-apply" href="[primary-cta] Apply">Apply Now</a>
+			<a class="button nicholls-cta-apply" href="http://www.nicholls.edu/apply/">Apply Now</a>
 		</div>
 
 		<nav id="nicholls-primary-navigation" class="nicholls-primary-navigation-" role="navigation">
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
-						<a href="[primary-menu] Programs">Programs</a>
+						<a href="http://www.nicholls.edu/programs/">Programs</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Admissions">Admissions</a>
+						<a href="http://www.nicholls.edu/admission/">Admissions</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Student Life">Student Life</a>
+						<a href="http://www.nicholls.edu/campus-life/">Student Life</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Athletics">Athletics</a>
+						<a href="http://geauxcolonels.com">Athletics</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] About Nicholls">About Nicholls</a>
+						<a href="http://www.nicholls.edu/about/">About Nicholls</a>
 					</li>
 				</ul>
 			</div>

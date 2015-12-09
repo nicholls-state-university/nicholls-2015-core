@@ -18,11 +18,9 @@
 		
 			<div class="nicholls-footer-info-navigation">
 			<ul>
-				<tr>
-					<li><a href="[footer-menu] Contact">Contact Us</a></li>
-					<li><a href="[footer-menu] Maps">Maps</a></li>
-					<li><a href="[footer-menu] Directions">Directions</a></li>
-				</tr>
+				<li><a href="http://www.nicholls.edu/contact/">Contact Us</a></li>
+				<li><a href="http://www.nicholls.edu/about/campus-map/">Maps</a></li>
+				<li><a href="http://www.nicholls.edu/about/directions/">Directions</a></li>
 			</ul>
 			</div>
 		
@@ -36,13 +34,11 @@
 
 		<div class="nicholls-social-media">
 		<ul>
-			<tr>
-				<li class="nicholls-social-media-footer-facebook"><a href="[footer-menu] Facebook">Nicholls Facebook</a></li>
-				<li class="nicholls-social-media-footer-instagram"><a href="[footer-menu] Instagram">Nicholls Instagram</a></li>
-				<li class="nicholls-social-media-footer-twitter"><a href="[footer-menu] Twitter">Nicholls Twitter</a></li>
-				<li class="nicholls-social-media-footer-linkedin"><a href="[footer-menu] LinkedIn">Nicholls LinkedIn</a></li>
-				<li class="nicholls-social-media-footer-youtube"><a href="[footer-menu] YouTube">Nicholls YouTube</a></li>
-			</tr>
+			<li class="nicholls-social-media-footer-facebook"><a href="https://www.facebook.com/Nicholls-State-University/">Nicholls Facebook</a></li>
+			<li class="nicholls-social-media-footer-instagram"><a href="https://www.instagram.com/nichollsstate/">Nicholls Instagram</a></li>
+			<li class="nicholls-social-media-footer-twitter"><a href="https://twitter.com/nichollsstate/">Nicholls Twitter</a></li>
+			<li class="nicholls-social-media-footer-linkedin"><a href="https://www.linkedin.com/edu/nicholls-state-university-18432">Nicholls LinkedIn</a></li>
+			<li class="nicholls-social-media-footer-youtube"><a href="https://www.youtube.com/nichweb">Nicholls YouTube</a></li>
 		</ul>	
 		</div>
 
@@ -54,23 +50,19 @@
 
 			<div class="nicholls-footer-menu-column">
 				<ul>
-					<tr>
-						<li><a class="icon-inline-small-mail" href="[footer-menu] Student Email">Student Email</a></li>
-						<li><a class="icon-inline-small-mail" href="[footer-menu] Faculty & Staff Email">Faculty & Staff Email</a></li>
-						<li><a class="icon-inline-small-document" href="[footer-menu] Banner">Banner</a></li>
-						<li><a class="icon-inline-small-document" href="[footer-menu] Moodle">Moodle</a></li>
-					</tr>
+					<li><a class="icon-inline-small-mail" href="http://www.nicholls.edu/student-email/">Student Email</a></li>
+					<li><a class="icon-inline-small-mail" href="https://mail.google.com/a/nicholls.edu">Faculty & Staff Email</a></li>
+					<li><a class="icon-inline-small-document" href="https://banner.nicholls.edu/">Banner</a></li>
+					<li><a class="icon-inline-small-document" href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
 				</ul>
 			</div>
 
 			<div class="nicholls-footer-menu-column">
 				<ul>
-					<tr>
-						<li><a class="icon-inline-small-question" href="[footer-menu] Directory">Directory</a></li>
-						<li><a class="icon-inline-small-ada" href="[footer-menu] ADA Information">ADA Information</a></li>
-						<li><a class="icon-inline-small-blank" href="[footer-menu] Emergency Preparedness">Emergency Preparedness</a></li>
-						<li><a class="icon-inline-small-blank" href="[footer-menu] Employment">Employment</a></li>
-					</tr>
+					<li><a class="icon-inline-small-question" href="http://www.nicholls.edu/directory/">Directory</a></li>
+					<li><a class="icon-inline-small-ada" href="http://www.nicholls.edu/ada/">ADA Information</a></li>
+					<li><a class="icon-inline-small-blank" href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
+					<li><a class="icon-inline-small-blank" href="http://www.nicholls.edu/human-resources/">Employment</a></li>
 				</ul>
 			</div>
 			
@@ -78,7 +70,7 @@
 	
 	</div>
 	
-	<div class="nicholls-info-copyright">All content and images © 2015 Nicholls State University - Member of the University of Louisiana System</div>
+	<div class="nicholls-info-copyright">All content and images © 2015 Nicholls State University - Member of the <a href="http://ulsystem.edu/">University of Louisiana System</a></div>
 
 	</footer>
 </div>
