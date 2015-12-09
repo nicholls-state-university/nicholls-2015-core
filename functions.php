@@ -323,7 +323,7 @@ function nicholls_core_fonts_google() {
 
 	//OLD echo "<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Alegreya:400italic,700italic,900italic,400,700,900' rel='stylesheet' type='text/css'>";
 	
-	echo "<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>";
+	echo "<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css' />";
 	/*
 	font-family: 'Noto Serif', serif;
 	font-family: 'Lato', sans-serif;
