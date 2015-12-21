@@ -36,15 +36,21 @@ img.emoji {
 </style>
 
 <link rel='stylesheet' id='nicholls_core-style-css'  href='../../../style.css?ver=4.3.1' type='text/css' media='all' />
-<script type='text/javascript' src='../../../../../wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-<script type='text/javascript' src='../../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../../../../../../wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='../../../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://web2.nicholls.edu/test/wp-includes/wlwmanifest.xml" /> 
+<!-- FlexSlider -->
+<script type='text/javascript' src='../assets/FlexSlider-master/jquery.flexslider-min.js?ver=1.2.1'></script>
+<link rel="stylesheet" href="../assets/FlexSlider-master/flexslider.css" type="text/css" media="screen" />
+
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://web2.nicholls.edu/test/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 4.3.1" />
 <link rel='canonical' href='http://web2.nicholls.edu/test/' />
 <link rel='shortlink' href='http://web2.nicholls.edu/test/' />
 
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'><style type="text/css" media="screen"></style></head>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900" rel="stylesheet" type="text/css" />
+
+</head>
 
 <body class="home page page-id-4 page-template-default wordpress y2015 m10 d27 h18 page pageid-4 page-author-webmanager s-welcome widgets-sidebar-1-active">
 
@@ -58,51 +64,51 @@ img.emoji {
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
-						<a href="[secondary-menu] Parents">Parents</a>
+						<a href="http://www.nicholls.edu/parents">Parents</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Current">Current Students</a>
+						<a href="http://www.nicholls.edu/current-students">Current Students</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Faculty">Faculty &amp; Staff</a>
+						<a href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
 					</li>
 					<li class="menu-item">
-						<a href="[secondary-menu] Alumni">Alumni &amp; Friends</a>
+						<a href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
 					</li>
 				</ul>
 			</div>
 		</nav><!-- #site-secondary-navigation -->
-		
+
 		<div class="nicholls-cta-secondary nicholls-cta">
-			<a class="button nicholls-cta-request-info" href="[secondary-cta] Request Info">Request Information</a>
-			<a class="button nicholls-cta-tours" href="[secondary-cta] Request Info">Tour Campus</a>
+			<a class="button nicholls-cta-request-info" href="http://www.nicholls.edu/request-info/">Request Information</a>
+			<a class="button nicholls-cta-tours" href="http://www.nicholls.edu/tours">Tour Campus</a>
 		</div>
-	
+
 		<div class="nicholls-site-branding">
 			<div class="nicholls-site-title"><a href="http://web2.nicholls.edu/test/" rel="home">Testing site</a></div>
 		</div><!-- .nicholls-site-branding -->
-		
+
 		<div class="nicholls-cta-primary nicholls-cta">
-			<a class="button nicholls-cta-apply" href="[primary-cta] Apply">Apply Now</a>
+			<a class="button nicholls-cta-apply" href="http://www.nicholls.edu/apply/">Apply Now</a>
 		</div>
 
 		<nav id="nicholls-primary-navigation" class="nicholls-primary-navigation-" role="navigation">
 			<div class="menu">
 				<ul>
 					<li class="menu-item">
-						<a href="[primary-menu] Programs">Programs</a>
+						<a href="http://www.nicholls.edu/programs/">Programs</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Admissions">Admissions</a>
+						<a href="http://www.nicholls.edu/admission/">Admissions</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Student Life">Student Life</a>
+						<a href="http://www.nicholls.edu/campus-life/">Student Life</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] Athletics">Athletics</a>
+						<a href="http://geauxcolonels.com">Athletics</a>
 					</li>
 					<li class="menu-item">
-						<a href="[primary-menu] About Nicholls">About Nicholls</a>
+						<a href="http://www.nicholls.edu/about/">About Nicholls</a>
 					</li>
 				</ul>
 			</div>
@@ -119,8 +125,179 @@ img.emoji {
 
 	<div id="content" class="site-content">
 
-	</div><!-- #content -->
+	<style type="text/css">
+    .flex-caption {
+      width: 96%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.5);
+      color: #fff;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+      font-size: 14px;
+      line-height: 18px;
+    }
+    li.css a {
+      border-radius: 0;
+    }
+  </style>
 
+
+	<script type="text/javascript">
+
+
+	// store the slider in a local variable
+	var $window = jQuery(window),
+			flexslider_infographics = { vars:{} };
+
+	// tiny helper function to add breakpoints
+	function getGridSize() {
+		return (window.innerWidth < 600) ? 2 :
+					 (window.innerWidth < 900) ? 3 : 4;
+	}
+
+		jQuery(window).load(function(){
+
+			jQuery('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+					jQuery('body').removeClass('loading');
+				}
+			});
+
+			jQuery('.flexslider-events').flexslider({
+				animation: "slide",
+				start: function(slider){
+					jQuery('body').removeClass('loading');
+				}
+			});
+
+
+
+
+
+		    jQuery('.flexslider-infographics').flexslider({
+		      animation: "slide",
+					randomize: true,
+		      animationLoop: false,
+		      itemWidth: 210,
+		      itemMargin: 5,
+		      minItems: getGridSize(), // use function to pull in initial value
+		      maxItems: getGridSize() // use function to pull in initial value
+		    });
+
+
+
+		});
+
+		// check grid size on resize event
+		$window.resize(function() {
+			var gridSize = getGridSize();
+
+			flexslider.vars.minItems = gridSize;
+			flexslider.vars.maxItems = gridSize;
+		});
+	</script>
+
+
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/photo-slider-1.jpg" />
+						<p class="flex-caption">Adventurer Cheesecake Brownie</p>
+					</li>
+					<li>
+						<img src="images/photo-slider-2.jpg" />
+						<p class="flex-caption">Adventurer Lemon</p>
+					</li>
+					<li>
+						<img src="images/photo-slider-3.jpg" />
+						<p class="flex-caption">Adventurer Donut</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slider-infographics">
+			<div class="flexslider-infographics">
+				<ul class="slides">
+					<li>
+					  <img src="images/infographics/infograpics-1-housing.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-2-generations.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-3-generations.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-4-lafourche-dietitians.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-5-lafourche-teachers.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-6-nursing-jobs.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-7-nursing-jobs.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-8-lafourche-dietitians.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-9-greek.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-10-countries.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-11-sports.jpg" />
+					</li>
+					<li>
+					  <img src="images/infographics/infograpics-12-lafourche-dietitians.jpg" />
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+
+
+		<section class="slider-events">
+			<div class="flexslider-events">
+				<ul class="slides">
+					<li>
+						<div class="flexslider-event-title">
+							This is the event title
+						</div>
+						<div class="flexslider-event-info">
+							This is the event information
+						</div>
+					</li>
+					<li>
+						<div class="flexslider-event-title">
+							This is the event title
+						</div>
+						<div class="flexslider-event-info">
+							This is the event information
+						</div>
+					</li>
+					<li>
+						<div class="flexslider-event-title">
+							This is the event title
+						</div>
+						<div class="flexslider-event-info">
+							This is the event information
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+	</div><!-- #content -->
 
 </div><!-- #page -->
 
@@ -129,31 +306,29 @@ img.emoji {
 	<footer id="nicholls-site-footer" class="nicholls-site-footer-" role="contentinfo">
 
 	<div class="nicholls-footer-column">
-	
+
 		<div class="nicholls-la-state-map">
 		<a class="link-nicholls-about-directions" href="http://www.nicholls.edu">Nicholls State University Directions</a>
 		</div>
 
 		<div class="nicholls-info-footer">
-		
+
 			<div class="nicholls-logo-wordmark">
 			<a class="link-nicholls-homepage" href="http://www.nicholls.edu">Nicholls State University</a>
-			</div>	
+			</div>
 
 			<div class="nicholls-phone-number">1-877-NICHOLLS</div>
-		
+
 			<div class="nicholls-footer-info-navigation">
 			<ul>
-				<tr>
-					<li><a href="[footer-menu] Contact">Contact Us</a></li>
-					<li><a href="[footer-menu] Maps">Maps</a></li>
-					<li><a href="[footer-menu] Directions">Directions</a></li>
-				</tr>
+				<li><a href="http://www.nicholls.edu/contact/">Contact Us</a></li>
+				<li><a href="http://www.nicholls.edu/about/campus-map/">Maps</a></li>
+				<li><a href="http://www.nicholls.edu/about/directions/">Directions</a></li>
 			</ul>
 			</div>
-		
+
 			<div class="nicholls-address">906 East 1st St. Thibodaux, Louisiana 70310</div>
-		
+
 		</div>
 
 	</div>
@@ -162,14 +337,12 @@ img.emoji {
 
 		<div class="nicholls-social-media">
 		<ul>
-			<tr>
-				<li class="nicholls-social-media-footer-facebook"><a href="[footer-menu] Facebook">Nicholls Facebook</a></li>
-				<li class="nicholls-social-media-footer-instagram"><a href="[footer-menu] Instagram">Nicholls Instagram</a></li>
-				<li class="nicholls-social-media-footer-twitter"><a href="[footer-menu] Twitter">Nicholls Twitter</a></li>
-				<li class="nicholls-social-media-footer-linkedin"><a href="[footer-menu] LinkedIn">Nicholls LinkedIn</a></li>
-				<li class="nicholls-social-media-footer-youtube"><a href="[footer-menu] YouTube">Nicholls YouTube</a></li>
-			</tr>
-		</ul>	
+			<li class="nicholls-social-media-footer-facebook"><a href="https://www.facebook.com/Nicholls-State-University/">Nicholls Facebook</a></li>
+			<li class="nicholls-social-media-footer-instagram"><a href="https://www.instagram.com/nichollsstate/">Nicholls Instagram</a></li>
+			<li class="nicholls-social-media-footer-twitter"><a href="https://twitter.com/nichollsstate/">Nicholls Twitter</a></li>
+			<li class="nicholls-social-media-footer-linkedin"><a href="https://www.linkedin.com/edu/nicholls-state-university-18432">Nicholls LinkedIn</a></li>
+			<li class="nicholls-social-media-footer-youtube"><a href="https://www.youtube.com/nichweb">Nicholls YouTube</a></li>
+		</ul>
 		</div>
 
 	</div>
@@ -180,31 +353,27 @@ img.emoji {
 
 			<div class="nicholls-footer-menu-column">
 				<ul>
-					<tr>
-						<li><a class="icon-inline-small-mail" href="[footer-menu] Student Email">Student Email</a></li>
-						<li><a class="icon-inline-small-mail" href="[footer-menu] Faculty & Staff Email">Faculty & Staff Email</a></li>
-						<li><a class="icon-inline-small-document" href="[footer-menu] Banner">Banner</a></li>
-						<li><a class="icon-inline-small-document" href="[footer-menu] Moodle">Moodle</a></li>
-					</tr>
+					<li><a class="icon-inline-small-mail" href="http://www.nicholls.edu/student-email/">Student Email</a></li>
+					<li><a class="icon-inline-small-mail" href="https://mail.google.com/a/nicholls.edu">Faculty & Staff Email</a></li>
+					<li><a class="icon-inline-small-document" href="https://banner.nicholls.edu/">Banner</a></li>
+					<li><a class="icon-inline-small-document" href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
 				</ul>
 			</div>
 
 			<div class="nicholls-footer-menu-column">
 				<ul>
-					<tr>
-						<li><a class="icon-inline-small-question" href="[footer-menu] Directory">Directory</a></li>
-						<li><a class="icon-inline-small-ada" href="[footer-menu] ADA Information">ADA Information</a></li>
-						<li><a class="icon-inline-small-blank" href="[footer-menu] Emergency Preparedness">Emergency Preparedness</a></li>
-						<li><a class="icon-inline-small-blank" href="[footer-menu] Employment">Employment</a></li>
-					</tr>
+					<li><a class="icon-inline-small-question" href="http://www.nicholls.edu/directory/">Directory</a></li>
+					<li><a class="icon-inline-small-ada" href="http://www.nicholls.edu/ada/">ADA Information</a></li>
+					<li><a class="icon-inline-small-blank" href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
+					<li><a class="icon-inline-small-blank" href="http://www.nicholls.edu/human-resources/">Employment</a></li>
 				</ul>
 			</div>
-			
+
 		</div>
-	
+
 	</div>
-	
-	<div class="nicholls-info-copyright">All content and images © 2015 Nicholls State University - Member of the University of Louisiana System</div>
+
+	<div class="nicholls-info-copyright">All content and images © 2015 Nicholls State University - Member of the <a href="http://ulsystem.edu/">University of Louisiana System</a></div>
 
 	</footer>
 </div>

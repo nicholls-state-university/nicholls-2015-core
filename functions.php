@@ -6,12 +6,15 @@
  *
  * @packageNicholls 2015 Core
  */
- 
+
 // Define theme core file location and uri using the current script file location
 $nicholls_core_theme_dir_src = explode( '/' , dirname( __FILE__ ) ); // Limit some pass by reference errors.
 $nicholls_core_theme_dir = array_pop( $nicholls_core_theme_dir_src );
 define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/' . $nicholls_core_theme_dir );
 define( 'NICHOLLS_CORE_URL', get_theme_root_uri() . '/' . $nicholls_core_theme_dir );
+
+// Include Files, ISSUE:: This should be better organized or moved to plugins.
+require_once( NICHOLLS_CORE_DIR . '/nicholls/php/widget-nicholls-department-info.php' );
 
 if ( ! function_exists( 'nicholls_core_setup' ) ) :
 /**
@@ -69,13 +72,16 @@ function nicholls_core_setup() {
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
-	add_theme_support( 'post-formats', array(
+
+/*
+  add_theme_support( 'post-formats', array(
 		'aside',
 		'image',
 		'video',
 		'quote',
 		'link',
 	) );
+**/
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'nicholls_core_custom_background_args', array(
@@ -104,15 +110,27 @@ add_action( 'after_setup_theme', 'nicholls_core_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function nicholls_core_widgets_init() {
+
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'nicholls_core' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+		'name'          => esc_html__( 'Primary', 'nicholls_core' ),
+		'id'            => 'primary',
+		'description'   => 'Primary sidebar after content container',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title widgettitle">',
+		'after_title'   => '</h3>',
 	) );
+
+  register_sidebar( array(
+		'name'          => esc_html__( 'Secondary', 'nicholls_core' ),
+		'id'            => 'secondary',
+		'description'   => 'Secondary sidebar after content container and primary area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title widgettitle">',
+		'after_title'   => '</h3>',
+	) );
+
 }
 add_action( 'widgets_init', 'nicholls_core_widgets_init' );
 
@@ -171,9 +189,9 @@ require get_template_directory() . '/inc/jetpack.php';
 */
 if ( !function_exists( 'fnbx_html_tag' ) ) {
 	function fnbx_html_tag( $html = array() ) {
-	
+
 		if ( empty( $html ) ) return;
-		
+
 		$attributes = '';
 		$composite = '';
 		$spacer = '';
@@ -181,23 +199,23 @@ if ( !function_exists( 'fnbx_html_tag' ) ) {
 		$reserved = array(
 			'tag', 'tag_type', 'attributes', 'tag_content', 'tag_content_before', 'tag_content_after', 'return'
 		);
-	
+
 		foreach ( $html as $name => $option ) {
 			if ( in_array( $name, $reserved ) ) continue;
 			$attributes .= $name . '="' . $option . '" ';
 		}
-		
+
 		if ( isset( $html['attributes'] ) ) $attributes .= $html['attributes'] . ' ' . $attributes;
-		
+
 		if ( $attributes != '' ) {
 			$attributes = rtrim( $attributes );
 			$spacer = ' ';
 		}
-		
+
 		if ( !isset( $html['tag_type'] ) ) $html['tag_type'] = 'default';
-		
+
 		if ( isset( $html['tag_content_before'] ) ) $composite .= $html['tag_content_before'];
-		
+
 		switch ( $html['tag_type'] ) {
 			case 'single':
 				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
@@ -205,26 +223,26 @@ if ( !function_exists( 'fnbx_html_tag' ) ) {
 				break;
 			case 'open':
 				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];			
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
 				break;
 			case 'close':
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];		
+				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
 				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';
 				break;
 			case 'attributes':
 				$composite = $attributes;
-				break;			
+				break;
 			case 'default':
 				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
 				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
-				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';			
+				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';
 				break;
 		}
-		
-		if ( isset( $html['tag_content_after'] ) ) $composite .= $html['tag_content_after'];	
-		
+
+		if ( isset( $html['tag_content_after'] ) ) $composite .= $html['tag_content_after'];
+
 		if ( $html['return'] == true ) return $composite ;
-	
+
 		echo $composite;
 	}
 }
@@ -232,8 +250,8 @@ if ( !function_exists( 'fnbx_html_tag' ) ) {
 /**
 * FNBX Date Class Function
 *
-* Taken from the old Sandbox Theme. The function provides date classes 
-* message pandering for donations for FNBX. Drop a dime in the bucket if you like, but it's really 
+* Taken from the old Sandbox Theme. The function provides date classes
+* message pandering for donations for FNBX. Drop a dime in the bucket if you like, but it's really
 * a ridiculous message to urge you to find or develop a child theme. Laugh, cry, or remove the code!
 *
 * @since 1.0
@@ -305,7 +323,7 @@ function nicholls_core_body_class_filter( $classes ) {
 		if ( $widget_group == 'wp_inactive_widgets' ) continue;
 		$classes[] =  'widgets-' . sanitize_title_with_dashes( $widget_group ) . ( empty( $widget_elements ) ? '-inactive' : '-active' );
 	}
-	
+
 	$classes = apply_filters( 'fnbx_body_class',  $classes );
 
 	return $classes;
@@ -322,13 +340,13 @@ add_action( 'wp_head', 'nicholls_core_fonts_google' );
 function nicholls_core_fonts_google() {
 
 	//OLD echo "<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Alegreya:400italic,700italic,900italic,400,700,900' rel='stylesheet' type='text/css'>";
-	
+
 	echo "<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css' />";
 	/*
 	font-family: 'Noto Serif', serif;
 	font-family: 'Lato', sans-serif;
 	*/
-	
+
 }
 
 add_action( 'nicholls-page-start', 'nicholls_ie_support_classes' );
