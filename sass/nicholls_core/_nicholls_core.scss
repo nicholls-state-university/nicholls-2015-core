@@ -1673,13 +1673,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-site-title a {
 	display: block;
 
-	font-size: 5.6em;
-	font-size: 5.6rem;
+	font-size: 6em;
+	font-size: 6rem;
 
 	text-indent: -9999px;
 	width: 2em;
-	height: 2em;
 	margin: 0 auto;
+	padding: 0;
 
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -1887,27 +1887,32 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	display: block;
 	float: left;
 	margin-top: 2em;
-	margin-left: 2em;
 }
 
 .nicholls-cta-primary {
 	display: block;
 	float: right;
 	margin-top: 2em;
-	margin-right: 2em;
 }
 
 .nicholls-cta-secondary a {
 	display: block;
 	background-color: #999;
 	clear: both;
+
+	border-bottom-right-radius: 1.5em;
+
 }
 
 .nicholls-cta-primary a {
 	display: block;
 	background-color: #cc3333;
 	margin-top: -2em;
+
+	border-bottom-left-radius: 1.5em;
+
 }
+
 
 .nicholls-cta .button {
 	width: 16em;
