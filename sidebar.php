@@ -7,11 +7,14 @@
  * @packageNicholls 2015 Core
  */
 
-if ( ! is_active_sidebar( 'primary' ) ) {
-	return;
+if ( is_active_sidebar( 'primary' ) ) {
+	echo '<div id="widgets-primary" class="widget-area widgets-primary-" role="complementary">';
+	dynamic_sidebar( 'primary' );
+	echo '</div><!-- #primary -->';
 }
-?>
 
-<div id="primary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'primary' ); ?>
-</div><!-- #secondary -->
+if ( is_active_sidebar( 'secondary' ) ) {
+	echo '<div id="widgets-secondary" class="widget-area widgets-secondary-" role="complementary">';
+	dynamic_sidebar( 'secondary' );
+	echo '</div><!-- #secondary -->';
+}
