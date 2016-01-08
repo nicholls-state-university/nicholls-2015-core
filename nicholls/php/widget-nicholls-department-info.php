@@ -26,7 +26,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 
 			echo $before_title . $title . $after_title;
 
-			fnbx_html_tag( array(
+			jacket_core_html_tag( array(
 				'tag' => 'div',
 				'tag_type' => 'open',
 				'id' => 'nicholls-department-info',
@@ -44,7 +44,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 				$this->html_field_display( 'Fax', 'department-fax-', ' ' . $widget_options['fax'] );
 
 			if ( !empty( $widget_options['email_address'] ) ) {
-				$email = fnbx_html_tag( array(
+				$email = jacket_core_html_tag( array(
 					'tag' => 'a',
 					'href' => 'mailto:' . $widget_options['email_address'],
 					'tag_content' => $widget_options['email_name'],
@@ -58,7 +58,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 			if ( !empty( $widget_options['note'] ) )
 				$this->html_field_display( '', 'department-note-', $widget_options['note'] );
 
-			fnbx_html_tag( array(
+			jacket_core_html_tag( array(
 				'tag' => 'div',
 				'tag_type' => 'close',
 				'tag_content_after' => "\n"
@@ -73,7 +73,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 		}
 
 		function form( $instance ) {
-			fnbx_html_tag( array(
+			jacket_core_html_tag( array(
 				'tag' => 'strong',
 				'tag_content' => 'This widget has no settings!!',
 				'tag_content_after' => '<br />Look at the Nicholls menu item to set department info'
@@ -84,7 +84,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 			if ( $info_contents == '' ) return;
 
 			if ( $title != '' ) {
-				$info = fnbx_html_tag( array(
+				$info = jacket_core_html_tag( array(
 					'tag' => 'strong',
 					'tag_content' => $title . ':',
 					'tag_content_after' => $info_contents,
@@ -94,7 +94,7 @@ if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 				$info = $info_contents;
 			}
 
-			fnbx_html_tag( array(
+			jacket_core_html_tag( array(
 				'tag' => 'div',
 				'class' => $class,
 				'tag_content' => $info,
@@ -254,7 +254,7 @@ function nicholls_common_admin_settings_register() {
 function nicholls_core_theme_admin_section_emergency_reset() {
 	$reset_nonce= wp_create_nonce('emergency_reset');
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => '<a href="' . site_url() . '/?emergency_reset=yes&_wpnonce=' . $reset_nonce . '">Reset Cache for Emergency Notices</a>'
 	) );
@@ -262,14 +262,14 @@ function nicholls_core_theme_admin_section_emergency_reset() {
 }
 
 function nicholls_core_theme_admin_section_contact_text() {
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'Contact information will be shown only if you have the Nicholls information widget in your sidebar.'
 	) );
 }
 
 function nicholls_core_theme_admin_section_advanced_text() {
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'These are advanced options. If you do not understand these options, please contact the Website Manager before you make further changes.'
 	) );
@@ -278,7 +278,7 @@ function nicholls_core_theme_admin_section_advanced_text() {
 function nicholls_core_theme_admin_setting_string( $field_name ) {
 	$options = get_option('nicholls_core_theme_options');
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'input',
 		'tag_type' => 'single',
 		'name' => 'nicholls_core_theme_options['. $field_name . ']',
@@ -289,7 +289,7 @@ function nicholls_core_theme_admin_setting_string( $field_name ) {
 function nicholls_core_theme_admin_setting_textarea( $field_name ) {
 	$options = get_option('nicholls_core_theme_options');
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'textarea',
 		'name' => 'nicholls_core_theme_options['. $field_name . ']',
 		'tag_content' => $options[ $field_name ]
@@ -311,7 +311,7 @@ function nicholls_core_theme_admin_setting_checkbox( $field_name ) {
 		$html_default['checked'] = 'checked';
 	}
 
-	fnbx_html_tag( $html_default );
+	jacket_core_html_tag( $html_default );
 
 }
 
@@ -345,15 +345,15 @@ function nicholls_common_admin_message( $message = '', $return = false ) {
 		'return' => $return
 	);
 
-	if ( $args_default['return'] == true ) return fnbx_html_tag( $args_default );
+	if ( $args_default['return'] == true ) return jacket_core_html_tag( $args_default );
 
-	fnbx_html_tag( $args_default );
+	jacket_core_html_tag( $args_default );
 }
 
 
 
 function nicholls_common_admin() {
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'open',
 		'class' => 'wrap'
@@ -362,17 +362,17 @@ function nicholls_common_admin() {
 	if ( $_REQUEST['saved'] ) nicholls_common_admin_message( 'Settings saved.' );
 	if ( $_REQUEST['reset'] ) nicholls_common_admin_message( 'Settings reset.' );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'h2',
 		'tag_content' => 'Nicholls Theme Options'
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'Options for your Nicholls Department website.'
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'form',
 		'tag_type' => 'open',
 		'action' => 'options.php',
@@ -383,13 +383,13 @@ function nicholls_common_admin() {
 	settings_fields('nicholls_core_theme_options');
 	do_settings_sections('nicholls_core_theme_admin');
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_type' => 'open',
 		'class' => 'submit'
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'input',
 		'tag_type' => 'single',
 		'name' => 'Submit',
@@ -398,17 +398,17 @@ function nicholls_common_admin() {
 		'value' => esc_attr('Save Changes')
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'p',
 		'tag_type' => 'close',
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'form',
 		'tag_type' => 'close'
 	) );
 
-	fnbx_html_tag( array(
+	jacket_core_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'close',
 	) );
