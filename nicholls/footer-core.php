@@ -2,7 +2,7 @@
 <div id="nicholls-footer-wrapper" class="nicholls-footer-wrapper-">
 	<footer id="nicholls-site-footer" class="nicholls-site-footer-" role="contentinfo">
 
-	<div class="nicholls-footer-column">
+	<div class="nicholls-footer-column nicholls-footer-col-info">
 	
 		<div class="nicholls-la-state-map">
 		<a class="link-nicholls-about-directions" href="http://www.nicholls.edu">Nicholls State University Directions</a>
@@ -30,7 +30,7 @@
 
 	</div>
 
-	<div class="nicholls-footer-column">
+	<div class="nicholls-footer-column nicholls-footer-col-social-media">
 
 		<div class="nicholls-social-media">
 		<ul>
@@ -44,7 +44,7 @@
 
 	</div>
 
-	<div class="nicholls-footer-column">
+	<div class="nicholls-footer-column nicholls-footer-col-nav">
 
 		<div class="nicholls-footer-menu">
 
