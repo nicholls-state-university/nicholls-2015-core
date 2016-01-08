@@ -13,8 +13,8 @@ $nicholls_core_theme_dir = array_pop( $nicholls_core_theme_dir_src );
 define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/' . $nicholls_core_theme_dir );
 define( 'NICHOLLS_CORE_URL', get_theme_root_uri() . '/' . $nicholls_core_theme_dir );
 
-// Include Files, ISSUE:: This should be better organized or moved to plugins.
-require_once( NICHOLLS_CORE_DIR . '/nicholls/php/widget-nicholls-department-info.php' );
+// Include Jacket Core init file. Setup $jacket_core global and defautls
+require_once( NICHOLLS_CORE_DIR . '/nicholls/jacket-core.php' );
 
 if ( ! function_exists( 'nicholls_core_setup' ) ) :
 /**
@@ -179,73 +179,6 @@ require get_template_directory() . '/inc/jetpack.php';
 * ----- Nicholls Core Starts Here ------
 */
 
-/**
-* FNBX HTML Tag
-*
-* Core utility function for the writing and manipulation of HTML tags.
-*
-* @since 1.0
-* @echo string
-*/
-if ( !function_exists( 'fnbx_html_tag' ) ) {
-	function fnbx_html_tag( $html = array() ) {
-
-		if ( empty( $html ) ) return;
-
-		$attributes = '';
-		$composite = '';
-		$spacer = '';
-		if ( !isset( $html['return'] ) ) $html['return'] = false;
-		$reserved = array(
-			'tag', 'tag_type', 'attributes', 'tag_content', 'tag_content_before', 'tag_content_after', 'return'
-		);
-
-		foreach ( $html as $name => $option ) {
-			if ( in_array( $name, $reserved ) ) continue;
-			$attributes .= $name . '="' . $option . '" ';
-		}
-
-		if ( isset( $html['attributes'] ) ) $attributes .= $html['attributes'] . ' ' . $attributes;
-
-		if ( $attributes != '' ) {
-			$attributes = rtrim( $attributes );
-			$spacer = ' ';
-		}
-
-		if ( !isset( $html['tag_type'] ) ) $html['tag_type'] = 'default';
-
-		if ( isset( $html['tag_content_before'] ) ) $composite .= $html['tag_content_before'];
-
-		switch ( $html['tag_type'] ) {
-			case 'single':
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
-				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '/>';
-				break;
-			case 'open':
-				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
-				break;
-			case 'close':
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
-				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';
-				break;
-			case 'attributes':
-				$composite = $attributes;
-				break;
-			case 'default':
-				if ( isset( $html['tag'] ) ) $composite .= '<' . $html['tag'] . $spacer . $attributes . '>';
-				if ( isset( $html['tag_content'] ) ) $composite .= $html['tag_content'];
-				if ( isset( $html['tag'] ) ) $composite .= '</' . $html['tag'] . '>';
-				break;
-		}
-
-		if ( isset( $html['tag_content_after'] ) ) $composite .= $html['tag_content_after'];
-
-		if ( $html['return'] == true ) return $composite ;
-
-		echo $composite;
-	}
-}
 
 /**
 * FNBX Date Class Function
@@ -358,4 +291,216 @@ function nicholls_ie_support_classes() {
 <!--[if IE 7]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--><?php
+}
+
+
+/* ISSUE:: Functions test area below */
+
+add_filter( 'jacket_core_custom_header', 'nicholls_custom_header');
+/*
+if ( $this->theme_support['custom-header'] ) {
+	$this->custom_header = array(
+		'no_header_text' => false,
+		'header_textcolor' => '',
+		'header_image' => '',
+		'header_image_thumbnail' => '',
+		'header_image_width' => null,
+		'header_image_height' => null,
+		'header_image_flex_width' => false,
+		'header_image_flex_height' => false,
+		'css_name' => '.header-',
+		'css_bg_color' => 'transparent',
+		'css_repeat' => 'no-repeat',
+		'css_repeat_from_theme' => false, // Force repeat from Theme style.css
+		'css_position_x' => 'center',
+		'css_position_y' => 'top',
+		'css_position_from_theme' => false, // Force position from Theme style.css
+		'css_attachment' => '',
+		'random_default' => false
+	);
+	$this->custom_header = apply_filters( 'jacket_core_custom_header',  $this->custom_header );
+*/
+function nicholls_custom_header( $header_args = array() ) {
+
+	$header_args['css_name'] = '.site-header';
+
+	return $header_args;
+}
+
+// Remember to remove _S custom backtround setup
+remove_action( 'after_setup_theme', 'nicholls_core_custom_header_setup' );
+add_action( 'after_setup_theme', 'nicholls_custom_headers_setup' );
+/*
+* Setup Nicholls Custom Headers.
+*
+* The first default is part of the filter, but we add other default headers here.
+*
+* @since 1.0
+*/
+function nicholls_custom_headers_setup() {
+	global $jacket_core;
+
+	$header_args = array(
+		'default-image' => $jacket_core->custom_header['header_image'],
+		'height' => $jacket_core->custom_header['header_image_height'],
+		'width' => $jacket_core->custom_header['header_image_width'],
+		'flex-height' => $jacket_core->custom_header['header_image_flex_width'],
+		'flex-width' => $jacket_core->custom_header['header_image_flex_height'],
+		'default-text-color' => $jacket_core->custom_header['header_textcolor'],
+		'header-text' => $jacket_core->custom_header['no_header_text'],
+		'random-default' => $jacket_core->custom_header['random_default'],
+		'wp-head-callback' => 'jacket_core_custom_header_style',
+		'admin-head-callback' => 'jacket_core_custom_header_admin_style',
+	);
+
+	add_theme_support( 'custom-header', $header_args );
+
+	register_default_headers( array (
+			'nicholls_default_header_a' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-beauregard-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-beauregard-1-thumbnail.jpg',
+				'description' => __( 'Beauregard Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_c' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-2.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-2-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 2', 'fnbx_lang' )
+			),
+			'nicholls_default_header_d' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-3.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-3-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 3', 'fnbx_lang' )
+			),
+			'nicholls_default_header_e' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-4.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-4-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 4', 'fnbx_lang' )
+			),
+			'nicholls_default_header_f' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-5.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-5-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 5', 'fnbx_lang' )
+			),
+			'nicholls_default_header_g' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-6.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-6-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 6', 'fnbx_lang' )
+			),
+			'nicholls_default_header_h' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-7.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-7-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 7', 'fnbx_lang' )
+			),
+			'nicholls_default_header_i' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-8.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-8-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 8', 'fnbx_lang' )
+			),
+			'nicholls_default_header_j' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ellender-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ellender-1-thumbnail.jpg',
+				'description' => __( 'Ellender Library 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_k' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-lamps-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-lamps-1-thumbnail.jpg',
+				'description' => __( 'Lights', 'fnbx_lang' )
+			),
+			'nicholls_default_header_l' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-quad-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-quad-1-thumbnail.jpg',
+				'description' => __( 'Quad 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_m' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ceiling-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ceiling-1-thumbnail.jpg',
+				'description' => __( 'Student 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-white-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-white-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_o' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-azaleas-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-azaleas-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-fountain-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-fountain-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-wall-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-wall-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			)
+	) );
+
+}
+
+
+// gets included in the site header
+function jacket_core_custom_header_style() {
+   global $jacket_core;
+
+	 if ( !isset( $jacket_core->custom_header['css_name'] ) || empty( $jacket_core->custom_header['css_name'] ) ) return;
+
+   $css_txt = '';
+
+   $css_image = get_header_image();
+   if ( empty( $css_image ) ) $css_image = $jacket_core->custom_header['header_image'];
+
+   $h_height = apply_filters( 'jacket_core_custom_header_css_background_height',  get_custom_header()->height );
+   $h_width = apply_filters( 'jacket_core_custom_header_css_background_width',  get_custom_header()->width );
+
+   if ( !empty( $h_height ) ) $css_txt .= "\n height: " . $h_height . 'px;';
+   if ( !empty( $h_width ) ) $css_txt .= "\n width: " . $h_width . 'px;';
+
+   if ( !empty( $jacket_core->custom_header['css_bg_color'] ) ) $css_txt .= "\n background-color: " . $jacket_core->custom_header['css_bg_color'] . ';';
+
+   if ( !empty( $css_image ) ) {
+	   $css_image = apply_filters( 'jacket_core_custom_header_css_background_url',  $css_image );
+	   $css_txt .= "\n background-image: " . ' url("' . $css_image . '");';
+	   if ( !isset( $jacket_core->custom_header['css_repeat_from_theme'] ) && $jacket_core->custom_header['css_repeat_from_theme'] != true ) {
+		   if ( !empty( $jacket_core->custom_header['css_repeat'] ) ) $css_txt .= "\n background-repeat: " . $jacket_core->custom_header['css_repeat'] . ';';
+	   }
+	   if ( !isset( $jacket_core->custom_header['css_position_from_theme'] ) && $jacket_core->custom_header['css_position_from_theme'] != true ) {
+		   if ( !empty( $jacket_core->custom_header['css_position_x'] ) ) $css_position_txt .= ' ' . $jacket_core->custom_header['css_position_x'];
+		   if ( !empty( $jacket_core->custom_header['css_position_y'] ) ) $css_position_txt .= ' ' . $jacket_core->custom_header['css_position_y'];
+
+			if ( !empty( $$css_position_txt ) ) $css_txt .= "\n background-position: " . $css_position_txt . ';';
+	   }
+	}
+
+	$css_txt = apply_filters( 'jacket_core_custom_header_css_background',  $css_txt );
+
+   if ( empty( $css_txt ) ) return;
+
+?><style type="text/css">
+<?php echo $jacket_core->custom_header['css_name']; ?> {
+<?php echo $css_txt . "\n"; ?>
+}
+</style><?php
+
+}
+
+// gets included in the admin header
+function jacket_core_custom_header_admin_style() {
+	global $jacket_core;
+
+	if ( !empty( $jacket_core->custom_header['css_repeat'] ) )
+		$css_background_repeat = $jacket_core->custom_header['css_repeat'];
+	else
+		$css_background_repeat = 'no-repeat';
+
+	 ?><style type="text/css">
+		#headimg {
+			width: <?php echo get_custom_header()->width; ?>px;
+			height: <?php echo get_custom_header()->height; ?>px;
+			background-repeat: <?php echo $css_background_repeat; ?>;
+		}
+	</style>
+<?php
 }
