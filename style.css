@@ -950,10 +950,10 @@ object {
 }
 
 /*
-* Jesse James theme configuration
+* Nicholls theme configuration
 */
 /* Imports */
-/* Susy - Configuration */
+/* START - Susy - Configuration */
 /* Susy - Configuration - Debug */
 /*
 // Use this in configuration to setup debugging
@@ -1002,25 +1002,136 @@ $susy: (
   )
 );
 */
+/* END - Susy - Configuration */
+/* START - Optional Settings */
 /* IE9 - Gradient support IE9 SVG, needs conditional override of 'filter' to 'none' */
-/* Settings */
+/* END - Optional Settings */
+/* START - NIcholls Settings */
 /* Colors - Nicholls */
-/* Colors - Nicholls - Palette A */
-/* Colors - Nicholls - Palette B */
 /* Colors - Links & Text */
-/* Colors - By Area */
-/* Colors - Layout Utilities */
-/* Utilities */
+/* Colors - Special Elements */
+/* START - NIcholls Settings */
+/* START - Utilities */
 /* Nicholls Colors - Basic */
 /* Color Util */
 /* Nicholls Colors - Greys */
 /* Color Util */
 /* color classes */
 /* Border Color Utility */
+/* START: Borders */
+/* Borders - width-location */
+/* line 186, sass/nicholls_core/_nicholls_core.scss */
+.border-1-top {
+  border-top: 1px solid;
+}
+
+/* line 190, sass/nicholls_core/_nicholls_core.scss */
+.border-1-right {
+  border-right: 1px solid;
+}
+
+/* line 194, sass/nicholls_core/_nicholls_core.scss */
+.border-1-bottom {
+  border-bottom: 1px solid;
+}
+
+/* line 198, sass/nicholls_core/_nicholls_core.scss */
+.border-1-left {
+  border-left: 1px solid;
+}
+
+/* line 202, sass/nicholls_core/_nicholls_core.scss */
+.border-1-all {
+  border: 1px solid;
+}
+
+/* line 186, sass/nicholls_core/_nicholls_core.scss */
+.border-2-top {
+  border-top: 2px solid;
+}
+
+/* line 190, sass/nicholls_core/_nicholls_core.scss */
+.border-2-right {
+  border-right: 2px solid;
+}
+
+/* line 194, sass/nicholls_core/_nicholls_core.scss */
+.border-2-bottom {
+  border-bottom: 2px solid;
+}
+
+/* line 198, sass/nicholls_core/_nicholls_core.scss */
+.border-2-left {
+  border-left: 2px solid;
+}
+
+/* line 202, sass/nicholls_core/_nicholls_core.scss */
+.border-2-all {
+  border: 2px solid;
+}
+
+/* Borders - color */
+/* Old Border Colors */
+/* line 210, sass/nicholls_core/_nicholls_core.scss */
+.border-red {
+  border-color: #cc3333;
+}
+
+/* END: Borders */
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-red {
+  border-color: #cc3333;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey {
+  border-color: #cccccc;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-white {
+  border-color: #fff;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-black {
+  border-color: #000;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-1 {
+  border-color: #efefef;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-2 {
+  border-color: #eaeaea;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-3 {
+  border-color: #e2e2e2;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-1 {
+  border-color: #7f7f7f;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-2 {
+  border-color: #6d6d6d;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-3 {
+  border-color: #666666;
+}
+
 /* Mixin - Icons - Social Media Icons */
 /* Mixin - Icons - Small Inline Icons */
 /* Small Inline Icon - Blank */
-/* line 310, sass/nicholls_core/nicholls_core.scss */
+/* line 290, sass/nicholls_core/_nicholls_core.scss */
 .icon-inline-small-blank:before {
   content: "";
   display: block;
@@ -1030,21 +1141,1330 @@ $susy: (
   margin: 0 .5em 0 0;
 }
 
-/* -- Jess's madness starts here -- */
+/* line 273, sass/nicholls_core/_nicholls_core.scss */
+.icon-inline-small-blank:before {
+  content: "";
+  display: block;
+  background: url("nicholls/images/icons/general/blank.png");
+  background: url("nicholls/images/icons/general/blank.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 1.2em;
+  height: 1.2em;
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+/* line 273, sass/nicholls_core/_nicholls_core.scss */
+.icon-inline-small-mail:before {
+  content: "";
+  display: block;
+  background: url("nicholls/images/icons/general/mail.png");
+  background: url("nicholls/images/icons/general/mail.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 1.2em;
+  height: 1.2em;
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+/* line 273, sass/nicholls_core/_nicholls_core.scss */
+.icon-inline-small-document:before {
+  content: "";
+  display: block;
+  background: url("nicholls/images/icons/general/document.png");
+  background: url("nicholls/images/icons/general/document.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 1.2em;
+  height: 1.2em;
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+/* line 273, sass/nicholls_core/_nicholls_core.scss */
+.icon-inline-small-question:before {
+  content: "";
+  display: block;
+  background: url("nicholls/images/icons/general/question.png");
+  background: url("nicholls/images/icons/general/question.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 1.2em;
+  height: 1.2em;
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+/* line 273, sass/nicholls_core/_nicholls_core.scss */
+.icon-inline-small-ada:before {
+  content: "";
+  display: block;
+  background: url("nicholls/images/icons/general/ada.png");
+  background: url("nicholls/images/icons/general/ada.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 1.2em;
+  height: 1.2em;
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+/* END - Utilities */
+/* START - Defaults */
+/* Heading Styles */
+/* line 312, sass/nicholls_core/_nicholls_core.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.1em;
+  color: #1f1f1f;
+  margin: .4em 0;
+}
+
+/* line 319, sass/nicholls_core/_nicholls_core.scss */
+h1 {
+  font-size: 200%;
+}
+
+/* line 323, sass/nicholls_core/_nicholls_core.scss */
+h2 {
+  font-size: 180%;
+}
+
+/* line 327, sass/nicholls_core/_nicholls_core.scss */
+h3 {
+  font-size: 160%;
+}
+
+/* line 331, sass/nicholls_core/_nicholls_core.scss */
+h4 {
+  font-size: 140%;
+}
+
+/* line 335, sass/nicholls_core/_nicholls_core.scss */
+h5 {
+  font-size: 120%;
+}
+
+/* line 339, sass/nicholls_core/_nicholls_core.scss */
+h6 {
+  font-size: 110%;
+}
+
+/* line 343, sass/nicholls_core/_nicholls_core.scss */
+.content-area h1 {
+  font-size: 200%;
+}
+
+/* line 347, sass/nicholls_core/_nicholls_core.scss */
+.content-area h2 {
+  font-size: 180%;
+}
+
+/* line 351, sass/nicholls_core/_nicholls_core.scss */
+.content-area h3 {
+  font-size: 160%;
+}
+
+/* line 355, sass/nicholls_core/_nicholls_core.scss */
+.content-area h4 {
+  font-size: 140%;
+}
+
+/* line 359, sass/nicholls_core/_nicholls_core.scss */
+.content-area h5 {
+  font-size: 120%;
+}
+
+/* line 363, sass/nicholls_core/_nicholls_core.scss */
+.content-area h6 {
+  font-size: 110%;
+}
+
+/* Content Common text blocks */
+/* line 369, sass/nicholls_core/_nicholls_core.scss */
+.content-area code, .content-area pre {
+  font-family: "courier new", courier, monospace;
+}
+
+/* line 373, sass/nicholls_core/_nicholls_core.scss */
+input.text {
+  padding: .2em;
+  border: 1px solid #999999;
+}
+
+/* Clearing Utility Elements */
+/* line 380, sass/nicholls_core/_nicholls_core.scss */
+.clear, .clearer, .clear-both {
+  clear: both;
+}
+
+/* line 384, sass/nicholls_core/_nicholls_core.scss */
+.clear-right {
+  clear: right;
+}
+
+/* line 388, sass/nicholls_core/_nicholls_core.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 392, sass/nicholls_core/_nicholls_core.scss */
+.clear-group:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 400, sass/nicholls_core/_nicholls_core.scss */
+.clear-group {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 402, sass/nicholls_core/_nicholls_core.scss */
+* html .clear-group {
+  height: 1%;
+}
+
+/* line 403, sass/nicholls_core/_nicholls_core.scss */
+.clear-group {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* Alignment */
+/* line 408, sass/nicholls_core/_nicholls_core.scss */
+.left, .alignleft {
+  display: inline;
+  float: left;
+  margin-right: .8em;
+}
+
+/* line 414, sass/nicholls_core/_nicholls_core.scss */
+.right, .alignright {
+  display: inline;
+  float: right;
+  margin-left: .8em;
+}
+
+/* line 420, sass/nicholls_core/_nicholls_core.scss */
+.float-left {
+  float: left;
+}
+
+/* line 424, sass/nicholls_core/_nicholls_core.scss */
+.float-right {
+  float: right;
+}
+
+/* line 428, sass/nicholls_core/_nicholls_core.scss */
+.aligncenter, .wp-caption.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Defaults */
+/* line 437, sass/nicholls_core/_nicholls_core.scss */
+.content-area img,
+.comment-content img,
+.widget img {
+  max-width: 97.5%;
+  /* Fluid images for posts, comments, and widgets */
+}
+
+/* line 443, sass/nicholls_core/_nicholls_core.scss */
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+/* line 448, sass/nicholls_core/_nicholls_core.scss */
+img.size-full {
+  max-width: 97.5%;
+  width: auto;
+  /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/* Responsive utilities */
+/* Google embed utilities - see: https://profromgo.com/blog/google-calendar-responsive/ */
+/* line 456, sass/nicholls_core/_nicholls_core.scss */
+.container-responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 465, sass/nicholls_core/_nicholls_core.scss */
+.container-responsive-iframe iframe,
+.container-responsive-iframe object,
+.container-responsive-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 475, sass/nicholls_core/_nicholls_core.scss */
+.container-responsive-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Defaults - END */
+/* START ---- OLD ---- */
+/* START Multi-purpose Elements */
+/* line 489, sass/nicholls_core/_nicholls_core.scss */
+.nav-previous {
+  float: left;
+}
+
+/* line 493, sass/nicholls_core/_nicholls_core.scss */
+.nav-next {
+  float: right;
+}
+
+/* END Multi-purpose Elements */
+/* START Widget Styles */
+/* line 501, sass/nicholls_core/_nicholls_core.scss */
+.widget-area {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 506, sass/nicholls_core/_nicholls_core.scss */
+.widget-area ul, .widget-area ul li {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 513, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget {
+  margin: .8em 0;
+}
+
+/* line 517, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widgettitle {
+  padding: .4em 0;
+  margin: 0 0 .6em 0;
+  font-size: 120%;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 526, sass/nicholls_core/_nicholls_core.scss */
+.widget ul {
+  margin: 0 0 0 .5em;
+}
+
+/* line 531, sass/nicholls_core/_nicholls_core.scss */
+.widget li {
+  margin: .5em 0 .5em .5em;
+}
+
+/* line 535, sass/nicholls_core/_nicholls_core.scss */
+.widget_search {
+  padding: .2em;
+}
+
+/* line 539, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_pages, .widget-area .menu {
+  line-height: 1.2em;
+}
+
+/* line 543, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_pages ul {
+  margin-left: .5em;
+}
+
+/* line 547, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_nav_menu li,
+.widget-area .widget_pages li {
+  text-indent: -0.9em;
+  margin: .4em 0;
+}
+
+/* line 553, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_nav_menu li:before,
+.widget-area .widget_pages li:before {
+  content: "\00BB \0020";
+}
+
+/* line 558, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .menu li ul, .widget-area .widget_pages li ul {
+  display: none;
+}
+
+/* line 562, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_pages .current_page_item ul, .widget-area .widget_pages .current_page_ancestor ul, .widget-area .menu .current-menu-item ul, .widget-area .menu .current-menu-ancestor ul {
+  display: block;
+}
+
+/* line 566, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_pages a, .widget-area .widget_pages a:link, .widget-area .widget_pages a:active, .widget-area .widget_pages a:visited,
+.widget-area .menu a, .widget-area .menu a:link, .widget-area .menu a:active, .widget-area .menu a:visited {
+  text-decoration: none;
+}
+
+/* line 571, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .widget_pages a:hover, .widget-area .menu a:hover {
+  text-decoration: underline;
+}
+
+/* END Widget Styles */
+/* START WordPress Post Navigation Styles */
+/* line 579, sass/nicholls_core/_nicholls_core.scss */
+.navigation {
+  /*
+  This one is tricky since we have two floats in a div
+  requries both "width: x" and "overflow: auto" to clear
+  interior elements for box creation!
+  */
+  height: 1.6em;
+  clear: both;
+  padding: .2em;
+  margin: .3em;
+  font-size: 90%;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 604, sass/nicholls_core/_nicholls_core.scss */
+.navigation .nav-meta {
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* END WordPress Post Navigation Styles */
+/* START Post styles */
+/* line 613, sass/nicholls_core/_nicholls_core.scss */
+.post {
+  padding-top: .2em;
+}
+
+/* line 617, sass/nicholls_core/_nicholls_core.scss */
+.entry-title, .entry-title a, .entry-title a:visited {
+  text-decoration: none;
+}
+
+/* line 621, sass/nicholls_core/_nicholls_core.scss */
+.entry-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 625, sass/nicholls_core/_nicholls_core.scss */
+.entry-date {
+  font-size: 90%;
+  color: #9f9f9f;
+}
+
+/* line 630, sass/nicholls_core/_nicholls_core.scss */
+.entry-date abbr.published {
+  display: block;
+  cursor: default;
+  margin: .2em 0 .2em .2em;
+  padding: .2em;
+  color: #9f9f9f;
+}
+
+/* line 638, sass/nicholls_core/_nicholls_core.scss */
+.content-area {
+  line-height: 1.4em;
+  clear: both;
+}
+
+/* line 643, sass/nicholls_core/_nicholls_core.scss */
+.content-area p {
+  line-height: 1.4em;
+}
+
+/* line 647, sass/nicholls_core/_nicholls_core.scss */
+.entry-meta {
+  clear: both;
+  padding: .4em;
+  font-size: 90%;
+  border-top: 1px solid #AFAFAF;
+  color: #222;
+  background: #efefef;
+  text-align: center;
+}
+
+/* END Post styles */
+/* START WordPress Image / Gallery Styles */
+/* line 661, sass/nicholls_core/_nicholls_core.scss */
+.gallery .gallery-item {
+  float: left;
+  width: 48%;
+}
+
+/* line 666, sass/nicholls_core/_nicholls_core.scss */
+.wp-caption {
+  margin: .4em;
+  padding: .2em;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* line 673, sass/nicholls_core/_nicholls_core.scss */
+.wp-caption .wp-caption-text {
+  margin: .2em 0 .1em 0;
+  padding: .2em .4em .1em .4em;
+  font-size: 76%;
+  text-align: center;
+  line-height: 1.2em;
+  border-top: 1px solid #efefef;
+}
+
+/* END WordPress Image / Gallery Styles */
+/* START Comment Styles */
+/* line 686, sass/nicholls_core/_nicholls_core.scss */
+.comments- {
+  margin: 0 .5em 0 .5em;
+  font-size: 96%;
+}
+
+/* line 691, sass/nicholls_core/_nicholls_core.scss */
+.comment-author {
+  padding: .4em;
+}
+
+/* line 695, sass/nicholls_core/_nicholls_core.scss */
+.comment-author .avatar {
+  float: left;
+  margin: 0 .5em .5em 0;
+}
+
+/* line 700, sass/nicholls_core/_nicholls_core.scss */
+.bypostauthor .comment-body .comment-author {
+  color: #fff;
+  background: #000;
+}
+
+/* line 705, sass/nicholls_core/_nicholls_core.scss */
+.bypostauthor-no .comment-body .comment-author {
+  color: #000;
+  background: transparent;
+}
+
+/* line 710, sass/nicholls_core/_nicholls_core.scss */
+.comment-meta {
+  clear: right;
+  margin: 0 0 .5em 0;
+  padding: .2em 0 .2em .5em;
+  font-size: 90%;
+  color: #222;
+}
+
+/* line 718, sass/nicholls_core/_nicholls_core.scss */
+.commentlist {
+  list-style-type: none;
+  margin: 0 .2em .5em .4em;
+}
+
+/* line 723, sass/nicholls_core/_nicholls_core.scss */
+.commentlist .comment, .commentlist .pingback {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: .2em 0 0 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* line 730, sass/nicholls_core/_nicholls_core.scss */
+.comments- label {
+  clear: both;
+  display: block;
+  margin: .4em 0;
+}
+
+/* END Comment Styles */
+/* Start Forms and Controls */
+/* line 740, sass/nicholls_core/_nicholls_core.scss */
+legend {
+  font-weight: 400;
+}
+
+/* line 744, sass/nicholls_core/_nicholls_core.scss */
+label {
+  display: block;
+}
+
+/* line 748, sass/nicholls_core/_nicholls_core.scss */
+input, textarea {
+  margin: .2em;
+  padding: .2em;
+  border: 1px solid #666;
+}
+
+/* line 754, sass/nicholls_core/_nicholls_core.scss */
+textarea {
+  clear: both;
+}
+
+/* line 758, sass/nicholls_core/_nicholls_core.scss */
+input:hover, textarea:hover {
+  border: 1px solid #333;
+}
+
+/* line 762, sass/nicholls_core/_nicholls_core.scss */
+input:focus, textarea:focus {
+  border: 1px solid #d1d1d1;
+}
+
+/* line 766, sass/nicholls_core/_nicholls_core.scss */
+.fnbx_form_row {
+  margin: .2em 0;
+  clear: both;
+}
+
+/* line 771, sass/nicholls_core/_nicholls_core.scss */
+.fnbx_form_row label {
+  width: 12em;
+  float: left;
+  padding: 2px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 779, sass/nicholls_core/_nicholls_core.scss */
+.fnbx_textarea label {
+  width: 100%;
+  float: none;
+}
+
+/* line 784, sass/nicholls_core/_nicholls_core.scss */
+.fnbx_form_row .fnbx_form_element {
+  padding: 2px;
+}
+
+/* line 788, sass/nicholls_core/_nicholls_core.scss */
+.form-container {
+  position: relative;
+  width: auto;
+  padding: .2em;
+}
+
+/* line 794, sass/nicholls_core/_nicholls_core.scss */
+.form-container form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 799, sass/nicholls_core/_nicholls_core.scss */
+.form-container .form-row {
+  width: auto;
+  clear: both;
+}
+
+/* line 804, sass/nicholls_core/_nicholls_core.scss */
+.form-container .form-note {
+  padding: .2em;
+  clear: both;
+}
+
+/* line 809, sass/nicholls_core/_nicholls_core.scss */
+.form-container .form-label, .form-container label {
+  display: block;
+  float: left;
+  padding: .6em .4em .2em .2em;
+  width: 39%;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 818, sass/nicholls_core/_nicholls_core.scss */
+.form-container .form-input, .form-container .form-element {
+  display: block;
+  position: relative;
+  width: 59%;
+  margin: 0 0 0 15.4em;
+  padding: .4em 0 .4em 0;
+}
+
+/* END - Defaults */
+/* Columns - column-float-width */
+/* line 830, sass/nicholls_core/_nicholls_core.scss */
+.column- {
+  padding: 0 .3em;
+  margin: 0 .3em;
+}
+
+/* line 835, sass/nicholls_core/_nicholls_core.scss */
+.width-50 {
+  width: 50%;
+}
+
+/* line 839, sass/nicholls_core/_nicholls_core.scss */
+.width-49 {
+  width: 49%;
+}
+
+/* line 843, sass/nicholls_core/_nicholls_core.scss */
+.width-48 {
+  width: 48%;
+}
+
+/* line 847, sass/nicholls_core/_nicholls_core.scss */
+.width-47 {
+  width: 47%;
+}
+
+/* line 851, sass/nicholls_core/_nicholls_core.scss */
+.width-46 {
+  width: 46%;
+}
+
+/* line 855, sass/nicholls_core/_nicholls_core.scss */
+.width-45 {
+  width: 45%;
+}
+
+/* line 859, sass/nicholls_core/_nicholls_core.scss */
+.width-right-default, .width-default {
+  width: 40.5%;
+}
+
+/* ??? */
+/* line 864, sass/nicholls_core/_nicholls_core.scss */
+.column-left-16 {
+  float: left;
+  width: 16em;
+  margin-right: 1em;
+}
+
+/* ??? */
+/* line 870, sass/nicholls_core/_nicholls_core.scss */
+.column-left-20 {
+  float: left;
+  width: 16em;
+  margin-right: 1em;
+}
+
+/* START - Custom Classes */
+/* line 878, sass/nicholls_core/_nicholls_core.scss */
+.type-serif {
+  font-family: 'Crimson Text', 'Georgia','Times New Roman', times, serif;
+}
+
+/* line 882, sass/nicholls_core/_nicholls_core.scss */
+.type-normal {
+  font-size: 72%;
+}
+
+/* line 886, sass/nicholls_core/_nicholls_core.scss */
+.transparent-black-50 {
+  background: transparent url("library/images/backgrounds/bg-transparent-black-50.png");
+}
+
+/* line 890, sass/nicholls_core/_nicholls_core.scss */
+.color-black-transparent-50 {
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: black;
+  /* RGBa with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.5);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000)";
+}
+
+/* line 901, sass/nicholls_core/_nicholls_core.scss */
+.transparent-white-50 {
+  background: transparent url("library/images/backgrounds/bg-transparent-white-50.png");
+}
+
+/* END - Custom Classes */
+/* Search - START */
+/* line 909, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- {
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+  background-color: #fff;
+  margin: .2em;
+  float: right;
+  clear: right;
+}
+
+/* line 918, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 924, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 930, sass/nicholls_core/_nicholls_core.scss */
+.input-q- {
+  border: none;
+  margin: 0 0 0 .7em;
+  padding: .4em .2em .2em 0;
+}
+
+/* line 936, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- input {
+  font-size: 86%;
+  width: 7em;
+}
+
+/* line 941, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- input:hover, .form-gs-container- input:focus {
+  border: none;
+}
+
+/* line 945, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- form input[type=submit] {
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+  background: url("library/images/icons/icon-white-search.png") no-repeat center center;
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
+  color: transparent;
+  font-size: 0;
+}
+
+/* line 957, sass/nicholls_core/_nicholls_core.scss */
+.form-gs-container- form input[type=submit]:hover {
+  background-color: #cc3333;
+}
+
+/* Search - END */
+/* START - Widgets */
+/* line 965, sass/nicholls_core/_nicholls_core.scss */
+.widget-area .nicholls-department-widget .widgettitle {
+  color: #cc3333;
+}
+
+/* line 969, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-department-widget .nicholls-department-info- {
+  border: 1px solid #e2e2e2;
+}
+
+/* line 973, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-department-widget .nicholls-department-info- div {
+  margin: 0 0 .5em 0;
+  padding: .4em;
+  background: #efefef;
+}
+
+/* END - Widgets */
+/* START - Tables */
+/* line 983, sass/nicholls_core/_nicholls_core.scss */
+.table-defaults td, .table-defaults th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 988, sass/nicholls_core/_nicholls_core.scss */
+.table-style-a {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 993, sass/nicholls_core/_nicholls_core.scss */
+.table-style-a td, .table-style-a th {
+  padding: .3em .5em;
+  border-right: 1px solid #000;
+  vertical-align: top;
+}
+
+/* line 999, sass/nicholls_core/_nicholls_core.scss */
+.table-style-a td:last-child, .table-style-a th:last-child {
+  border-right: none;
+}
+
+/* line 1003, sass/nicholls_core/_nicholls_core.scss */
+.table-style-a th {
+  font-size: 105%;
+  text-align: left;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 1010, sass/nicholls_core/_nicholls_core.scss */
+.table-style-b {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 1015, sass/nicholls_core/_nicholls_core.scss */
+.table-style-b td, .table-style-b th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 1020, sass/nicholls_core/_nicholls_core.scss */
+.table-style-b td, .table-style-b th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 1025, sass/nicholls_core/_nicholls_core.scss */
+.table-style-b tr td {
+  border-top: 1px solid #000;
+}
+
+/* line 1029, sass/nicholls_core/_nicholls_core.scss */
+.table-style-b th {
+  font-size: 105%;
+  text-align: left;
+}
+
+/* line 1034, sass/nicholls_core/_nicholls_core.scss */
+.table-header-red th {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 1039, sass/nicholls_core/_nicholls_core.scss */
+.table-cells-even-down-grey tr:nth-child(even) td {
+  background-color: #e2e2e2;
+}
+
+/* line 1043, sass/nicholls_core/_nicholls_core.scss */
+.table-cells-even-across-grey tr td:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* line 1047, sass/nicholls_core/_nicholls_core.scss */
+.table-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1052, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-vertical {
+  border-collapse: collapse;
+}
+
+/* line 1056, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-vertical td, .table-lines-vertical th {
+  padding: .3em .5em;
+  border-right: 1px solid #000;
+  vertical-align: top;
+}
+
+/* line 1062, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-vertical td:last-child, .table-lines-vertical th:last-child {
+  border-right: none;
+}
+
+/* line 1066, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-horizontal {
+  border-collapse: collapse;
+}
+
+/* line 1070, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-horizontal td, .table-lines-horizontal th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 1075, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-horizontal td, .table-lines-horizontal th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 1080, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-horizontal tr td {
+  border-top: 1px solid #000;
+}
+
+/* line 1084, sass/nicholls_core/_nicholls_core.scss */
+.table-lines-horizontal th {
+  font-size: 105%;
+  text-align: left;
+}
+
+/* line 1089, sass/nicholls_core/_nicholls_core.scss */
+.table-cells-even-down-grey tr:nth-child(even) td {
+  background-color: #e2e2e2;
+}
+
+/* line 1093, sass/nicholls_core/_nicholls_core.scss */
+.table-cells-even-across-grey tr td:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* line 1097, sass/nicholls_core/_nicholls_core.scss */
+.table-header-bg-red th {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 1102, sass/nicholls_core/_nicholls_core.scss */
+.table-header-bg-dark-grey th {
+  font-size: 105%;
+  text-align: left;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 1109, sass/nicholls_core/_nicholls_core.scss */
+.table-caption-bg-red caption {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 1114, sass/nicholls_core/_nicholls_core.scss */
+.table-caption-bg-dark-grey caption {
+  background: #666;
+  color: #fff;
+}
+
+/* line 1119, sass/nicholls_core/_nicholls_core.scss */
+.table-border-black {
+  border: 1px solid #000;
+}
+
+/* END - Tables */
+/* START - Button Styles */
+/* line 1127, sass/nicholls_core/_nicholls_core.scss */
+.button-default {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+/* line 1144, sass/nicholls_core/_nicholls_core.scss */
+.button-default:hover {
+  text-decoration: none;
+}
+
+/* line 1148, sass/nicholls_core/_nicholls_core.scss */
+.button-default:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 1153, sass/nicholls_core/_nicholls_core.scss */
+a.button-red {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #cc3333;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, top, bottom, left, right);
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(top, #cc3333, #841A1A);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(top, #cc3333, #841A1A);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(top, #cc3333, #841A1A);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(to bottom, #cc3333, #841a1a);
+  text-decoration: none;
+}
+
+/* line 1182, sass/nicholls_core/_nicholls_core.scss */
+a.button-red {
+  color: #fff;
+}
+
+/* line 1186, sass/nicholls_core/_nicholls_core.scss */
+a.button-red:link {
+  color: #fff;
+}
+
+/* line 1190, sass/nicholls_core/_nicholls_core.scss */
+a.button-red:hover {
+  text-decoration: underline;
+}
+
+/* line 1194, sass/nicholls_core/_nicholls_core.scss */
+a.button-shadow-large {
+  -webkit-box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* line 1200, sass/nicholls_core/_nicholls_core.scss */
+a.button-shadow-large:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 1206, sass/nicholls_core/_nicholls_core.scss */
+a.button-space-block-2 {
+  margin: 2em;
+}
+
+/* line 1210, sass/nicholls_core/_nicholls_core.scss */
+a.button-width-auto {
+  white-space: nowrap;
+}
+
+/* END - Button Styles */
+/* START: List Posts */
+/* line 1218, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-list {
+  list-style-type: none;
+}
+
+/* line 1222, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-item {
+  margin-left: .2em;
+}
+
+/* line 1226, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-item-title {
+  font-weight: bold;
+}
+
+/* line 1230, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-item-date {
+  font-size: 90%;
+  color: #7f7f7f;
+}
+
+/* line 1235, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-nicholls-news .thumbnail-container {
+  float: left;
+  padding: .2em;
+  margin: .2em;
+  border: 2px solid #ccc;
+}
+
+/* line 1242, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-nicholls-news .list-posts-item-content {
+  clear: right;
+}
+
+/* line 1246, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-nicholls-news .list-posts-item-title {
+  clear: both;
+}
+
+/* line 1250, sass/nicholls_core/_nicholls_core.scss */
+.list-posts-nicholls-list .list-posts-list {
+  list-style-type: disc;
+}
+
+/* END: List Posts */
+/* START: Plugin - Nicholls Faculty Staff */
+/* line 1258, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments,
+.nicholls-org-types {
+  clear: both;
+  padding-bottom: .4em;
+  margin-bottom: .4em;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 1266, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments .nicholls-fs-department-links,
+.nicholls-fs-departments .nicholls-fs-department-link,
+.nicholls-org-types .nicholls-org-type-links,
+.nicholls-org-types .nicholls-org-type-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1275, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments .nicholls-fs-department-link,
+.nicholls-org-types .nicholls-org-type-link {
+  float: left;
+}
+
+/* line 1280, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:before,
+.nicholls-org-types .nicholls-org-type-link:before {
+  content: '/';
+  display: inline-block;
+  float: left;
+  margin: 0 1em;
+}
+
+/* line 1288, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:first-child:before,
+.nicholls-org-types .nicholls-org-type-link:first-child:before {
+  content: '';
+  margin: 0;
+}
+
+/* line 1299, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:last-child:after,
+.nicholls-org-types .nicholls-org-type-link:last-child:after {
+  clear: right;
+}
+
+/* line 1304, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-photo {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 1309, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-courses {
+  clear: both;
+}
+
+/* line 1313, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-courses h3 {
+  text-align: center;
+}
+
+/* line 1317, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-form-message-top- {
+  padding-bottom: .4em;
+  border-bottom: 1px solid #cc3333;
+}
+
+/* line 1322, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-fs-form-message- textarea {
+  width: 100%;
+  height: 6em;
+}
+
+/* Layout - Phone Screen Portrait breakpoint is  */
+@media (min-width: 0em) and (max-width: 28em) {
+  /* line 1329, sass/nicholls_core/_nicholls_core.scss */
+  .nicholls-fs-photo {
+    float: none;
+    margin-right: 0;
+  }
+}
+/* END: Nicholls Faculty Staff plugin */
+/* START: Plugin - wp-socializer */
+/* line 1339, sass/nicholls_core/_nicholls_core.scss */
+.wp-socializer ul, .wp-socializer li {
+  list-style: none;
+}
+
+/* line 1343, sass/nicholls_core/_nicholls_core.scss */
+.wp-socializer li {
+  float: left;
+  padding: .2em;
+  margin: .2em;
+}
+
+/* END: Plugin - wp-socializer */
+/* START - Plugin Contact Form 7 - Form Controls */
+/* line 1352, sass/nicholls_core/_nicholls_core.scss */
+div.wpcf7 {
+  position: relative;
+  width: auto;
+  padding: .2em;
+}
+
+/* line 1358, sass/nicholls_core/_nicholls_core.scss */
+.form-container .wpcf7-list-item {
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1365, sass/nicholls_core/_nicholls_core.scss */
+.wpcf7-checkbox input {
+  display: block;
+  float: left;
+}
+
+/* line 1370, sass/nicholls_core/_nicholls_core.scss */
+.wpcf7-checkbox .wpcf7-list-item-label {
+  display: block;
+  margin: .2em 0 .2em .2em;
+  float: left;
+  width: 18em;
+}
+
+/* line 1377, sass/nicholls_core/_nicholls_core.scss */
+.form-input .your-message textarea {
+  width: 20em;
+}
+
+/* END - Plugin Contact Form 7 - Form Controls */
+/* START Hidden Elements */
+/* line 1384, sass/nicholls_core/_nicholls_core.scss */
+.hide, .accessibility-hide, .accessibility {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* END Hidden Elements */
+/* START Conditional Elements */
+/* Widgets Inactive (Primary & Secondary) - Container goes full width */
+/* line 1394, sass/nicholls_core/_nicholls_core.scss */
+.widgets-primary-active .content-area {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #000;
+}
+
+/* line 1400, sass/nicholls_core/_nicholls_core.scss */
+body.widgets-primary-inactive.widgets-secondary-inactive .content-area {
+  float: none;
+  width: auto;
+  border-left: none;
+}
+
+/* END Conditional Elements */
+/* START Compatiblity Elements */
+/* END Compatiblity Elements */
+/* START Debug */
+/* line 1413, sass/nicholls_core/_nicholls_core.scss */
+.debug-test {
+  color: black;
+}
+
+/* END Debug */
 /* Layout - Default breakpoint is 945 */
-/* line 327, sass/nicholls_core/nicholls_core.scss */
+/* line 1420, sass/nicholls_core/_nicholls_core.scss */
 body {
   width: 100%;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  background-color: #666;
 }
 
-/* line 333, sass/nicholls_core/nicholls_core.scss */
+/* line 1427, sass/nicholls_core/_nicholls_core.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 
-/* line 337, sass/nicholls_core/nicholls_core.scss */
+/* line 1431, sass/nicholls_core/_nicholls_core.scss */
 .site, .site-header {
   width: 63.84em;
   margin-left: auto;
@@ -1053,6 +2473,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   position: relative;
   clear: both;
+  background-color: #fff;
 }
 /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 .site:after, .site-header:after {
@@ -1061,13 +2482,13 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 345, sass/nicholls_core/nicholls_core.scss */
+/* line 1440, sass/nicholls_core/_nicholls_core.scss */
 .site-header {
   text-align: center;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 350, sass/nicholls_core/nicholls_core.scss */
+/* line 1445, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-wrapper- footer {
   width: 63.84em;
   margin-left: auto;
@@ -1084,22 +2505,22 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* line 358, sass/nicholls_core/nicholls_core.scss */
+/* line 1453, sass/nicholls_core/_nicholls_core.scss */
 .content-area {
   width: 42.96em;
-  float: left;
-  margin-right: 0.888em;
-}
-
-/* line 362, sass/nicholls_core/nicholls_core.scss */
-.widget-area {
-  width: 19.992em;
   float: right;
   margin-right: 0;
 }
 
+/* line 1457, sass/nicholls_core/_nicholls_core.scss */
+.widget-area {
+  width: 19.992em;
+  float: left;
+  margin-right: 0.888em;
+}
+
 /* see jesse_james_body_class_filter() */
-/* line 367, sass/nicholls_core/nicholls_core.scss */
+/* line 1462, sass/nicholls_core/_nicholls_core.scss */
 .widgets-sidebar-1-inactive .content-area {
   width: 63.84em;
   margin-left: auto;
@@ -1114,7 +2535,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Layout - Large Screen breakpoint is 1166 */
 @media (min-width: 80em) {
-  /* line 374, sass/nicholls_core/nicholls_core.scss */
+  /* line 1469, sass/nicholls_core/_nicholls_core.scss */
   .site, .site-header {
     width: 76.368em;
     margin-left: auto;
@@ -1127,7 +2548,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 378, sass/nicholls_core/nicholls_core.scss */
+  /* line 1473, sass/nicholls_core/_nicholls_core.scss */
   .nicholls-footer-wrapper- footer {
     width: 76.368em;
     margin-left: auto;
@@ -1140,21 +2561,21 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 382, sass/nicholls_core/nicholls_core.scss */
+  /* line 1477, sass/nicholls_core/_nicholls_core.scss */
   .content-area {
     width: 53.4em;
-    float: left;
-    margin-right: 0.888em;
-  }
-
-  /* line 386, sass/nicholls_core/nicholls_core.scss */
-  .widget-area {
-    width: 19.992em;
     float: right;
     margin-right: 0;
   }
 
-  /* line 390, sass/nicholls_core/nicholls_core.scss */
+  /* line 1481, sass/nicholls_core/_nicholls_core.scss */
+  .widget-area {
+    width: 19.992em;
+    float: left;
+    margin-right: 0.888em;
+  }
+
+  /* line 1485, sass/nicholls_core/_nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 76.368em;
     margin-left: auto;
@@ -1169,7 +2590,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Tablet Screen breakpoint is  */
 @media (min-width: 46em) and (max-width: 62em) {
-  /* line 399, sass/nicholls_core/nicholls_core.scss */
+  /* line 1494, sass/nicholls_core/_nicholls_core.scss */
   .site, .site-header {
     width: 47.136em;
     margin-left: auto;
@@ -1182,7 +2603,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 403, sass/nicholls_core/nicholls_core.scss */
+  /* line 1498, sass/nicholls_core/_nicholls_core.scss */
   .nicholls-footer-wrapper- footer {
     width: 47.136em;
     margin-left: auto;
@@ -1195,7 +2616,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 407, sass/nicholls_core/nicholls_core.scss */
+  /* line 1502, sass/nicholls_core/_nicholls_core.scss */
   .content-area, .widget-area {
     width: 47.136em;
     float: left;
@@ -1203,7 +2624,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 411, sass/nicholls_core/nicholls_core.scss */
+  /* line 1506, sass/nicholls_core/_nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 47.136em;
     margin-left: auto;
@@ -1218,7 +2639,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Phone Screen Landscape breakpoint is  */
 @media (min-width: 31em) and (max-width: 46em) {
-  /* line 420, sass/nicholls_core/nicholls_core.scss */
+  /* line 1515, sass/nicholls_core/_nicholls_core.scss */
   .site, .site-header {
     width: 34.608em;
     margin-left: auto;
@@ -1231,7 +2652,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 424, sass/nicholls_core/nicholls_core.scss */
+  /* line 1519, sass/nicholls_core/_nicholls_core.scss */
   .nicholls-footer-wrapper- footer {
     width: 34.608em;
     margin-left: auto;
@@ -1244,7 +2665,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 428, sass/nicholls_core/nicholls_core.scss */
+  /* line 1523, sass/nicholls_core/_nicholls_core.scss */
   .content-area, .widget-area {
     width: 34.608em;
     float: left;
@@ -1252,7 +2673,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 432, sass/nicholls_core/nicholls_core.scss */
+  /* line 1527, sass/nicholls_core/_nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 34.608em;
     margin-left: auto;
@@ -1267,7 +2688,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Layout - Phone Screen Portrait breakpoint is  */
 @media (min-width: 0em) and (max-width: 31em) {
-  /* line 441, sass/nicholls_core/nicholls_core.scss */
+  /* line 1536, sass/nicholls_core/_nicholls_core.scss */
   .site, .site-header {
     width: 22.08em;
     margin-left: auto;
@@ -1280,7 +2701,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 445, sass/nicholls_core/nicholls_core.scss */
+  /* line 1540, sass/nicholls_core/_nicholls_core.scss */
   .nicholls-footer-wrapper- footer {
     width: 22.08em;
     margin-left: auto;
@@ -1293,7 +2714,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
   }
 
-  /* line 449, sass/nicholls_core/nicholls_core.scss */
+  /* line 1544, sass/nicholls_core/_nicholls_core.scss */
   .content-area, .widget-area {
     width: 22.08em;
     float: left;
@@ -1301,7 +2722,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 
-  /* line 453, sass/nicholls_core/nicholls_core.scss */
+  /* line 1548, sass/nicholls_core/_nicholls_core.scss */
   .widgets-sidebar-1-inactive .content-area {
     width: 22.08em;
     margin-left: auto;
@@ -1339,25 +2760,72 @@ h1, h2, h3, h4, h5, h6 {
   /*  @import 'media/high-rez'; */
 }
 /* Print */
+/* Defaults - START */
+/* line 1593, sass/nicholls_core/_nicholls_core.scss */
+body {
+  font-family: 'Open Sans', Arial, sans serif;
+  font-size: "100%";
+  color: #000;
+  padding: 0;
+  margin: 0;
+  width: "100%";
+}
+
+/* Interactive HTML Styles */
+/* line 1604, sass/nicholls_core/_nicholls_core.scss */
+a, a:link {
+  color: #cc3333;
+  text-decoration: underline;
+}
+
+/* line 1609, sass/nicholls_core/_nicholls_core.scss */
+a:visited {
+  color: #666666;
+}
+
+/* line 1613, sass/nicholls_core/_nicholls_core.scss */
+a:hover {
+  color: #cc3333;
+  text-decoration: none;
+}
+
+/* line 1618, sass/nicholls_core/_nicholls_core.scss */
+a.nofx {
+  background: none;
+  border: none;
+}
+
+/* line 1623, sass/nicholls_core/_nicholls_core.scss */
+a.nofx:hover {
+  background: none;
+  border: none;
+}
+
+/* line 1628, sass/nicholls_core/_nicholls_core.scss */
+.link-color-white, .link-color-white:link, .link-color-white:hover, .link-color-white:active, .link-color-white:visited {
+  color: #fff;
+}
+
+/* Defaults - END */
 /* Compatibility - IE and other compatibility issues */
 /* Header ,Branding, & Navigation */
 /*
 We will need to move breakpoint modifications into other breakpoint blocks as needed.
 */
-/* line 506, sass/nicholls_core/nicholls_core.scss */
+/* line 1645, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-header-wrapper- {
   width: 100%;
   background-color: #000;
 }
 
-/* line 511, sass/nicholls_core/nicholls_core.scss */
+/* line 1650, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-wrapper- {
   width: 100%;
   background-color: #000;
 }
 
 /* Logo - sword */
-/* line 518, sass/nicholls_core/nicholls_core.scss */
+/* line 1657, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-site-branding {
   width: 10em;
   margin: 0 auto;
@@ -1366,7 +2834,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   z-index: 102;
 }
 
-/* line 526, sass/nicholls_core/nicholls_core.scss */
+/* line 1665, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-site-title {
   width: auto;
   text-align: center;
@@ -1375,7 +2843,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   float: left;
 }
 
-/* line 534, sass/nicholls_core/nicholls_core.scss */
+/* line 1673, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-site-title a {
   display: block;
   font-size: 5.6em;
@@ -1391,7 +2859,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Logo - wordmark */
-/* line 556, sass/nicholls_core/nicholls_core.scss */
+/* line 1695, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-logo-wordmark {
   width: auto;
   text-align: center;
@@ -1400,13 +2868,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   float: left;
 }
 
-/* line 564, sass/nicholls_core/nicholls_core.scss */
+/* line 1703, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-logo-wordmark a {
   background: url("nicholls/images/logo/Nicholls-Wordmark-white.png");
   background: url("nicholls/images/logo/Nicholls-Wordmark-white.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 570, sass/nicholls_core/nicholls_core.scss */
+/* line 1709, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-logo-wordmark a {
   display: block;
   font-size: 6rem;
@@ -1420,7 +2888,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* Navigation */
 /* secondary */
-/* line 586, sass/nicholls_core/nicholls_core.scss */
+/* line 1725, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -1430,7 +2898,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: left;
 }
 
-/* line 595, sass/nicholls_core/nicholls_core.scss */
+/* line 1734, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -1440,7 +2908,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* centers IE6/7 */
 }
 
-/* line 601, sass/nicholls_core/nicholls_core.scss */
+/* line 1740, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -1449,7 +2917,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 608, sass/nicholls_core/nicholls_core.scss */
+/* line 1747, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul {
   display: inline-block;
   /* IE6/7 haslayout trip-switch */
@@ -1457,21 +2925,21 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 614, sass/nicholls_core/nicholls_core.scss */
+/* line 1753, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul li {
   display: inline;
   padding: .2em;
   border-bottom: 1px solid #999;
 }
 
-/* line 621, sass/nicholls_core/nicholls_core.scss */
+/* line 1760, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul li:last-child {
   border-bottom-right-radius: 1.5em;
   border-bottom: 1px solid #999;
   border-right: 1px solid #999;
 }
 
-/* line 630, sass/nicholls_core/nicholls_core.scss */
+/* line 1769, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a {
   display: inline-block;
   padding: 0 1em .4em 1em;
@@ -1480,7 +2948,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary */
-/* line 639, sass/nicholls_core/nicholls_core.scss */
+/* line 1778, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- {
   width: auto;
   margin: 0 auto;
@@ -1492,7 +2960,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   background-color: #cc3333;
 }
 
-/* line 650, sass/nicholls_core/nicholls_core.scss */
+/* line 1789, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- .menu {
   display: inline-block;
   /* centers modern browsers */
@@ -1511,7 +2979,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   clear: both;
 }
 
-/* line 659, sass/nicholls_core/nicholls_core.scss */
+/* line 1798, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
   list-style-type: none;
   list-style-position: inside;
@@ -1525,13 +2993,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 674, sass/nicholls_core/nicholls_core.scss */
+/* line 1813, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul {
   /* display: inline-block; */
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 678, sass/nicholls_core/nicholls_core.scss */
+/* line 1817, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul li {
   display: inline-block;
   padding: .2em;
@@ -1542,7 +3010,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: center;
 }
 
-/* line 690, sass/nicholls_core/nicholls_core.scss */
+/* line 1829, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul ul {
   box-shadow: none;
   float: left;
@@ -1554,18 +3022,18 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding: 0;
 }
 
-/* line 701, sass/nicholls_core/nicholls_core.scss */
+/* line 1840, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul ul li {
   margin: 0;
   padding: 0;
 }
 
-/* line 706, sass/nicholls_core/nicholls_core.scss */
+/* line 1845, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul ul a {
   width: auto;
 }
 
-/* line 710, sass/nicholls_core/nicholls_core.scss */
+/* line 1849, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- .menu-item a {
   padding: 0 .4em;
   /* variable width */
@@ -1573,25 +3041,25 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* primary & secondary */
-/* line 718, sass/nicholls_core/nicholls_core.scss */
+/* line 1857, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 723, sass/nicholls_core/nicholls_core.scss */
+/* line 1862, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:link,
 .nicholls-primary-navigation- ul li a:active,
 .nicholls-primary-navigation- ul li a:visited {
   color: #fff;
 }
 
-/* line 729, sass/nicholls_core/nicholls_core.scss */
+/* line 1868, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-primary-navigation- ul li a:hover {
   color: #fff;
 }
 
-/* line 733, sass/nicholls_core/nicholls_core.scss */
+/* line 1872, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a,
 .nicholls-secondary-navigation- ul li a:link,
 .nicholls-secondary-navigation- ul li a:active,
@@ -1600,13 +3068,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 741, sass/nicholls_core/nicholls_core.scss */
+/* line 1880, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-secondary-navigation- ul li a:hover {
   color: #999;
 }
 
 /* Call to Action Buttons */
-/* line 747, sass/nicholls_core/nicholls_core.scss */
+/* line 1886, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta-secondary {
   display: block;
   float: left;
@@ -1614,7 +3082,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   margin-left: 2em;
 }
 
-/* line 754, sass/nicholls_core/nicholls_core.scss */
+/* line 1893, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta-primary {
   display: block;
   float: right;
@@ -1622,21 +3090,21 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   margin-right: 2em;
 }
 
-/* line 761, sass/nicholls_core/nicholls_core.scss */
+/* line 1900, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta-secondary a {
   display: block;
   background-color: #999;
   clear: both;
 }
 
-/* line 767, sass/nicholls_core/nicholls_core.scss */
+/* line 1906, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta-primary a {
   display: block;
   background-color: #cc3333;
   margin-top: -2em;
 }
 
-/* line 773, sass/nicholls_core/nicholls_core.scss */
+/* line 1912, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta .button {
   width: 16em;
   padding: .4em 0;
@@ -1645,12 +3113,12 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   font-size: 110%;
 }
 
-/* line 781, sass/nicholls_core/nicholls_core.scss */
+/* line 1920, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta .nicholls-cta-request-info {
   margin-bottom: .6em;
 }
 
-/* line 785, sass/nicholls_core/nicholls_core.scss */
+/* line 1924, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta a,
 .nicholls-cta a:link,
 .nicholls-cta a:active,
@@ -1659,20 +3127,20 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 793, sass/nicholls_core/nicholls_core.scss */
+/* line 1932, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-cta a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
 /* Footer */
-/* line 802, sass/nicholls_core/nicholls_core.scss */
+/* line 1941, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-wrapper- {
   background-color: #000;
   color: #cccccc;
 }
 
-/* line 807, sass/nicholls_core/nicholls_core.scss */
+/* line 1946, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-column {
   width: 30%;
   float: left;
@@ -1681,18 +3149,30 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   padding-top: 1em;
 }
 
-/* line 815, sass/nicholls_core/nicholls_core.scss */
-.nicholls-footer-column div {
+/* line 1954, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-footer-column div,
+.nicholls-footer-column ul,
+.nicholls-footer-column ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 820, sass/nicholls_core/nicholls_core.scss */
+/* line 1961, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-footer-col-info {
+  width: 34%;
+}
+
+/* line 1965, sass/nicholls_core/_nicholls_core.scss */
+.nicholls-footer-col-social-media {
+  width: 24%;
+}
+
+/* line 1972, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-info-footer {
   white-space: nowrap;
 }
 
-/* line 824, sass/nicholls_core/nicholls_core.scss */
+/* line 1976, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-info-copyright {
   clear: both;
   font-size: 82%;
@@ -1701,7 +3181,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Louisiana map */
-/* line 833, sass/nicholls_core/nicholls_core.scss */
+/* line 1985, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-la-state-map {
   width: auto;
   text-align: center;
@@ -1712,7 +3192,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   height: 10em;
 }
 
-/* line 843, sass/nicholls_core/nicholls_core.scss */
+/* line 1995, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-la-state-map a {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1729,13 +3209,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer - Information */
-/* line 864, sass/nicholls_core/nicholls_core.scss */
+/* line 2016, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-phone-number {
   display: block;
   float: left;
 }
 
-/* line 869, sass/nicholls_core/nicholls_core.scss */
+/* line 2021, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-address {
   display: block;
   float: left;
@@ -1744,13 +3224,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer Info Navigation */
-/* line 878, sass/nicholls_core/nicholls_core.scss */
+/* line 2030, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation {
   display: block;
   float: left;
 }
 
-/* line 883, sass/nicholls_core/nicholls_core.scss */
+/* line 2035, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul {
   list-style-type: none;
   list-style-position: inside;
@@ -1764,13 +3244,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 898, sass/nicholls_core/nicholls_core.scss */
+/* line 2050, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul {
   /* display: inline-block; */
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 902, sass/nicholls_core/nicholls_core.scss */
+/* line 2054, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul li {
   display: block;
   float: left;
@@ -1780,19 +3260,19 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-align: center;
 }
 
-/* line 913, sass/nicholls_core/nicholls_core.scss */
+/* line 2065, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul li:after {
   content: "|";
   margin-left: .2em;
 }
 
-/* line 918, sass/nicholls_core/nicholls_core.scss */
+/* line 2070, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul li:last-child:after {
   content: "";
   margin-left: 0;
 }
 
-/* line 923, sass/nicholls_core/nicholls_core.scss */
+/* line 2075, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul li a,
 .nicholls-footer-info-navigation ul li a:link,
 .nicholls-footer-info-navigation ul li a:active,
@@ -1801,14 +3281,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   text-decoration: none;
 }
 
-/* line 931, sass/nicholls_core/nicholls_core.scss */
+/* line 2083, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-info-navigation ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
 /* Footer Links Menu */
-/* line 938, sass/nicholls_core/nicholls_core.scss */
+/* line 2090, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu ul {
   list-style-type: none;
   list-style-position: inside;
@@ -1817,7 +3297,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
   /* IE6/7 haslayout trip-switch */
 }
 
-/* line 945, sass/nicholls_core/nicholls_core.scss */
+/* line 2097, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu ul li {
   width: auto;
   text-align: left;
@@ -1826,14 +3306,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 }
 
 /* Footer - Social Media Icons */
-/* line 954, sass/nicholls_core/nicholls_core.scss */
+/* line 2106, sass/nicholls_core/_nicholls_core.scss */
 footer .nicholls-social-media ul {
   list-style-type: none;
   list-style-position: inside;
   list-style-image: none;
 }
 
-/* line 250, sass/nicholls_core/nicholls_core.scss */
+/* line 230, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-facebook {
   width: auto;
   text-align: center;
@@ -1842,7 +3322,7 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 259, sass/nicholls_core/nicholls_core.scss */
+/* line 239, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-facebook a {
   display: block;
   font-size: 1em;
@@ -1860,12 +3340,12 @@ footer .nicholls-social-media ul {
   background-image: url("nicholls/images/icons/social-media/facebook.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 283, sass/nicholls_core/nicholls_core.scss */
+/* line 263, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-facebook a {
   background: url("nicholls/images/icons/social-media/facebook-ie8.png") no-repeat center 20% scroll;
 }
 
-/* line 250, sass/nicholls_core/nicholls_core.scss */
+/* line 230, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-instagram {
   width: auto;
   text-align: center;
@@ -1874,7 +3354,7 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 259, sass/nicholls_core/nicholls_core.scss */
+/* line 239, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-instagram a {
   display: block;
   font-size: 1em;
@@ -1892,12 +3372,12 @@ footer .nicholls-social-media ul {
   background-image: url("nicholls/images/icons/social-media/instagram.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 283, sass/nicholls_core/nicholls_core.scss */
+/* line 263, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-instagram a {
   background: url("nicholls/images/icons/social-media/instagram-ie8.png") no-repeat center 20% scroll;
 }
 
-/* line 250, sass/nicholls_core/nicholls_core.scss */
+/* line 230, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-twitter {
   width: auto;
   text-align: center;
@@ -1906,7 +3386,7 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 259, sass/nicholls_core/nicholls_core.scss */
+/* line 239, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-twitter a {
   display: block;
   font-size: 1em;
@@ -1924,12 +3404,12 @@ footer .nicholls-social-media ul {
   background-image: url("nicholls/images/icons/social-media/twitter.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 283, sass/nicholls_core/nicholls_core.scss */
+/* line 263, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-twitter a {
   background: url("nicholls/images/icons/social-media/twitter-ie8.png") no-repeat center 20% scroll;
 }
 
-/* line 250, sass/nicholls_core/nicholls_core.scss */
+/* line 230, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-linkedin {
   width: auto;
   text-align: center;
@@ -1938,7 +3418,7 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 259, sass/nicholls_core/nicholls_core.scss */
+/* line 239, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-linkedin a {
   display: block;
   font-size: 1em;
@@ -1956,12 +3436,12 @@ footer .nicholls-social-media ul {
   background-image: url("nicholls/images/icons/social-media/linkedin.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 283, sass/nicholls_core/nicholls_core.scss */
+/* line 263, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-linkedin a {
   background: url("nicholls/images/icons/social-media/linkedin-ie8.png") no-repeat center 20% scroll;
 }
 
-/* line 250, sass/nicholls_core/nicholls_core.scss */
+/* line 230, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-youtube {
   width: auto;
   text-align: center;
@@ -1970,7 +3450,7 @@ footer .nicholls-social-media ul {
   float: left;
 }
 
-/* line 259, sass/nicholls_core/nicholls_core.scss */
+/* line 239, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-social-media-footer-youtube a {
   display: block;
   font-size: 1em;
@@ -1988,17 +3468,17 @@ footer .nicholls-social-media ul {
   background-image: url("nicholls/images/icons/social-media/youtube.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-/* line 283, sass/nicholls_core/nicholls_core.scss */
+/* line 263, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-social-media-footer-youtube a {
   background: url("nicholls/images/icons/social-media/youtube-ie8.png") no-repeat center 20% scroll;
 }
 
-/* line 966, sass/nicholls_core/nicholls_core.scss */
+/* line 2118, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu {
   font-size: 90%;
 }
 
-/* line 970, sass/nicholls_core/nicholls_core.scss */
+/* line 2122, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu ul li a,
 .nicholls-footer-menu ul li a:link,
 .nicholls-footer-menu ul li a:active,
@@ -2007,97 +3487,1452 @@ footer .nicholls-social-media ul {
   text-decoration: none;
 }
 
-/* line 978, sass/nicholls_core/nicholls_core.scss */
+/* line 2130, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 983, sass/nicholls_core/nicholls_core.scss */
+/* line 2135, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu ul, .nicholls-footer-menu-column ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 988, sass/nicholls_core/nicholls_core.scss */
+/* line 2140, sass/nicholls_core/_nicholls_core.scss */
 .nicholls-footer-menu-column {
   width: 49%;
   float: left;
 }
 
-/* line 293, sass/nicholls_core/nicholls_core.scss */
-.icon-inline-small-blank:before {
-  content: "";
-  display: block;
-  background: url("nicholls/images/icons/general/blank.png");
-  background: url("nicholls/images/icons/general/blank.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
-/* line 293, sass/nicholls_core/nicholls_core.scss */
-.icon-inline-small-mail:before {
-  content: "";
-  display: block;
-  background: url("nicholls/images/icons/general/mail.png");
-  background: url("nicholls/images/icons/general/mail.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
-/* line 293, sass/nicholls_core/nicholls_core.scss */
-.icon-inline-small-document:before {
-  content: "";
-  display: block;
-  background: url("nicholls/images/icons/general/document.png");
-  background: url("nicholls/images/icons/general/document.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
-/* line 293, sass/nicholls_core/nicholls_core.scss */
-.icon-inline-small-question:before {
-  content: "";
-  display: block;
-  background: url("nicholls/images/icons/general/question.png");
-  background: url("nicholls/images/icons/general/question.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
-/* line 293, sass/nicholls_core/nicholls_core.scss */
-.icon-inline-small-ada:before {
-  content: "";
-  display: block;
-  background: url("nicholls/images/icons/general/ada.png");
-  background: url("nicholls/images/icons/general/ada.svg"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
 /* Debug */
 /* Compatibility: IE8, etc */
-/* line 1004, sass/nicholls_core/nicholls_core.scss */
+/* line 2151, sass/nicholls_core/_nicholls_core.scss */
 .lt-ie9 .nicholls-site-title a {
   background: url("nicholls/images/logo/Nicholls-N-Sword-w-text-ie8.png") no-repeat center 20% scroll;
 }
+
+/* Heading Styles */
+/* line 5, sass/nicholls_core/_nicholls_defaults.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.1em;
+  color: #1f1f1f;
+  margin: .4em 0;
+}
+
+/* line 12, sass/nicholls_core/_nicholls_defaults.scss */
+h1 {
+  font-size: 200%;
+}
+
+/* line 16, sass/nicholls_core/_nicholls_defaults.scss */
+h2 {
+  font-size: 180%;
+}
+
+/* line 20, sass/nicholls_core/_nicholls_defaults.scss */
+h3 {
+  font-size: 160%;
+}
+
+/* line 24, sass/nicholls_core/_nicholls_defaults.scss */
+h4 {
+  font-size: 140%;
+}
+
+/* line 28, sass/nicholls_core/_nicholls_defaults.scss */
+h5 {
+  font-size: 120%;
+}
+
+/* line 32, sass/nicholls_core/_nicholls_defaults.scss */
+h6 {
+  font-size: 110%;
+}
+
+/* line 36, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h1 {
+  font-size: 200%;
+}
+
+/* line 40, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h2 {
+  font-size: 180%;
+}
+
+/* line 44, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h3 {
+  font-size: 160%;
+}
+
+/* line 48, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h4 {
+  font-size: 140%;
+}
+
+/* line 52, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h5 {
+  font-size: 120%;
+}
+
+/* line 56, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area h6 {
+  font-size: 110%;
+}
+
+/* Content Common text blocks */
+/* line 62, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area code, .content-area pre {
+  font-family: "courier new", courier, monospace;
+}
+
+/* line 66, sass/nicholls_core/_nicholls_defaults.scss */
+input.text {
+  padding: .2em;
+  border: 1px solid #999999;
+}
+
+/* Clearing Utility Elements */
+/* line 73, sass/nicholls_core/_nicholls_defaults.scss */
+.clear, .clearer, .clear-both {
+  clear: both;
+}
+
+/* line 77, sass/nicholls_core/_nicholls_defaults.scss */
+.clear-right {
+  clear: right;
+}
+
+/* line 81, sass/nicholls_core/_nicholls_defaults.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 85, sass/nicholls_core/_nicholls_defaults.scss */
+.clear-group:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 93, sass/nicholls_core/_nicholls_defaults.scss */
+.clear-group {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 95, sass/nicholls_core/_nicholls_defaults.scss */
+* html .clear-group {
+  height: 1%;
+}
+
+/* line 96, sass/nicholls_core/_nicholls_defaults.scss */
+.clear-group {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* Alignment */
+/* line 101, sass/nicholls_core/_nicholls_defaults.scss */
+.left, .alignleft {
+  display: inline;
+  float: left;
+  margin-right: .8em;
+}
+
+/* line 107, sass/nicholls_core/_nicholls_defaults.scss */
+.right, .alignright {
+  display: inline;
+  float: right;
+  margin-left: .8em;
+}
+
+/* line 113, sass/nicholls_core/_nicholls_defaults.scss */
+.float-left {
+  float: left;
+}
+
+/* line 117, sass/nicholls_core/_nicholls_defaults.scss */
+.float-right {
+  float: right;
+}
+
+/* line 121, sass/nicholls_core/_nicholls_defaults.scss */
+.aligncenter, .wp-caption.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Defaults */
+/* line 130, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area img,
+.comment-content img,
+.widget img {
+  max-width: 97.5%;
+  /* Fluid images for posts, comments, and widgets */
+}
+
+/* line 136, sass/nicholls_core/_nicholls_defaults.scss */
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+/* line 141, sass/nicholls_core/_nicholls_defaults.scss */
+img.size-full {
+  max-width: 97.5%;
+  width: auto;
+  /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/* Responsive utilities */
+/* Google embed utilities - see: https://profromgo.com/blog/google-calendar-responsive/ */
+/* line 149, sass/nicholls_core/_nicholls_defaults.scss */
+.container-responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 158, sass/nicholls_core/_nicholls_defaults.scss */
+.container-responsive-iframe iframe,
+.container-responsive-iframe object,
+.container-responsive-iframe embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 168, sass/nicholls_core/_nicholls_defaults.scss */
+.container-responsive-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Defaults - END */
+/* START ---- OLD ---- */
+/* START Multi-purpose Elements */
+/* line 182, sass/nicholls_core/_nicholls_defaults.scss */
+.nav-previous {
+  float: left;
+}
+
+/* line 186, sass/nicholls_core/_nicholls_defaults.scss */
+.nav-next {
+  float: right;
+}
+
+/* END Multi-purpose Elements */
+/* START Widget Styles */
+/* line 194, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 199, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area ul, .widget-area ul li {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 206, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget {
+  margin: .8em 0;
+}
+
+/* line 210, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widgettitle {
+  padding: .4em 0;
+  margin: 0 0 .6em 0;
+  font-size: 120%;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 219, sass/nicholls_core/_nicholls_defaults.scss */
+.widget ul {
+  margin: 0 0 0 .5em;
+}
+
+/* line 224, sass/nicholls_core/_nicholls_defaults.scss */
+.widget li {
+  margin: .5em 0 .5em .5em;
+}
+
+/* line 228, sass/nicholls_core/_nicholls_defaults.scss */
+.widget_search {
+  padding: .2em;
+}
+
+/* line 232, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_pages, .widget-area .menu {
+  line-height: 1.2em;
+}
+
+/* line 236, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_pages ul {
+  margin-left: .5em;
+}
+
+/* line 240, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_nav_menu li,
+.widget-area .widget_pages li {
+  text-indent: -0.9em;
+  margin: .4em 0;
+}
+
+/* line 246, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_nav_menu li:before,
+.widget-area .widget_pages li:before {
+  content: "\00BB \0020";
+}
+
+/* line 251, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .menu li ul, .widget-area .widget_pages li ul {
+  display: none;
+}
+
+/* line 255, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_pages .current_page_item ul, .widget-area .widget_pages .current_page_ancestor ul, .widget-area .menu .current-menu-item ul, .widget-area .menu .current-menu-ancestor ul {
+  display: block;
+}
+
+/* line 259, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_pages a, .widget-area .widget_pages a:link, .widget-area .widget_pages a:active, .widget-area .widget_pages a:visited,
+.widget-area .menu a, .widget-area .menu a:link, .widget-area .menu a:active, .widget-area .menu a:visited {
+  text-decoration: none;
+}
+
+/* line 264, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .widget_pages a:hover, .widget-area .menu a:hover {
+  text-decoration: underline;
+}
+
+/* END Widget Styles */
+/* START WordPress Post Navigation Styles */
+/* line 272, sass/nicholls_core/_nicholls_defaults.scss */
+.navigation {
+  /*
+  This one is tricky since we have two floats in a div
+  requries both "width: x" and "overflow: auto" to clear
+  interior elements for box creation!
+  */
+  height: 1.6em;
+  clear: both;
+  padding: .2em;
+  margin: .3em;
+  font-size: 90%;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 297, sass/nicholls_core/_nicholls_defaults.scss */
+.navigation .nav-meta {
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* END WordPress Post Navigation Styles */
+/* START Post styles */
+/* line 306, sass/nicholls_core/_nicholls_defaults.scss */
+.post {
+  padding-top: .2em;
+}
+
+/* line 310, sass/nicholls_core/_nicholls_defaults.scss */
+.entry-title, .entry-title a, .entry-title a:visited {
+  text-decoration: none;
+}
+
+/* line 314, sass/nicholls_core/_nicholls_defaults.scss */
+.entry-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 318, sass/nicholls_core/_nicholls_defaults.scss */
+.entry-date {
+  font-size: 90%;
+  color: #9f9f9f;
+}
+
+/* line 323, sass/nicholls_core/_nicholls_defaults.scss */
+.entry-date abbr.published {
+  display: block;
+  cursor: default;
+  margin: .2em 0 .2em .2em;
+  padding: .2em;
+  color: #9f9f9f;
+}
+
+/* line 331, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area {
+  line-height: 1.4em;
+  clear: both;
+}
+
+/* line 336, sass/nicholls_core/_nicholls_defaults.scss */
+.content-area p {
+  line-height: 1.4em;
+}
+
+/* line 340, sass/nicholls_core/_nicholls_defaults.scss */
+.entry-meta {
+  clear: both;
+  padding: .4em;
+  font-size: 90%;
+  border-top: 1px solid #AFAFAF;
+  color: #222;
+  background: #efefef;
+  text-align: center;
+}
+
+/* END Post styles */
+/* START WordPress Image / Gallery Styles */
+/* line 354, sass/nicholls_core/_nicholls_defaults.scss */
+.gallery .gallery-item {
+  float: left;
+  width: 48%;
+}
+
+/* line 359, sass/nicholls_core/_nicholls_defaults.scss */
+.wp-caption {
+  margin: .4em;
+  padding: .2em;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* line 366, sass/nicholls_core/_nicholls_defaults.scss */
+.wp-caption .wp-caption-text {
+  margin: .2em 0 .1em 0;
+  padding: .2em .4em .1em .4em;
+  font-size: 76%;
+  text-align: center;
+  line-height: 1.2em;
+  border-top: 1px solid #efefef;
+}
+
+/* END WordPress Image / Gallery Styles */
+/* START Comment Styles */
+/* line 379, sass/nicholls_core/_nicholls_defaults.scss */
+.comments- {
+  margin: 0 .5em 0 .5em;
+  font-size: 96%;
+}
+
+/* line 384, sass/nicholls_core/_nicholls_defaults.scss */
+.comment-author {
+  padding: .4em;
+}
+
+/* line 388, sass/nicholls_core/_nicholls_defaults.scss */
+.comment-author .avatar {
+  float: left;
+  margin: 0 .5em .5em 0;
+}
+
+/* line 393, sass/nicholls_core/_nicholls_defaults.scss */
+.bypostauthor .comment-body .comment-author {
+  color: #fff;
+  background: #000;
+}
+
+/* line 398, sass/nicholls_core/_nicholls_defaults.scss */
+.bypostauthor-no .comment-body .comment-author {
+  color: #000;
+  background: transparent;
+}
+
+/* line 403, sass/nicholls_core/_nicholls_defaults.scss */
+.comment-meta {
+  clear: right;
+  margin: 0 0 .5em 0;
+  padding: .2em 0 .2em .5em;
+  font-size: 90%;
+  color: #222;
+}
+
+/* line 411, sass/nicholls_core/_nicholls_defaults.scss */
+.commentlist {
+  list-style-type: none;
+  margin: 0 .2em .5em .4em;
+}
+
+/* line 416, sass/nicholls_core/_nicholls_defaults.scss */
+.commentlist .comment, .commentlist .pingback {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: .2em 0 0 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* line 423, sass/nicholls_core/_nicholls_defaults.scss */
+.comments- label {
+  clear: both;
+  display: block;
+  margin: .4em 0;
+}
+
+/* END Comment Styles */
+/* Start Forms and Controls */
+/* line 433, sass/nicholls_core/_nicholls_defaults.scss */
+legend {
+  font-weight: 400;
+}
+
+/* line 437, sass/nicholls_core/_nicholls_defaults.scss */
+label {
+  display: block;
+}
+
+/* line 441, sass/nicholls_core/_nicholls_defaults.scss */
+input, textarea {
+  margin: .2em;
+  padding: .2em;
+  border: 1px solid #666;
+}
+
+/* line 447, sass/nicholls_core/_nicholls_defaults.scss */
+textarea {
+  clear: both;
+}
+
+/* line 451, sass/nicholls_core/_nicholls_defaults.scss */
+input:hover, textarea:hover {
+  border: 1px solid #333;
+}
+
+/* line 455, sass/nicholls_core/_nicholls_defaults.scss */
+input:focus, textarea:focus {
+  border: 1px solid #d1d1d1;
+}
+
+/* line 459, sass/nicholls_core/_nicholls_defaults.scss */
+.fnbx_form_row {
+  margin: .2em 0;
+  clear: both;
+}
+
+/* line 464, sass/nicholls_core/_nicholls_defaults.scss */
+.fnbx_form_row label {
+  width: 12em;
+  float: left;
+  padding: 2px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 472, sass/nicholls_core/_nicholls_defaults.scss */
+.fnbx_textarea label {
+  width: 100%;
+  float: none;
+}
+
+/* line 477, sass/nicholls_core/_nicholls_defaults.scss */
+.fnbx_form_row .fnbx_form_element {
+  padding: 2px;
+}
+
+/* line 481, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container {
+  position: relative;
+  width: auto;
+  padding: .2em;
+}
+
+/* line 487, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 492, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container .form-row {
+  width: auto;
+  clear: both;
+}
+
+/* line 497, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container .form-note {
+  padding: .2em;
+  clear: both;
+}
+
+/* line 502, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container .form-label, .form-container label {
+  display: block;
+  float: left;
+  padding: .6em .4em .2em .2em;
+  width: 39%;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 511, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container .form-input, .form-container .form-element {
+  display: block;
+  position: relative;
+  width: 59%;
+  margin: 0 0 0 15.4em;
+  padding: .4em 0 .4em 0;
+}
+
+/* START - Plugin Styles */
+/* END - Plugin Styles */
+/* START - Custom Site */
+/* START - Custom Layout Classes */
+/* Columns - column-float-width */
+/* line 532, sass/nicholls_core/_nicholls_defaults.scss */
+.column- {
+  padding: 0 .3em;
+  margin: 0 .3em;
+}
+
+/* line 537, sass/nicholls_core/_nicholls_defaults.scss */
+.width-50 {
+  width: 50%;
+}
+
+/* line 541, sass/nicholls_core/_nicholls_defaults.scss */
+.width-49 {
+  width: 49%;
+}
+
+/* line 545, sass/nicholls_core/_nicholls_defaults.scss */
+.width-48 {
+  width: 48%;
+}
+
+/* line 549, sass/nicholls_core/_nicholls_defaults.scss */
+.width-47 {
+  width: 47%;
+}
+
+/* line 553, sass/nicholls_core/_nicholls_defaults.scss */
+.width-46 {
+  width: 46%;
+}
+
+/* line 557, sass/nicholls_core/_nicholls_defaults.scss */
+.width-45 {
+  width: 45%;
+}
+
+/* line 561, sass/nicholls_core/_nicholls_defaults.scss */
+.width-right-default, .width-default {
+  width: 40.5%;
+}
+
+/* ??? */
+/* line 566, sass/nicholls_core/_nicholls_defaults.scss */
+.column-left-16 {
+  float: left;
+  width: 16em;
+  margin-right: 1em;
+}
+
+/* ??? */
+/* line 572, sass/nicholls_core/_nicholls_defaults.scss */
+.column-left-20 {
+  float: left;
+  width: 16em;
+  margin-right: 1em;
+}
+
+/* START: Borders */
+/* OLD Borders [REMOVE-ASAP] - border-location-color-size */
+/* line 582, sass/nicholls_core/_nicholls_defaults.scss */
+.border-right-cccccc-1 {
+  border-right: 1px solid #ccc;
+}
+
+/* line 586, sass/nicholls_core/_nicholls_defaults.scss */
+.border-left-cccccc-1 {
+  border-right: 1px solid #ccc;
+}
+
+/* Borders - width-location */
+/* line 593, sass/nicholls_core/_nicholls_defaults.scss */
+.border-1-top {
+  border-top: 1px solid;
+}
+
+/* line 597, sass/nicholls_core/_nicholls_defaults.scss */
+.border-1-right {
+  border-right: 1px solid;
+}
+
+/* line 601, sass/nicholls_core/_nicholls_defaults.scss */
+.border-1-bottom {
+  border-bottom: 1px solid;
+}
+
+/* line 605, sass/nicholls_core/_nicholls_defaults.scss */
+.border-1-left {
+  border-left: 1px solid;
+}
+
+/* line 609, sass/nicholls_core/_nicholls_defaults.scss */
+.border-1-all {
+  border: 1px solid;
+}
+
+/* line 593, sass/nicholls_core/_nicholls_defaults.scss */
+.border-2-top {
+  border-top: 2px solid;
+}
+
+/* line 597, sass/nicholls_core/_nicholls_defaults.scss */
+.border-2-right {
+  border-right: 2px solid;
+}
+
+/* line 601, sass/nicholls_core/_nicholls_defaults.scss */
+.border-2-bottom {
+  border-bottom: 2px solid;
+}
+
+/* line 605, sass/nicholls_core/_nicholls_defaults.scss */
+.border-2-left {
+  border-left: 2px solid;
+}
+
+/* line 609, sass/nicholls_core/_nicholls_defaults.scss */
+.border-2-all {
+  border: 2px solid;
+}
+
+/* Borders - color */
+/* Old Border Colors */
+/* line 617, sass/nicholls_core/_nicholls_defaults.scss */
+.border-red {
+  border-color: #cc3333;
+}
+
+/* New Border Colors - see _base.css for utility */
+/* START: Borders */
+/* Borders - width-location */
+/* line 186, sass/nicholls_core/_nicholls_core.scss */
+.border-1-top {
+  border-top: 1px solid;
+}
+
+/* line 190, sass/nicholls_core/_nicholls_core.scss */
+.border-1-right {
+  border-right: 1px solid;
+}
+
+/* line 194, sass/nicholls_core/_nicholls_core.scss */
+.border-1-bottom {
+  border-bottom: 1px solid;
+}
+
+/* line 198, sass/nicholls_core/_nicholls_core.scss */
+.border-1-left {
+  border-left: 1px solid;
+}
+
+/* line 202, sass/nicholls_core/_nicholls_core.scss */
+.border-1-all {
+  border: 1px solid;
+}
+
+/* line 186, sass/nicholls_core/_nicholls_core.scss */
+.border-2-top {
+  border-top: 2px solid;
+}
+
+/* line 190, sass/nicholls_core/_nicholls_core.scss */
+.border-2-right {
+  border-right: 2px solid;
+}
+
+/* line 194, sass/nicholls_core/_nicholls_core.scss */
+.border-2-bottom {
+  border-bottom: 2px solid;
+}
+
+/* line 198, sass/nicholls_core/_nicholls_core.scss */
+.border-2-left {
+  border-left: 2px solid;
+}
+
+/* line 202, sass/nicholls_core/_nicholls_core.scss */
+.border-2-all {
+  border: 2px solid;
+}
+
+/* Borders - color */
+/* Old Border Colors */
+/* line 210, sass/nicholls_core/_nicholls_core.scss */
+.border-red {
+  border-color: #cc3333;
+}
+
+/* END: Borders */
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-red {
+  border-color: #cc3333;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey {
+  border-color: #cccccc;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-white {
+  border-color: #fff;
+}
+
+/* line 218, sass/nicholls_core/_nicholls_core.scss */
+.border-color-black {
+  border-color: #000;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-1 {
+  border-color: #efefef;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-2 {
+  border-color: #eaeaea;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-light-3 {
+  border-color: #e2e2e2;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-1 {
+  border-color: #7f7f7f;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-2 {
+  border-color: #6d6d6d;
+}
+
+/* line 221, sass/nicholls_core/_nicholls_core.scss */
+.border-color-grey-dark-3 {
+  border-color: #666666;
+}
+
+/* END: Borders */
+/* END - Custom Layout Classes */
+/* START - Custom Classes */
+/* line 630, sass/nicholls_core/_nicholls_defaults.scss */
+.type-serif {
+  font-family: 'Crimson Text', 'Georgia','Times New Roman', times, serif;
+}
+
+/* line 634, sass/nicholls_core/_nicholls_defaults.scss */
+.type-normal {
+  font-size: 72%;
+}
+
+/* line 638, sass/nicholls_core/_nicholls_defaults.scss */
+.transparent-black-50 {
+  background: transparent url("library/images/backgrounds/bg-transparent-black-50.png");
+}
+
+/* line 642, sass/nicholls_core/_nicholls_defaults.scss */
+.color-black-transparent-50 {
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: black;
+  /* RGBa with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.5);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000)";
+}
+
+/* line 653, sass/nicholls_core/_nicholls_defaults.scss */
+.transparent-white-50 {
+  background: transparent url("library/images/backgrounds/bg-transparent-white-50.png");
+}
+
+/* END - Custom Classes */
+/* Search - START */
+/* line 661, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- {
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+  background-color: #fff;
+  margin: .2em;
+  float: right;
+  clear: right;
+}
+
+/* line 670, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 676, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 682, sass/nicholls_core/_nicholls_defaults.scss */
+.input-q- {
+  border: none;
+  margin: 0 0 0 .7em;
+  padding: .4em .2em .2em 0;
+}
+
+/* line 688, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- input {
+  font-size: 86%;
+  width: 7em;
+}
+
+/* line 693, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- input:hover, .form-gs-container- input:focus {
+  border: none;
+}
+
+/* line 697, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- form input[type=submit] {
+  -moz-border-radius: 10px / 10px;
+  -webkit-border-radius: 10px 10px;
+  border-radius: 10px / 10px;
+  background: url("library/images/icons/icon-white-search.png") no-repeat center center;
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
+  color: transparent;
+  font-size: 0;
+}
+
+/* line 709, sass/nicholls_core/_nicholls_defaults.scss */
+.form-gs-container- form input[type=submit]:hover {
+  background-color: #cc3333;
+}
+
+/* Search - END */
+/* START - Widgets */
+/* line 717, sass/nicholls_core/_nicholls_defaults.scss */
+.widget-area .nicholls-department-widget .widgettitle {
+  color: #cc3333;
+}
+
+/* line 721, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-department-widget .nicholls-department-info- {
+  border: 1px solid #e2e2e2;
+}
+
+/* line 725, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-department-widget .nicholls-department-info- div {
+  margin: 0 0 .5em 0;
+  padding: .4em;
+  background: #efefef;
+}
+
+/* END - Widgets */
+/* START - Special Usage */
+/* START - Tables */
+/* line 737, sass/nicholls_core/_nicholls_defaults.scss */
+.table-defaults td, .table-defaults th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 742, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-a {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 747, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-a td, .table-style-a th {
+  padding: .3em .5em;
+  border-right: 1px solid #000;
+  vertical-align: top;
+}
+
+/* line 753, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-a td:last-child, .table-style-a th:last-child {
+  border-right: none;
+}
+
+/* line 757, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-a th {
+  font-size: 105%;
+  text-align: left;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 764, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-b {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 769, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-b td, .table-style-b th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 774, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-b td, .table-style-b th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 779, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-b tr td {
+  border-top: 1px solid #000;
+}
+
+/* line 783, sass/nicholls_core/_nicholls_defaults.scss */
+.table-style-b th {
+  font-size: 105%;
+  text-align: left;
+}
+
+/* line 788, sass/nicholls_core/_nicholls_defaults.scss */
+.table-header-red th {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 793, sass/nicholls_core/_nicholls_defaults.scss */
+.table-cells-even-down-grey tr:nth-child(even) td {
+  background-color: #e2e2e2;
+}
+
+/* line 797, sass/nicholls_core/_nicholls_defaults.scss */
+.table-cells-even-across-grey tr td:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* line 801, sass/nicholls_core/_nicholls_defaults.scss */
+.table-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 806, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-vertical {
+  border-collapse: collapse;
+}
+
+/* line 810, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-vertical td, .table-lines-vertical th {
+  padding: .3em .5em;
+  border-right: 1px solid #000;
+  vertical-align: top;
+}
+
+/* line 816, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-vertical td:last-child, .table-lines-vertical th:last-child {
+  border-right: none;
+}
+
+/* line 820, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-horizontal {
+  border-collapse: collapse;
+}
+
+/* line 824, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-horizontal td, .table-lines-horizontal th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 829, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-horizontal td, .table-lines-horizontal th {
+  padding: .3em .5em;
+  vertical-align: top;
+}
+
+/* line 834, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-horizontal tr td {
+  border-top: 1px solid #000;
+}
+
+/* line 838, sass/nicholls_core/_nicholls_defaults.scss */
+.table-lines-horizontal th {
+  font-size: 105%;
+  text-align: left;
+}
+
+/* line 843, sass/nicholls_core/_nicholls_defaults.scss */
+.table-cells-even-down-grey tr:nth-child(even) td {
+  background-color: #e2e2e2;
+}
+
+/* line 847, sass/nicholls_core/_nicholls_defaults.scss */
+.table-cells-even-across-grey tr td:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* line 851, sass/nicholls_core/_nicholls_defaults.scss */
+.table-header-bg-red th {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 856, sass/nicholls_core/_nicholls_defaults.scss */
+.table-header-bg-dark-grey th {
+  font-size: 105%;
+  text-align: left;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 863, sass/nicholls_core/_nicholls_defaults.scss */
+.table-caption-bg-red caption {
+  background: #cc3333;
+  color: #fff;
+}
+
+/* line 868, sass/nicholls_core/_nicholls_defaults.scss */
+.table-caption-bg-dark-grey caption {
+  background: #666;
+  color: #fff;
+}
+
+/* line 873, sass/nicholls_core/_nicholls_defaults.scss */
+.table-border-black {
+  border: 1px solid #000;
+}
+
+/* END - Tables */
+/* START - Button Styles */
+/* line 881, sass/nicholls_core/_nicholls_defaults.scss */
+.button-default {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+/* line 898, sass/nicholls_core/_nicholls_defaults.scss */
+.button-default:hover {
+  text-decoration: none;
+}
+
+/* line 902, sass/nicholls_core/_nicholls_defaults.scss */
+.button-default:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 907, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-red {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #cc3333;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, top, bottom, left, right);
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(top, #cc3333, #841A1A);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(top, #cc3333, #841A1A);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(top, #cc3333, #841A1A);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(to bottom, #cc3333, #841a1a);
+  text-decoration: none;
+}
+
+/* line 936, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-red {
+  color: #fff;
+}
+
+/* line 940, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-red:link {
+  color: #fff;
+}
+
+/* line 944, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-red:hover {
+  text-decoration: underline;
+}
+
+/* line 948, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-shadow-large {
+  -webkit-box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* line 954, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-shadow-large:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 960, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-space-block-2 {
+  margin: 2em;
+}
+
+/* line 964, sass/nicholls_core/_nicholls_defaults.scss */
+a.button-width-auto {
+  white-space: nowrap;
+}
+
+/* END - Button Styles */
+/* START: List Posts */
+/* line 973, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-list {
+  list-style-type: none;
+}
+
+/* line 977, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-item {
+  margin-left: .2em;
+}
+
+/* line 981, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-item-title {
+  font-weight: bold;
+}
+
+/* line 985, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-item-date {
+  font-size: 90%;
+  color: #7f7f7f;
+}
+
+/* line 990, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-nicholls-news .thumbnail-container {
+  float: left;
+  padding: .2em;
+  margin: .2em;
+  border: 2px solid #ccc;
+}
+
+/* line 997, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-nicholls-news .list-posts-item-content {
+  clear: right;
+}
+
+/* line 1001, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-nicholls-news .list-posts-item-title {
+  clear: both;
+}
+
+/* line 1005, sass/nicholls_core/_nicholls_defaults.scss */
+.list-posts-nicholls-list .list-posts-list {
+  list-style-type: disc;
+}
+
+/* END: List Posts */
+/* START: Plugin - Nicholls Faculty Staff */
+/* line 1013, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments,
+.nicholls-org-types {
+  clear: both;
+  padding-bottom: .4em;
+  margin-bottom: .4em;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 1021, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments .nicholls-fs-department-links,
+.nicholls-fs-departments .nicholls-fs-department-link,
+.nicholls-org-types .nicholls-org-type-links,
+.nicholls-org-types .nicholls-org-type-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1030, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments .nicholls-fs-department-link,
+.nicholls-org-types .nicholls-org-type-link {
+  float: left;
+}
+
+/* line 1035, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:before,
+.nicholls-org-types .nicholls-org-type-link:before {
+  content: '/';
+  display: inline-block;
+  float: left;
+  margin: 0 1em;
+}
+
+/* line 1043, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:first-child:before,
+.nicholls-org-types .nicholls-org-type-link:first-child:before {
+  content: '';
+  margin: 0;
+}
+
+/* line 1054, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-departments .nicholls-fs-department-link:last-child:after,
+.nicholls-org-types .nicholls-org-type-link:last-child:after {
+  clear: right;
+}
+
+/* line 1059, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-photo {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 1064, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-courses {
+  clear: both;
+}
+
+/* line 1068, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-courses h3 {
+  text-align: center;
+}
+
+/* line 1072, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-form-message-top- {
+  padding-bottom: .4em;
+  border-bottom: 1px solid #cc3333;
+}
+
+/* line 1077, sass/nicholls_core/_nicholls_defaults.scss */
+.nicholls-fs-form-message- textarea {
+  width: 100%;
+  height: 6em;
+}
+
+/* Layout - Phone Screen Portrait breakpoint is  */
+@media (min-width: 0em) and (max-width: 28em) {
+  /* line 1084, sass/nicholls_core/_nicholls_defaults.scss */
+  .nicholls-fs-photo {
+    float: none;
+    margin-right: 0;
+  }
+}
+/* END: Nicholls Faculty Staff plugin */
+/* START: Plugin - wp-socializer */
+/* line 1094, sass/nicholls_core/_nicholls_defaults.scss */
+.wp-socializer ul, .wp-socializer li {
+  list-style: none;
+}
+
+/* line 1098, sass/nicholls_core/_nicholls_defaults.scss */
+.wp-socializer li {
+  float: left;
+  padding: .2em;
+  margin: .2em;
+}
+
+/* END: Plugin - wp-socializer */
+/* START - Plugin Contact Form 7 - Form Controls */
+/* line 1107, sass/nicholls_core/_nicholls_defaults.scss */
+div.wpcf7 {
+  position: relative;
+  width: auto;
+  padding: .2em;
+}
+
+/* line 1113, sass/nicholls_core/_nicholls_defaults.scss */
+.form-container .wpcf7-list-item {
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1120, sass/nicholls_core/_nicholls_defaults.scss */
+.wpcf7-checkbox input {
+  display: block;
+  float: left;
+}
+
+/* line 1125, sass/nicholls_core/_nicholls_defaults.scss */
+.wpcf7-checkbox .wpcf7-list-item-label {
+  display: block;
+  margin: .2em 0 .2em .2em;
+  float: left;
+  width: 18em;
+}
+
+/* line 1132, sass/nicholls_core/_nicholls_defaults.scss */
+.form-input .your-message textarea {
+  width: 20em;
+}
+
+/* END - Plugin Contact Form 7 - Form Controls */
+/* START Hidden Elements */
+/* line 1139, sass/nicholls_core/_nicholls_defaults.scss */
+.hide, .accessibility-hide, .accessibility {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* END Hidden Elements */
+/* START Conditional Elements */
+/* Widgets Inactive (Primary & Secondary) - Container goes full width */
+/* line 1149, sass/nicholls_core/_nicholls_defaults.scss */
+.widgets-primary-active .content-area {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #000;
+}
+
+/* line 1155, sass/nicholls_core/_nicholls_defaults.scss */
+body.widgets-primary-inactive.widgets-secondary-inactive .content-area {
+  float: none;
+  width: auto;
+  border-left: none;
+}
+
+/* END Conditional Elements */
+/* START Compatiblity Elements */
+/* END Compatiblity Elements */
+/* START Debug */
+/* line 1168, sass/nicholls_core/_nicholls_defaults.scss */
+.debug-test {
+  color: black;
+}
+
+/* END Debug */
