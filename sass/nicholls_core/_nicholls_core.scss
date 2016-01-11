@@ -514,13 +514,13 @@ img.size-full {
 	margin: .8em 0;
 }
 
-.widget-area .widgettitle {
+.widget-area .widget-title {
 	padding: .4em 0;
 	margin: 0 0 .6em 0;
 	font-size: 120%;
 	font-weight: bold;
-	border-top: 1px solid $n-color-elements-widget-borders-primary;
-	border-bottom: 1px solid $n-color-elements-widget-borders-primary;
+	background-color: $n-color-red;
+	color: $n-color-white;
 }
 
 .widget ul {
@@ -546,13 +546,10 @@ img.size-full {
 
 .widget-area .widget_nav_menu li,
 .widget-area .widget_pages li {
-	text-indent: -0.9em;
 	margin: .4em 0;
-}
-
-.widget-area .widget_nav_menu li:before,
-.widget-area .widget_pages li:before {
-	content: "\00BB \0020";
+	border-bottom-color: #ccc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 
 .widget-area .menu li ul, .widget-area .widget_pages li ul {
@@ -961,10 +958,6 @@ input:focus, textarea:focus {
 /* Search - END */
 
 /* START - Widgets */
-
-.widget-area .nicholls-department-widget .widgettitle {
-	color: $n-color-red;
-}
 
 .nicholls-department-widget .nicholls-department-info- {
 	border: 1px solid $n-color-grey-light-3;
@@ -1391,11 +1384,6 @@ div.wpcf7 {
 /* START Conditional Elements */
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
-.widgets-primary-active .content-area {
-	 border-left-width: 1px;
-	 border-left-style: solid;
-	 border-left-color: $n-color-elements-widget-borders-primary;
-}
 
 body.widgets-primary-inactive.widgets-secondary-inactive .content-area {
 	float: none;
@@ -1440,6 +1428,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
 	text-align: center;
 	border-bottom: 1px solid #ccc;
+	height: 16em;
 }
 
 .nicholls-footer-wrapper- footer {
@@ -2147,8 +2136,52 @@ footer .nicholls-social-media ul {
 	float: left;
 }
 
+/* START - Nicholls WordPress Styles */
 
+.site-title {
 
+	text-align: left;
+	font-size: 120%;
+	font-weight: 900;
+	margin: 0;
+	padding: .6em;
+
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.site-title a,
+.site-title a:active,
+.site-title a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	text-decoration: underline;
+}
+
+.site-description {
+	margin: 0;
+	padding: .6em;
+	text-align: left;
+	color: #fff;
+
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
 /* Debug */
 
 /* Compatibility: IE8, etc */
