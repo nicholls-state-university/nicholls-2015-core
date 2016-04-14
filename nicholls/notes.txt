@@ -6,6 +6,11 @@ Standard Slider should be a 3:2 image standard converted width:
 Infographics width tests
 407px - for 3 panels higher resoulution.
 
+Department Sites - Header Image
+1224 x 304
+
+
+
 Notes to use Alpha for transparent backgrounds.
 
 .alpha60 {
