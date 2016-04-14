@@ -1352,7 +1352,7 @@ img.size-full {
 .entry-date {
 	font-size: 90%;
 	color: #9f9f9f;
-	
+
 }
 
 .entry-date abbr.published {
@@ -1366,10 +1366,12 @@ img.size-full {
 .content-area {
     line-height: 1.4em;
     clear: both;
+		padding: 0 .6em 0 .6em;
 }
 
-.content-area .entry-content {
-	padding: 0 .6em 0 0;
+/* Remove padding for homepage */
+.page-template-template-homepage .content-area {
+		padding: 0;
 }
 
 .content-area p {
