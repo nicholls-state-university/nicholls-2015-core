@@ -138,7 +138,16 @@ add_action( 'widgets_init', 'nicholls_core_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nicholls_core_scripts() {
-	wp_enqueue_style( 'nicholls_core-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_style( 'magnific-popup-css', get_template_directory_uri() . '/nicholls/css/magnific-popup.css' );
+	wp_enqueue_script( 'magnific-popup-js', get_template_directory_uri() . '/nicholls/js/jquery.magnific-popup.min.js', array(), '20120206', true );
+
+	wp_enqueue_style( 'slicknav-css', get_template_directory_uri() . '/nicholls/css/slicknav.min.css' );
+	wp_enqueue_script( 'slicknav-js', get_template_directory_uri() . '/nicholls/js/jquery.slicknav.min.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'nicholls_core-js', get_template_directory_uri() . '/nicholls/js/nicholls-core.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'nicholls_core-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -147,6 +156,10 @@ function nicholls_core_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Nicholls styles last in the cascade do overrides happen
+	wp_enqueue_style( 'nicholls_core-style', get_stylesheet_uri() );
+
 }
 add_action( 'wp_enqueue_scripts', 'nicholls_core_scripts' );
 
@@ -209,7 +222,7 @@ add_filter( 'body_class', 'nicholls_core_body_class_filter' );
 * @return array
 */
 function nicholls_core_body_class_filter( $classes ) {
-	global $wp_query, $current_user;
+	global $wp_query, $current_user, $jacket_core;
 
 	// It's surely WordPress, right?
 	$classes[] = 'wordpress';
@@ -253,7 +266,7 @@ function nicholls_core_body_class_filter( $classes ) {
 
 	$widget_groups = wp_get_sidebars_widgets();
 	foreach ( $widget_groups as $widget_group => $widget_elements ) {
-		if ( $widget_group == 'wp_inactive_widgets' ) continue;
+		if ( !in_array( $widget_group, $jacket_core->widget_areas ) ) continue;
 		$classes[] =  'widgets-' . sanitize_title_with_dashes( $widget_group ) . ( empty( $widget_elements ) ? '-inactive' : '-active' );
 	}
 
@@ -274,7 +287,7 @@ function nicholls_core_fonts_google() {
 
 	//OLD echo "<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Alegreya:400italic,700italic,900italic,400,700,900' rel='stylesheet' type='text/css'>";
 
-	echo "<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css' />";
+	echo "<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>";
 	/*
 	font-family: 'Noto Serif', serif;
 	font-family: 'Lato', sans-serif;
@@ -289,8 +302,7 @@ add_action( 'nicholls-page-start', 'nicholls_ie_support_classes' );
 function nicholls_ie_support_classes() {
 ?><!--[if lt IE 7]>      <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><?php
+<!--[if IE 8]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9"> <![endif]--><?php
 }
 
 
@@ -357,84 +369,59 @@ function nicholls_custom_headers_setup() {
 
 	register_default_headers( array (
 			'nicholls_default_header_a' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-beauregard-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-beauregard-1-thumbnail.jpg',
-				'description' => __( 'Beauregard Hall 1', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-1.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-1-thumbnail.jpg',
+				'description' => __( 'Nicholls Fountain', 'nicholls_lang' )
 			),
 			'nicholls_default_header_c' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-2.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-2-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 2', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-2.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-2-thumbnail.jpg',
+				'description' => __( 'Polk Hall', 'nicholls_lang' )
 			),
 			'nicholls_default_header_d' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-3.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-3-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 3', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-3.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-3-thumbnail.jpg',
+				'description' => __( 'Elkins Hall', 'nicholls_lang' )
 			),
 			'nicholls_default_header_e' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-4.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-4-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 4', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-4.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-4-thumbnail.jpg',
+				'description' => __( 'Nicholls Softball', 'nicholls_lang' )
 			),
 			'nicholls_default_header_f' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-5.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-5-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 5', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-5.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-5-thumbnail.jpg',
+				'description' => __( 'Ellender Memorial Library', 'nicholls_lang' )
 			),
 			'nicholls_default_header_g' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-6.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-6-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 6', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-6.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-6-thumbnail.jpg',
+				'description' => __( 'Nicholls Housing', 'nicholls_lang' )
 			),
 			'nicholls_default_header_h' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-7.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-7-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 7', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-7.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-7-thumbnail.jpg',
+				'description' => __( 'Beauregard Hall', 'nicholls_lang' )
 			),
 			'nicholls_default_header_i' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-8.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-8-thumbnail.jpg',
-				'description' => __( 'Elkins Hall 8', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-8.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-8-thumbnail.jpg',
+				'description' => __( 'Ellender Memorial Library', 'nicholls_lang' )
 			),
 			'nicholls_default_header_j' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ellender-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ellender-1-thumbnail.jpg',
-				'description' => __( 'Ellender Library 1', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-9.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-9-thumbnail.jpg',
+				'description' => __( 'John L. Guidry Stadium', 'nicholls_lang' )
 			),
 			'nicholls_default_header_k' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-lamps-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-lamps-1-thumbnail.jpg',
-				'description' => __( 'Lights', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-10.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-10-thumbnail.jpg',
+				'description' => __( 'Elkins Hall', 'nicholls_lang' )
 			),
 			'nicholls_default_header_l' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-quad-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-quad-1-thumbnail.jpg',
-				'description' => __( 'Quad 1', 'fnbx_lang' )
-			),
-			'nicholls_default_header_m' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ceiling-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-ceiling-1-thumbnail.jpg',
-				'description' => __( 'Student 1', 'fnbx_lang' )
-			),
-			'nicholls_default_header_n' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-white-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-white-1-thumbnail.jpg',
-				'description' => __( 'White Hall 1', 'fnbx_lang' )
-			),
-			'nicholls_default_header_o' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-azaleas-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-elkins-azaleas-1-thumbnail.jpg',
-				'description' => __( 'White Hall 1', 'fnbx_lang' )
-			),
-			'nicholls_default_header_n' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-fountain-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-fountain-1-thumbnail.jpg',
-				'description' => __( 'White Hall 1', 'fnbx_lang' )
-			),
-			'nicholls_default_header_n' => array (
-				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-wall-1.jpg',
-				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/h-wall-1-thumbnail.jpg',
-				'description' => __( 'White Hall 1', 'fnbx_lang' )
+				'url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-11.jpg',
+				'thumbnail_url' => NICHOLLS_CORE_URL . '/nicholls/images/headers/header-11-thumbnail.jpg',
+				'description' => __( 'Eternal Flame', 'nicholls_lang' )
 			)
 	) );
 
@@ -450,6 +437,14 @@ function jacket_core_custom_header_style() {
    $css_txt = '';
 
    $css_image = get_header_image();
+
+
+   // ISSUE:: Random images don't work!
+   if ( empty($css_image) ) {
+	   $css_image = get_random_header_image();
+   }
+
+
    if ( empty( $css_image ) ) $css_image = $jacket_core->custom_header['header_image'];
 
    $h_height = apply_filters( 'jacket_core_custom_header_css_background_height',  get_custom_header()->height );
