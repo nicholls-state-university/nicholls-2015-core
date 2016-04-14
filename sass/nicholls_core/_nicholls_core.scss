@@ -227,21 +227,17 @@ $n-colors-grey-values: (
 
 @mixin nicholls-icon-footer-social( $network ) {
 
-	.nicholls-social-media-footer-#{$network} {
+	.footer-icon-#{$network} {
 		width: auto;
 		text-align: center;
-		margin: 0 1.2em 0 0;
 		padding: 0;
 		float: left;
 	}
 
 
-	.nicholls-social-media-footer-#{$network} a {
+	.footer-icon-#{$network} a {
 		display: block;
 
-		font-size: 1em;
-
-		font-size: 1rem;
 		text-indent: -9999px;
 		width: 2em;
 		height: 2em;
@@ -260,7 +256,7 @@ $n-colors-grey-values: (
 
 	}
 
-	.lt-ie9 .nicholls-social-media-footer-#{$network} a {
+	.lt-ie9 .footer-icon-#{$network} a {
 		background: url( 'nicholls/images/icons/social-media/#{$network}-ie8.png' ) no-repeat center 20% scroll;
 	}
 
@@ -285,6 +281,7 @@ $n-colors-grey-values: (
 	}
 }
 
+
 /* Small Inline Icon - Blank */
 
 .icon-inline-small-blank:before {
@@ -296,12 +293,739 @@ $n-colors-grey-values: (
 	margin: 0 .5em 0 0;
 }
 
+/* Defaults - START */
+
+body {
+	font-family: 'Open Sans', Arial, sans serif;
+	font-size: $body-font-size;
+	color: $n-color-black;
+	padding: 0;
+	margin: 0;
+	width: $body-width;
+}
+
+/* Interactive HTML Styles */
+
+a, a:link {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: $link-color-visited;
+}
+
+a:hover {
+	color: $link-color-hover;
+	text-decoration: none;
+}
+
+a.nofx {
+	background: none;
+	border: none;
+}
+
+a.nofx:hover {
+	background: none;
+	border: none;
+}
+
+.link-color-white, .link-color-white:link, .link-color-white:hover, .link-color-white:active, .link-color-white:visited {
+	color: #fff;
+}
+
+/* Defaults - END */
+
+/* Compatibility - IE and other compatibility issues */
+
+
+
+
+/* Header ,Branding, & Navigation */
+
+/*
+We will need to move breakpoint modifications into other breakpoint blocks as needed.
+*/
+
+.nicholls-header-wrapper- {
+	width: 100%;
+	background-color: #000;
+}
+
+.nicholls-footer-wrapper- {
+	width: 100%;
+	background-color: #000;
+	color: #ccc;
+}
+
+/* Logo - sword */
+
+.nicholls-site-branding {
+	width: 10em;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 102;
+}
+
+.nicholls-site-title {
+	width: auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nicholls-site-title a {
+	display: block;
+
+	font-size: 6em;
+	font-size: 6rem;
+
+	text-indent: -9999px;
+	width: 2.1em;
+	margin: -.4em auto 0 auto;
+	padding: 0;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+
+	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.png' );
+	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.svg' ),
+	linear-gradient(transparent, transparent);
+
+}
+
+/* Logo - wordmark */
+
+.nicholls-logo-wordmark {
+	width: auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nicholls-logo-wordmark a {
+	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.png' );
+	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.svg' ),
+	linear-gradient(transparent, transparent);
+}
+
+.nicholls-logo-wordmark a {
+	display: block;
+	font-size: 6rem;
+	text-indent: -9999px;
+	width: 2em;
+	line-height: .7em;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+/* Navigation */
+
+#nicholls-ui-mobile {
+	display: none;
+}
+
+#nicholls-ui-mobile .slicknav_btn {
+	float: left;
+	background-color: #000;
+	border-radius: 0;
+	margin: 0;
+}
+
+#nicholls-ui-mobile .slicknav_nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* secondary */
+
+.nicholls-secondary-navigation- {
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	float: none;
+	z-index: 100;
+	text-align: left;
+}
+
+.nicholls-secondary-navigation- .menu {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+	float: left;
+}
+
+.nicholls-secondary-navigation- .menu-search {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+	float: right;
+	border-bottom-right-radius: 1.5em;
+	border-right: 1px solid #999;
+	border-bottom-left-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 2em;
+}
+
+.nicholls-secondary-navigation- .menu-search a,
+.nicholls-secondary-navigation- .menu-search a:link,
+.nicholls-secondary-navigation- .menu-search a:hover,
+.nicholls-secondary-navigation- .menu-search a:active,
+.nicholls-secondary-navigation- .menu-search a:visited {
+	border: none;
+	text-decoration: none;
+	font-size: 0 !important;
+	display: block;
+}
+
+/* Search Box */
+
+.mfp-close-btn-in .mfp-close {
+	color: #ccc !important;
+}
+
+.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
+	 list-style-type: none;
+	 list-style-position: inside;
+	 list-style-image: none;
+	 display: block; /* IE6/7 haslayout trip-switch */
+ }
+
+.nicholls-secondary-navigation- ul {
+	display: inline-block; /* IE6/7 haslayout trip-switch */
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-secondary-navigation- ul li {
+	display: inline;
+	padding: .2em;
+
+	border-bottom: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- ul li:first-child {
+	border-bottom-left-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- ul li:last-child {
+	border-bottom-right-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- ul li a {
+	display: inline-block;
+	padding: 0 1em .4em 1em;
+	font-size: 80%;
+	font-weight: 600;
+}
+
+/* primary */
+
+.nicholls-primary-navigation- {
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	float: none;
+	clear: both;
+	z-index: 100;
+	text-align: center;
+	background-color: #cc3333;
+	line-height: 1em;
+}
+
+.nicholls-primary-navigation- .menu {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+
+	@include container(31);
+
+}
+
+.nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+
+	margin: 0;
+	padding: 0;
+
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	width: 100%;
+	display: table;
+
+	/* display: block; */ /* IE6/7 haslayout trip-switch */
+ }
+
+.nicholls-primary-navigation- ul {
+	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */
+}
+
+.nicholls-primary-navigation- ul li {
+	display: inline-block;
+	padding: .2em;
+	margin: 0;
+
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	display: table-cell;
+	width: auto;
+	text-align: center;
+
+}
+
+.nicholls-primary-navigation- ul ul {
+	box-shadow: none;
+	float: left;
+	left: -999em;
+	position: absolute;
+	top: 1.5em;
+	z-index: 99999;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-primary-navigation- ul ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-primary-navigation- ul ul a {
+	width: auto;
+}
+
+.nicholls-primary-navigation- .menu-item a {
+	padding: 0 .4em; /* variable width */
+	font-weight: 700;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/* primary & secondary */
+
+.nicholls-primary-navigation- ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-primary-navigation- ul li a:link,
+.nicholls-primary-navigation- ul li a:active,
+.nicholls-primary-navigation- ul li a:visited {
+	color: #fff;
+}
+
+.nicholls-primary-navigation- ul li a:hover {
+	color: #fff;
+}
+
+.nicholls-secondary-navigation- ul li a,
+.nicholls-secondary-navigation- ul li a:link,
+.nicholls-secondary-navigation- ul li a:active,
+.nicholls-secondary-navigation- ul li a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+.nicholls-secondary-navigation- ul li a:hover {
+	color: #999;
+}
+
+/* Call to Action Buttons */
+
+.nicholls-cta-secondary {
+	display: block;
+	float: left;
+	margin-top: 1em;
+	clear: left;
+}
+
+.nicholls-cta-primary {
+	display: block;
+	float: right;
+	margin-top: 2em;
+	clear: right;
+}
+
+.nicholls-cta-secondary a {
+	display: block;
+	background-color: #999;
+	clear: both;
+	border-bottom-right-radius: 1.5em;
+}
+
+.nicholls-cta-primary a {
+	display: block;
+	background-color: #cc3333;
+	margin-top: -2em;
+	border-bottom-left-radius: 1.5em;
+}
+
+.nicholls-cta .button {
+	width: 16em;
+	padding: .2em 0;
+	margin: 0;
+	font-weight: 900;
+	font-size: 110%;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.nicholls-cta .nicholls-cta-request-info {
+	margin-bottom: .6em;
+}
+
+.nicholls-cta a,
+.nicholls-cta a:link,
+.nicholls-cta a:active,
+.nicholls-cta a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-cta a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Nicholls Go To Navigation */
+
+.nicholls-nav-go-wrapper- {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-nav-go- {
+	display: none;
+	background-color: #cc3333;
+	padding: 0 0 .3em;
+}
+
+.nicholls-nav-go-,
+.nicholls-nav-go- a,
+.nicholls-nav-go- a:link,
+.nicholls-nav-go- a:active,
+.nicholls-nav-go- a:visited {
+	color: #fff !important;
+}
+
+.nicholls-nav-go- span {
+		font-size: 90%;
+		font-weight: bold;
+		margin: 0 0 0 .4em;
+}
+
+.nicholls-nav-go-top-wrapper- {
+	background-color: #cc3333;
+}
+
+/* Footer */
+
+.nicholls-site-footer- a,
+.nicholls-site-footer- a:link,
+.nicholls-site-footer- a:active,
+.nicholls-site-footer- a:visited {
+	color: #cc3333;
+	text-decoration: underline;
+}
+
+.nicholls-site-footer- a:hover {
+	text-decoration: none;
+}
+
+.nicholls-footer-column {
+	width: 30%;
+	float: left;
+	font-size: 90%;
+	line-height: 1.2em;
+	padding-top: 1em;
+}
+
+.nicholls-footer-column div,
+.nicholls-footer-column ul,
+.nicholls-footer-column ol {
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-footer-col-info {
+  width: 38%;
+}
+
+.nicholls-footer-col-social-media {
+	width: 18%;
+}
+
+.nicholls-footer-col-nav {
+	width: 34%;
+}
+
+.nicholls-info-footer {
+	white-space: nowrap;
+}
+
+.nicholls-info-copyright {
+	clear: both;
+	font-size: 82%;
+	text-align: center;
+	margin: .2em 0;
+}
+
+/* Louisiana map */
+
+.nicholls-la-state-map {
+	width: auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 9.6em;
+	height: 10em;
+}
+
+.nicholls-la-state-map a {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url( 'nicholls/images/louisiana-map-thibodaux.png' );
+	background-image: url( 'nicholls/images/louisiana-map-thibodaux-new.svg' ),
+	linear-gradient(transparent, transparent);
+
+	display: block;
+	font-size: 4rem;
+	text-indent: -9999px;
+	width: 2em;
+	height: 2em;
+
+	margin: 0 auto;
+
+	/* IE8 background-size polyfil */
+	-ms-behavior: url('src/ie/background-size-polyfill-gh-pages/backgroundsize.min.htc');
+}
+
+/* Footer - Information */
+
+.nicholls-phone-number {
+	display: block;
+	float: left;
+}
+
+.nicholls-address {
+	display: block;
+	float: left;
+	white-space: nowrap;
+	font-size: 82%;
+}
+
+/* Footer Info Navigation */
+
+.nicholls-footer-info-navigation {
+	display: block;
+	float: left;
+}
+
+.nicholls-footer-info-navigation ul {
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+
+	margin: 0;
+	padding: 0;
+
+	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
+	width: 100%;
+	display: block;
+
+	/* display: block; */ /* IE6/7 haslayout trip-switch */
+ }
+
+.nicholls-footer-info-navigation ul {
+	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */
+}
+
+.nicholls-footer-info-navigation ul li {
+	display: block;
+	float: left;
+	padding: 0 .2em;
+	margin: 0;
+
+	width: auto;
+	text-align: center;
+
+}
+
+.nicholls-footer-info-navigation ul li:after {
+	content: "|";
+	margin-left: .2em;
+}
+
+.nicholls-footer-info-navigation ul li:last-child:after {
+	content: "";
+	margin-left: 0;
+}
+
+.nicholls-footer-info-navigation ul li a,
+.nicholls-footer-info-navigation ul li a:link,
+.nicholls-footer-info-navigation ul li a:active,
+.nicholls-footer-info-navigation ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-footer-info-navigation ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Footer Links Menu */
+
+.nicholls-footer-menu ul {
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+	display: block; /* IE6/7 haslayout trip-switch */
+}
+
+.nicholls-footer-menu ul li {
+	width: auto;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Footer - Social Media Icons */
+
+footer .nicholls-social-media ul {
+display: table;
+	 list-style-type: none;
+	 list-style-position: inside;
+	 list-style-image: none;
+}
+
+.nicholls-social-media .footer-icon a {
+			font-size: .8em;
+}
+
+.nicholls-social-media .footer-icon {
+			margin-right: .3em;
+			margin-left: .3em;
+}
+
+@include nicholls-icon-footer-social( 'facebook' );
+@include nicholls-icon-footer-social( 'instagram' );
+@include nicholls-icon-footer-social( 'twitter' );
+@include nicholls-icon-footer-social( 'linkedin' );
+@include nicholls-icon-footer-social( 'youtube' );
+
+.nicholls-footer-menu {
+	font-size: 90%;;
+}
+
+.nicholls-footer-menu ul li a,
+.nicholls-footer-menu ul li a:link,
+.nicholls-footer-menu ul li a:active,
+.nicholls-footer-menu ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-footer-menu ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.nicholls-footer-menu ul, .nicholls-footer-menu-column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nicholls-footer-menu-column {
+	width: 49%;
+	float: left;
+}
+
+/* START - Nicholls WordPress Styles */
+
+.site-title {
+	text-align: left;
+}
+
+.site-title span {
+
+	text-align: left;
+	font-size: 120%;
+	font-weight: 600;
+	margin: 0;
+	padding: .4em;
+
+	clear: both;
+	display: inline-block;
+
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.site-title span a,
+.site-title span a:active,
+.site-title span a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.site-title span a:hover {
+	text-decoration: underline;
+}
+
+.site-description {
+	text-align: left;
+}
+
+.site-description span {
+	margin: 0;
+	padding: .4em .4em .4em 1em;
+	text-align: left;
+	color: #fff;
+
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+/* Debug */
+
+/* Compatibility: IE8, etc */
+
+.lt-ie9 .nicholls-site-title a {
+	background: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text-ie8.png' ) no-repeat center 20% scroll;
+}
+
 @include nicholls-icon-inline-small( 'blank' );
 
 @include nicholls-icon-inline-small( 'mail' );
 @include nicholls-icon-inline-small( 'document' );
 @include nicholls-icon-inline-small( 'question' );
 @include nicholls-icon-inline-small( 'ada' );
+@include nicholls-icon-inline-small( 'emergency' );
+@include nicholls-icon-inline-small( 'jobs' );
 
 /* END - Utilities */
 
@@ -310,10 +1034,10 @@ $n-colors-grey-values: (
 /* Heading Styles */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.1em;
-    color: #1f1f1f;
-    margin: .4em 0;
+	color: #1f1f1f;
+	margin: .4em 0;
 }
 
 h1 {
@@ -403,6 +1127,16 @@ input.text {
 .clear-group { display: block; }
 /* close commented backslash hack */
 
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* IE < 8 */
+
 /* Alignment */
 
 .left, .alignleft {
@@ -437,7 +1171,7 @@ input.text {
 .content-area img,
 .comment-content img,
 .widget img {
-	max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
 
 img[class*="align"],
@@ -510,12 +1244,8 @@ img.size-full {
 	padding: 0;
 }
 
-.widget-area .widget {
-	margin: .8em 0;
-}
-
 .widget-area .widget-title {
-	padding: .4em 0;
+	padding: .4em;
 	margin: 0 0 .6em 0;
 	font-size: 120%;
 	font-weight: bold;
@@ -622,6 +1352,7 @@ img.size-full {
 .entry-date {
 	font-size: 90%;
 	color: #9f9f9f;
+	
 }
 
 .entry-date abbr.published {
@@ -635,6 +1366,10 @@ img.size-full {
 .content-area {
     line-height: 1.4em;
     clear: both;
+}
+
+.content-area .entry-content {
+	padding: 0 .6em 0 0;
 }
 
 .content-area p {
@@ -904,12 +1639,7 @@ input:focus, textarea:focus {
 /* Search - START */
 
 .form-gs-container- {
-	@include border-radius(10px, 10px);
-	background-color: #fff;
 
-	margin: .2em;
-	float: right;
-	clear: right;
 }
 
 .form-gs-container- fieldset {
@@ -924,35 +1654,87 @@ input:focus, textarea:focus {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
-.input-q- {
+.form-gs-container- .input-q-:focus,
+.form-gs-container- .input-q-:hover,
+.form-gs-container- .input-q-:active {
+	color: #fff;
+}
+
+.form-gs-container- .input-q- {
 	border: none;
-	margin: 0 0 0 .7em;
-	padding: .4em .2em .2em 0;
+	margin: 0;
+	padding: .2em !important;
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
 }
 
 .form-gs-container- input {
 	font-size: 86%;
 	width: 7em;
+	border: none;
+	box-shadow: none;
 }
 
-.form-gs-container- input:hover, .form-gs-container- input:focus {
+.form-gs-container- input:hover,
+.form-gs-container- input:focus {
 	border: none;
 }
 
 .form-gs-container- form input[type=submit] {
-	@include border-radius(10px, 10px);
 
-	background : url("library/images/icons/icon-white-search.png") no-repeat center center;
+	background : url("nicholls/images/icons/general/search-white.png") no-repeat center center;
 	background-color: #000;
 	width : 22px;
 	height :22px;
-	border : 1px solid #ccc;
 	color : transparent;
 	font-size : 0
 }
 
-.form-gs-container- form input[type=submit]:hover {
-	background-color: $n-color-red;
+.n-button-search- {
+	display: block;
+
+	background-image: url("nicholls/images/icons/general/search-white.png");
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+
+	width : 22px;
+	height :22px;
+	color : transparent;
+	font-size : 0;
+}
+
+.mfp-container .form-gs-container- {
+	width: 20em;
+	height: 4em;
+	background-color: #222;
+	margin: 0 auto;
+	padding: .8em;
+	border: 1px solid #ccc;
+	border-radius: 1.5em;
+}
+
+.mfp-container .form-gs-container- .input-q- {
+	background: #666;
+	border: 1px solid #ccc;
+	width: 12em;
+}
+
+.mfp-container .form-gs-container- #gs {
+	width: 100%;
+}
+
+.mfp-container .form-gs-container- .input-search-,
+.mfp-container .form-gs-container- .button-search- {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 5px;
 }
 
 /* Search - END */
@@ -1070,7 +1852,7 @@ input:focus, textarea:focus {
 	vertical-align: top;
 }
 
-.table-lines-horizontal  tr td {
+.table-lines-horizontal td, .table-lines-horizontal th {
 	border-top: 1px solid #000;
 }
 
@@ -1246,7 +2028,80 @@ a.button-width-auto {
 
 /* END: List Posts */
 
-/* START: Plugin - Nicholls Faculty Staff */
+/* START: Plugin - Nicholls Emergency */
+
+/* Emergency Preparedness Notices */
+
+.nicholls-emergency-notice-wrapper {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #000;
+}
+
+.nicholls-emergency-notice {
+	@include container(31);
+	background-color: yellow;
+}
+
+.nicholls-emergency-notice ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nicholls-emergency-notice ul li {
+	margin: 0;
+	padding: 0;
+	line-height: 1.1em;
+	font-size: 94%;
+}
+
+.nicholls-emergency-notice p {
+	font-size: 84%;
+	font-weight: 600;
+	margin: 0;
+	padding: .8em 0 .8em .8em;
+}
+
+.nicholls-emergency-notice h2 {
+	margin: 0;
+	padding: .4em 0 .6em .4em;
+	font-size: 126%;
+	font-weight: 800;
+}
+
+.nicholls-emergency-notice-wrapper .nicholls-emergency-notice a {
+	color: #cc3333;
+	text-decoration: underline;
+}
+
+.nicholls-emergency-notice-wrapper .nicholls-emergency-notice a:hover {
+	color: #ffffff;
+	background: #cc3333
+}
+
+.nicholls-emergency-notice-wrapper .message {
+	background: #cc3333;
+	color: #fff;
+}
+
+.nicholls-emergency-notice-wrapper .message h2 {
+	color: #fff;
+}
+
+.nicholls-emergency-notice-wrapper .message a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.nicholls-emergency-notice-wrapper .message a:hover {
+	color: #fff;
+	background: #cc3333
+}
+
+/* END: Plugin - Nicholls Emergency */
+
+/* START: Nicholls Faculty Staff plugin */
 
 .nicholls-fs-departments,
 .nicholls-org-types {
@@ -1373,6 +2228,308 @@ div.wpcf7 {
 
 /* END - Plugin Contact Form 7 - Form Controls */
 
+/* START: Plugin - Nicholls Slider - Homepage */
+.n-home-section-primary- {
+	background-color: #666;
+}
+
+
+.n-home-section-primary- .n-slider-section-photo- {
+	width: 66%;
+	float: left;
+}
+
+.n-slider-photo- {
+	width: 100%;
+}
+
+.n-background-colonel-pride {
+	display: block;
+
+	font-size: 13em;
+	font-size: 13rem;
+
+	height: 1em;
+	width: 1.3em;
+	margin: 0 0 0 .7em;
+	padding: 0;
+	float: left;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	background-image: url( 'nicholls/images/colonel-pride/colonel-pride.png' );
+	background-image: url( 'nicholls/images/colonel-pride/colonel-pride.svg' ),
+	linear-gradient(transparent, transparent);
+
+}
+
+.lSSlideOuter > *,
+.lSSlideOuter .lslide,
+.lSSlideOuter .lslide a,
+.lSSlideOuter ul,
+.lSSlideOuter li,
+.lSSlideOuter img {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.n-slider-section-video- {
+	margin: 0;
+	border-top: 2px solid #cc3333;
+}
+
+.n-section-video- {
+	clear: both;
+	background-color: #111;
+}
+
+.n-section-video- .n-slider-video- {
+	padding: 0;
+	padding: .6em 0 .6em 0;
+}
+
+.n-section-video- .n-slider-video- .slides li img {
+	width: 20em;
+}
+
+.n-section-video- .n-slider-video- .lSSlideWrapper {
+	text-align: center;
+}
+
+.n-section-video- .n-slider-video- .video-title {
+	color: #ccc;
+	font-size: 82%;
+	font-weight: bold;
+	margin: .6em .2em 1em .2em;
+}
+
+// ISSUE:: Unused
+.n-section-infographic- {
+	height: 11.6em;
+	clear: both;
+	background-color: #111;
+}
+
+.n-slider-section-infographic- {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+
+.n-slider-infographic- li {
+	border: 1px solid #000;
+	width: 25%;
+}
+
+#n-slider-photo-slides {
+	margin-bottom: -0.5em;
+}
+
+#n-slider-photo .lSSlideOuter {
+	max-height: 33em;
+}
+
+.n-slider-photo- .lSSlideOuter .lSPager,
+.n-slider-photo- .lSSlideOuter .lSPager.lSpg {
+	position: relative;
+	margin: 0 !important;
+	padding: 0 !important;
+	top: -2em;
+	height: 0; // issue:: fix spacing
+}
+
+.n-slider-photo- .lSSlideOuter .lSPager.lSpg > li a {
+	height: 1em;
+	width: 1em;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > li.active a {
+	background-color: #cc3333 !important;
+	border: 1px solid #000;
+}
+
+.page-template-template-homepage .simcal-calendar {
+	padding: 0;
+}
+
+.n-slider-calendar-  * {
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+
+.n-slider-calendar- {
+	width: 34%;
+	float: right;
+	background-color: #222;
+	height: 17.8em;
+	padding-top: 1.2em;
+}
+
+.calendar-control {
+	display: block;
+
+	font-size: 1em;
+	font-size: 1rem;
+	text-indent: -9999px;
+	width: 100%;
+	height: .5em;
+	border: none;
+	background-color: transparent;
+
+	background-repeat: no-repeat;
+
+	background-image: url( 'nicholls/images/homepage/controls-calendar.png' );
+	clear: both;
+}
+
+.n-slider-calendar-prev-,
+.n-slider-calendar-next- {
+	margin: .4em 0;
+}
+
+.n-slider-calendar-prev- {
+	background-position: 50% 0%;
+}
+
+.n-slider-calendar-next- {
+	background-position: 50% 100%;
+}
+
+.n-slider-calendar- .simcal-event {
+	background-color: #444;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+
+}
+
+/****************************************/
+/* Styling rules, such as font and colors */
+.date-as-calendar {
+
+  /* It seems vertical-align: baseline does not work correctly with display: inline-flex. */
+  vertical-align: top;
+
+  /* margin: 1ex; */
+
+  color: black;
+  background: white;
+  background : linear-gradient(to bottom right, #FFF 0%, #EEE 100%);
+
+  border: 1px solid #888;
+  overflow: hidden;
+
+  display: inline-block;
+  position: relative;
+	float: left;
+
+  width: 5em;
+  height: 4em;
+}
+
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year {
+  text-align: center;
+  line-height: 1.0;
+}
+.date-as-calendar .month {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  background: #B11;
+  background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
+  color: white;
+}
+
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1em;
+}
+.date-as-calendar .month {
+  top: 0px;
+  font-size: 0.7em;
+  padding: 0.1em 0;
+}
+.date-as-calendar .weekday {
+  top: 1.2em;
+  font-size: 0.7em;
+}
+.date-as-calendar .day {
+  top: .9em;
+  font-size: 1.6em;
+	font-weight: bold;
+}
+.date-as-calendar .year {
+  bottom: .1em;
+  font-size: 0.8em;
+}
+
+.n-slider-calendar- .calendar-details {
+	padding: 0 .4em;
+	position: relative;
+	float: left;
+	width: 20em;
+	color: #fff;
+}
+
+.n-slider-calendar- .calendar-details .event-title,
+.n-slider-calendar- .calendar-details .event-datetime,
+.n-slider-calendar- .calendar-details .event-location {
+	display: block;
+	clear: both;
+}
+
+.n-slider-calendar- .calendar-details .event-title {
+	line-height: 1.2em;
+}
+
+.n-slider-calendar- .calendar-details .event-datetime {
+	line-height: 1.2em;
+}
+
+.n-slider-calendar- .calendar-details .event-location {
+	line-height: 1.2em;
+}
+
+.n-slider-calendar- .calendar-details .event-title a,
+.n-slider-calendar- .calendar-details .event-title a:link,
+.n-slider-calendar- .calendar-details .event-title a:active,
+.n-slider-calendar- .calendar-details .event-title a:visited {
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.n-slider-calendar- .calendar-details .event-title a:hover {
+	text-decoration: underline !important;
+}
+
+.n-slider-calendar- .calendar-details .event-datetime,
+.n-slider-calendar- .calendar-details .event-datetime span {
+	font-size: 88%;
+}
+
+.n-slider-calendar- .calendar-details .event-location {
+	font-size: 88%;
+}
+
+.n-slider-calendar- .calendar-details .simcal-event-details {
+	font-size: 88%;
+}
+
+/* END: Plugin - Nicholls Slider - Homepage */
+
 /* START Hidden Elements */
 .hide, .accessibility-hide, .accessibility {
 	position: absolute !important;
@@ -1389,6 +2546,24 @@ body.widgets-primary-inactive.widgets-secondary-inactive .content-area {
 	float: none;
 	width: auto;
 	border-left: none;
+
+}
+
+body.page-template-template-homepage .content-area {
+	float: none;
+	width: auto;
+}
+
+body.page-template-template-homepage .site-main {
+	background-color: #222;
+}
+
+body.page-template-template-homepage .nicholls-nav-go-to-wrapper- {
+	display: none;
+}
+
+body.page-template-template-top-page .content-area {
+	padding: 0 .5em;
 }
 
 /* END Conditional Elements */
@@ -1407,9 +2582,15 @@ body.widgets-primary-inactive.widgets-secondary-inactive .content-area {
 
 body {
 	width: 100%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif !important;
 	text-align: center;
-	background-color: #666;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#111111+0,666666+50,111111+100 */
+	background: #111111; /* Old browsers */
+	background: -moz-linear-gradient(top,  #111111 0%, #666666 50%, #111111 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #111111 0%,#666666 50%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #111111 0%,#666666 50%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1425,10 +2606,17 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: $n-color-white;
 }
 
+.nicholls-site-header {
+	@include container(31);
+	text-align: left;
+	padding: 0;
+	position: relative;
+	clear: both;
+}
+
 .site-header {
 	text-align: center;
-	border-bottom: 1px solid #ccc;
-	height: 16em;
+	height: 19em;
 }
 
 .nicholls-footer-wrapper- footer {
@@ -1437,6 +2625,11 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	position: relative;
 	clear: both;
+}
+
+/* ISSUE:: Hidden, but can be reversed and made visible. */
+#site-navigation {
+	display: none;
 }
 
 .content-area {
@@ -1452,10 +2645,15 @@ h1, h2, h3, h4, h5, h6 {
 	@include container(31);
 }
 
+/* Layout - Homepage vertical responsive design */
+@media screen and (max-height: 64em) {
+
+}
+
 /* Layout - Large Screen breakpoint is 1166 */
 @include susy-breakpoint( 80em, 37 ) {
 
-	.site, .site-header {
+	.site, .site-header, .nicholls-site-header {
 		@include container(37);
 	}
 
@@ -1475,12 +2673,191 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(37);
 	}
 
+	.n-background-colonel-pride {
+		margin: 0 0 0 .4em;
+	}
+
+	.nicholls-footer-col-social-media {
+		width: 24%;
+	}
+
+	.nicholls-social-media .footer-icon a {
+				font-size: 1em;
+				width: 3em;
+	}
+
+	.nicholls-footer-col-nav {
+		width: 30%;
+	}
+
+	.nicholls-footer-col-info {
+	  width: 34%;
+	}
+
+	.nicholls-la-state-map {
+		width: 10em;
+		height: 10em;
+	}
+
+	.nicholls-la-state-map a {
+		font-size: 4.6rem;
+		width: 2em;
+		height: 2em;
+	}
+
+	/* Homepage */
+	.n-slider-calendar- {
+		width: 34%;
+		height: 21.4em;
+		padding: 0;
+	}
+
+	.date-as-calendar {
+		width: 6.6em;
+		height: 5em;
+	}
+
+	.date-as-calendar .month {
+		font-size: 1em;
+	}
+
+	.date-as-calendar .weekday {
+		font-size: 0.8em;
+	}
+
+	.date-as-calendar .day {
+		font-size: 2em;
+	}
+
+	.date-as-calendar .year {
+		font-size: 0.9em;
+	}
+
+
+	.n-slider-calendar- .calendar-details {
+		width: 22em;
+	}
+
+	.n-slider-calendar- .calendar-details .event-title a,
+	.n-slider-calendar- .calendar-details .event-title a:link,
+	.n-slider-calendar- .calendar-details .event-title a:active,
+	.n-slider-calendar- .calendar-details .event-title a:visited {
+		font-size: 96%;
+	}
+
+	.n-slider-calendar- .calendar-details .event-datetime,
+	.n-slider-calendar- .calendar-details .event-datetime span {
+		font-size: 90%;
+	}
+
+	.n-slider-calendar- .calendar-details .event-location {
+		font-size: 90%;
+	}
+
+	.n-slider-calendar- .calendar-details .simcal-event-details {
+		font-size: 90%;
+	}
+
+	/* START: Plugin - Nicholls Emergency */
+	.nicholls-emergency-notice {
+		@include container(37);
+	}
+	/* END: Plugin - Nicholls Emergency */
 }
 
 /* Layout - Tablet Screen breakpoint is  */
 @include susy-breakpoint( 46em 62em, 23) {
 
-	.site, .site-header {
+	/* Nicholls Logo */
+
+	.nicholls-site-title {
+		float: none;
+	}
+
+	.nicholls-site-title a {
+		float: left;
+		font-size: 3.8em;
+		font-size: 3.8rem;
+		margin: 0 0 0 .3em;
+	}
+	/* Nicholls Call to Action buttons */
+
+	.nicholls-cta-secondary {
+		margin-top: 0;
+	}
+
+	.nicholls-cta-secondary .button	{
+		width: 23em;
+		display: block;
+		position: relative;
+		margin: 0;
+		font-size: 100%;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		clear: none;
+	}
+
+	.nicholls-cta-request-info {
+		float: left;
+	}
+
+	.nicholls-cta-tours {
+		float: right;
+	}
+
+	.nicholls-cta-secondary, .nicholls-cta-primary {
+		float: none;
+	}
+
+	.nicholls-cta-secondary a {
+		clear: both;
+		border-bottom-right-radius: 0;
+	}
+
+	.nicholls-cta-primary .button {
+		margin: 0 auto;
+		width: 100%;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	.nicholls-cta-primary a {
+		margin: 0 auto;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	#nicholls-ui-mobile {
+		display: block;
+	}
+
+	#nicholls-ui-mobile .slicknav_menu {
+		font-size: 100%;
+		padding: 0;
+		float: left;
+	}
+
+	#nicholls-ui-mobile.menu-active .slicknav_menu {
+		float: none;
+	}
+
+	#nicholls-ui-mobile .menu-search {
+		float: right;
+	}
+
+	#nicholls-ui-mobile #form-gs-container {
+		display: none;
+	}
+
+	#nicholls-primary-navigation-wrapper {
+		display: none;
+	}
+
+	#nicholls-secondary-navigation-wrapper {
+		display: none;
+	}
+
+	.site, .site-header, .nicholls-site-header {
 		@include container(23);
 	}
 
@@ -1496,12 +2873,224 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(23);
 	}
 
+	.n-home-section-primary- .n-slider-section-photo- {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.n-slider-calendar- {
+		width: 100%;
+		height: 11em;
+		padding-top: 0;
+	}
+
+	.n-slider-calendar- .calendar-details {
+		width: auto;
+	}
+
+	.n-background-colonel-pride {
+		font-size: 9em;
+		font-size: 9rem;
+		margin: 0 0 0 0.4em;
+	}
+
+	.n-section-video- .n-slider-video- .slides li img {
+		width: 14em;
+	}
+
+	/* Content */
+
+	.entry-content {
+
+		.column- {
+			clear: both;
+			float: none;
+		}
+
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
+	}
+
+	/* Nicholls go To Navigation */
+
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+
+	.nicholls-nav-go- {
+		display: block;
+		@include container;
+	}
+
+	.nicholls-nav-go- span {
+			font-size: 74%;
+	}
+
+	/* Nicholls Footer */
+
+	.nicholls-footer-col-info {
+	  width: 100%;
+		float: none;
+		clear: both;
+		padding-left: 6em;
+	}
+
+	.nicholls-la-state-map {
+		width: 8em;
+		height: 6em;
+	}
+
+	.nicholls-footer-col-info .nicholls-logo-wordmark a {
+		font-size: 4em;
+		font-size: 4rem;
+	}
+
+	.nicholls-info-footer {
+		float: right;
+		width: 24em;
+	}
+
+	.nicholls-phone-number,
+	.nicholls-footer-info-navigation {
+		clear: left;
+	}
+
+	.nicholls-footer-col-social-media {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-social-media ul {
+		margin: 0 auto;
+	}
+
+	.nicholls-social-media .footer-icon a {
+				font-size: 1em;
+	}
+
+	.nicholls-social-media .footer-icon {
+				margin-right: 1em;
+				margin-left: 1em;
+	}
+
+	.nicholls-footer-col-nav {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-info-copyright {
+		font-size: 74%;
+		line-height: 1.1em;
+		padding: 1em 0 .4em 0;
+		margin: .2em 0;
+	}
+
+	/* START: Plugin - Nicholls Emergency */
+	.nicholls-emergency-notice {
+		@include container(23);
+	}
+	/* END: Plugin - Nicholls Emergency */
+
 }
 
 /* Layout - Phone Screen Landscape breakpoint is  */
 @include susy-breakpoint( 31em 46em, 17 ) {
 
-	.site, .site-header {
+	/* Nicholls Logo */
+
+	.nicholls-site-title {
+		float: none;
+	}
+
+	.nicholls-site-title a {
+		float: left;
+		font-size: 3.8em;
+		font-size: 3.8rem;
+		margin: 0 0 0 .3em;
+	}
+
+	/* Nicholls Call to Action buttons */
+
+	.nicholls-cta-secondary {
+		margin-top: 0;
+	}
+
+	.nicholls-cta-secondary .button	{
+		width: 17em;
+		display: block;
+		position: relative;
+		margin: 0;
+		font-size: 100%;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		clear: none;
+	}
+
+	.nicholls-cta-request-info {
+		float: left;
+	}
+
+	.nicholls-cta-tours {
+		float: right;
+	}
+
+	.nicholls-cta-secondary, .nicholls-cta-primary {
+		float: none;
+	}
+
+	.nicholls-cta-secondary a {
+		clear: both;
+		border-bottom-right-radius: 0;
+	}
+
+	.nicholls-cta-primary .button {
+		margin: 0 auto;
+		width: 100%;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	.nicholls-cta-primary a {
+		margin: 0 auto;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	#nicholls-ui-mobile {
+		display: block;
+	}
+
+	#nicholls-ui-mobile .slicknav_menu {
+		font-size: 100%;
+		padding: 0;
+		float: left;
+	}
+
+	#nicholls-ui-mobile.menu-active .slicknav_menu {
+		float: none;
+	}
+
+	#nicholls-ui-mobile .menu-search {
+		float: right;
+	}
+
+	#nicholls-ui-mobile #form-gs-container {
+		display: none;
+	}
+
+	#nicholls-primary-navigation-wrapper {
+		display: none;
+	}
+
+	#nicholls-secondary-navigation-wrapper {
+		display: none;
+	}
+
+	.site, .site-header, .nicholls-site-header {
 		@include container(17);
 	}
 
@@ -1517,12 +3106,238 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(17);
 	}
 
+	.n-home-section-primary- .n-slider-section-photo- {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.n-slider-calendar- {
+		width: 100%;
+		height: 13em;
+		padding-top: 0;
+	}
+
+	.n-slider-calendar-prev-,
+	.n-slider-calendar-next- {
+		margin: 1em 0;
+	}
+
+	.n-slider-calendar- .calendar-details {
+		width: auto;
+	}
+
+	.n-background-colonel-pride {
+		font-size: 7em;
+		font-size: 7rem;
+		margin: 0 0 0 0.1em;
+	}
+
+	.n-section-video- .n-slider-video- .slides li img {
+		width: 14em;
+	}
+
+	/* Content */
+
+	.entry-content {
+
+		.column- {
+			clear: both;
+			float: none;
+		}
+
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
+	}
+
+	/* Nicholls go To Navigation */
+
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+
+	.nicholls-nav-go- {
+		display: block;
+		@include container;
+	}
+
+	.nicholls-nav-go- span {
+		font-size: 68%;
+	}
+
+	/* Nicholls Footer */
+
+	.nicholls-footer-col-info {
+	  width: 100%;
+		float: none;
+		clear: both;
+		padding-left: 6em;
+	}
+
+	.nicholls-la-state-map {
+		width: 8em;
+		height: 6em;
+	}
+
+	.nicholls-footer-col-info .nicholls-logo-wordmark a {
+		font-size: 4em;
+		font-size: 4rem;
+	}
+
+	.nicholls-info-footer {
+		float: right;
+		width: 24em;
+	}
+
+	.nicholls-phone-number,
+	.nicholls-footer-info-navigation {
+		clear: left;
+	}
+
+	.nicholls-footer-col-social-media {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-social-media ul {
+		margin: 0 auto;
+	}
+
+	.nicholls-social-media .footer-icon a {
+				font-size: 1em;
+	}
+
+	.nicholls-social-media .footer-icon {
+				margin-right: 1em;
+				margin-left: 1em;
+	}
+
+	.nicholls-footer-col-nav {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-info-copyright {
+		font-size: 74%;
+		line-height: 1.1em;
+		padding: 1em 0 .4em 0;
+		margin: .2em 0;
+	}
+
+	/* START: Plugin - Nicholls Emergency */
+	.nicholls-emergency-notice {
+		@include container(17);
+	}
+	/* END: Plugin - Nicholls Emergency */
 }
 
 /* Layout - Phone Screen Portrait breakpoint is  */
 @include susy-breakpoint( 0em 31em, 11 ) {
 
-	.site, .site-header {
+	body {
+		background: #000; /* Old browsers */
+	}
+
+	/* Nicholls Logo */
+
+	.nicholls-site-title {
+		float: none;
+	}
+
+	.nicholls-site-title a {
+		float: left;
+		font-size: 3.8em;
+		font-size: 3.8rem;
+		margin: 0 0 0 .3em;
+	}
+
+	/* Nicholls Call to Action buttons */
+
+	.nicholls-cta-secondary {
+		margin-top: 0;
+	}
+
+	.nicholls-cta-secondary .button	{
+		width: 11em;
+		display: block;
+		position: relative;
+		margin: 0;
+		font-size: 100%;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		clear: none;
+	}
+
+	.nicholls-cta-request-info {
+		float: left;
+	}
+
+	.nicholls-cta-tours {
+		float: right;
+	}
+
+	.nicholls-cta-secondary, .nicholls-cta-primary {
+		float: none;
+	}
+
+	.nicholls-cta-secondary a {
+		clear: both;
+		border-bottom-right-radius: 0;
+	}
+
+	.nicholls-cta-primary .button {
+		margin: 0 auto;
+		width: 100%;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	.nicholls-cta-primary a {
+		margin: 0 auto;
+		border-bottom-left-radius: 0;
+		clear: both;
+	}
+
+	#nicholls-ui-mobile {
+		display: block;
+	}
+
+	#nicholls-ui-mobile .slicknav_menu {
+		font-size: 100%;
+		padding: 0;
+		float: left;
+	}
+
+	#nicholls-ui-mobile.menu-active .slicknav_menu {
+		float: none;
+	}
+
+	#nicholls-ui-mobile .menu-search {
+		float: right;
+	}
+
+	/* Search Box */
+
+	.mfp-close-btn-in .mfp-close {
+		display: none;
+	}
+
+	#nicholls-ui-mobile #form-gs-container {
+		display: none;
+	}
+
+	#nicholls-primary-navigation-wrapper {
+		display: none;
+	}
+
+	#nicholls-secondary-navigation-wrapper {
+		display: none;
+	}
+
+	.site, .site-header, .nicholls-site-header {
 		@include container(11);
 	}
 
@@ -1538,6 +3353,117 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(11);
 	}
 
+	.n-home-section-primary- .n-slider-section-photo- {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.n-slider-calendar- {
+		width: 100%;
+		height: 13em;
+		padding-top: 0;
+	}
+
+	.n-slider-calendar-prev-,
+	.n-slider-calendar-next- {
+		margin: 1em 0;
+	}
+
+	.n-slider-calendar- .calendar-details {
+		width: 21em;
+	}
+
+	.n-background-colonel-pride {
+		font-size: 7em;
+		font-size: 7rem;
+		margin: 0 0 0 0.1em;
+	}
+
+	/* Content */
+
+	.entry-content {
+
+		.column- {
+			clear: both;
+			float: none;
+		}
+
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
+	}
+
+	/* Nicholls go To Navigation */
+
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+
+	.nicholls-nav-go- {
+		display: block;
+		@include container;
+	}
+
+	.nicholls-nav-go- span {
+			font-size: 60%;
+	}
+
+	/* Nicholls Footer */
+
+	.nicholls-footer-col-info {
+	  width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-la-state-map {
+		width: 8em;
+		height: 6em;
+	}
+
+	.nicholls-footer-col-info .nicholls-logo-wordmark a {
+		font-size: 4em;
+		font-size: 4rem;
+	}
+
+	.nicholls-footer-col-social-media {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-social-media .footer-icon a {
+				font-size: 1em;
+	}
+
+	.nicholls-social-media ul {
+		margin: 0 auto;
+	}
+
+	.nicholls-social-media .footer-icon {
+				margin-right: 1em;
+				margin-left: 1em;
+	}
+
+	.nicholls-footer-col-nav {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.nicholls-info-copyright {
+		font-size: 74%;
+		line-height: 1.1em;
+		padding: 1em 0 .4em 0;
+		margin: .2em 0;
+	}
+
+	/* START: Plugin - Nicholls Emergency */
+	.nicholls-emergency-notice {
+		@include container(11);
+	}
+	/* END: Plugin - Nicholls Emergency */
 }
 
 
@@ -1574,618 +3500,4 @@ h1, h2, h3, h4, h5, h6 {
 /* Print */
 @media print {
 
-}
-
-
-/* Defaults - START */
-
-body {
-	font-family: 'Open Sans', Arial, sans serif;
-	font-size: $body-font-size;
-	color: $n-color-black;
-	padding: 0;
-	margin: 0;
-	width: $body-width;
-}
-
-/* Interactive HTML Styles */
-
-a, a:link {
-	color: $link-color;
-	text-decoration: underline;
-}
-
-a:visited {
-	color: $link-color-visited;
-}
-
-a:hover {
-	color: $link-color-hover;
-	text-decoration: none;
-}
-
-a.nofx {
-	background: none;
-	border: none;
-}
-
-a.nofx:hover {
-	background: none;
-	border: none;
-}
-
-.link-color-white, .link-color-white:link, .link-color-white:hover, .link-color-white:active, .link-color-white:visited {
-	color: #fff;
-}
-
-/* Defaults - END */
-
-/* Compatibility - IE and other compatibility issues */
-
-
-
-
-/* Header ,Branding, & Navigation */
-
-/*
-We will need to move breakpoint modifications into other breakpoint blocks as needed.
-*/
-
-.nicholls-header-wrapper- {
-	width: 100%;
-	background-color: #000;
-}
-
-.nicholls-footer-wrapper- {
-	width: 100%;
-	background-color: #000;
-}
-
-/* Logo - sword */
-
-.nicholls-site-branding {
-	width: 10em;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
-	z-index: 102;
-}
-
-.nicholls-site-title {
-	width: auto;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-.nicholls-site-title a {
-	display: block;
-
-	font-size: 6em;
-	font-size: 6rem;
-
-	text-indent: -9999px;
-	width: 2em;
-	margin: 0 auto;
-	padding: 0;
-
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.png' );
-	background-image: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text.svg' ),
-	linear-gradient(transparent, transparent);
-
-}
-
-/* Logo - wordmark */
-
-.nicholls-logo-wordmark {
-	width: auto;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-.nicholls-logo-wordmark a {
-	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.png' );
-	background: url( 'nicholls/images/logo/Nicholls-Wordmark-white.svg' ),
-	linear-gradient(transparent, transparent);
-}
-
-.nicholls-logo-wordmark a {
-	display: block;
-	font-size: 6rem;
-	text-indent: -9999px;
-	width: 2em;
-	line-height: .7em;
-
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-}
-
-/* Navigation */
-
-/* secondary */
-
-.nicholls-secondary-navigation- {
-	width: auto;
-	margin: 0 auto;
-	position: relative;
-	float: none;
-	z-index: 100;
-	text-align: left;
-}
-
-.nicholls-secondary-navigation- .menu {
-	display: inline-block; /* centers modern browsers */
-	margin: 0 auto; /* centers modern browsers */
-	text-align: center; /* centers IE6/7 */
-}
-
-.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
-	 list-style-type: none;
-	 list-style-position: inside;
-	 list-style-image: none;
-	 display: block; /* IE6/7 haslayout trip-switch */
- }
-
-.nicholls-secondary-navigation- ul {
-	display: inline-block; /* IE6/7 haslayout trip-switch */
-	margin: 0;
-	padding: 0;
-}
-
-.nicholls-secondary-navigation- ul li {
-	display: inline;
-	padding: .2em;
-
-	border-bottom: 1px solid #999;
-}
-
-.nicholls-secondary-navigation- ul li:last-child {
-
-	border-bottom-right-radius: 1.5em;
-
-	border-bottom: 1px solid #999;
-	border-right: 1px solid #999;
-
-}
-
-.nicholls-secondary-navigation- ul li a {
-	display: inline-block;
-	padding: 0 1em .4em 1em;
-	font-size: 80%;
-	font-weight: 600;
-}
-
-/* primary */
-
-.nicholls-primary-navigation- {
-	width: auto;
-	margin: 0 auto;
-	position: relative;
-	float: none;
-	clear: both;
-	z-index: 100;
-	text-align: center;
-	background-color: #cc3333;
-}
-
-.nicholls-primary-navigation- .menu {
-	display: inline-block; /* centers modern browsers */
-	margin: 0 auto; /* centers modern browsers */
-	text-align: center; /* centers IE6/7 */
-
-	@include container(31);
-
-}
-
-.nicholls-primary-navigation- ul, .nicholls-primary-navigation- ul ul {
-	list-style-type: none;
-	list-style-position: inside;
-	list-style-image: none;
-
-	margin: 0;
-	padding: 0;
-
-	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
-	width: 100%;
-	display: table;
-
-	/* display: block; */ /* IE6/7 haslayout trip-switch */
- }
-
-.nicholls-primary-navigation- ul {
-	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */
-}
-
-.nicholls-primary-navigation- ul li {
-	display: inline-block;
-	padding: .2em;
-	margin: 0;
-
-	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
-	display: table-cell;
-	width: auto;
-	text-align: center;
-
-}
-
-.nicholls-primary-navigation- ul ul {
-	box-shadow: none;
-	float: left;
-	left: -999em;
-	position: absolute;
-	top: 1.5em;
-	z-index: 99999;
-	margin: 0;
-	padding: 0;
-}
-
-.nicholls-primary-navigation- ul ul li {
-	margin: 0;
-	padding: 0;
-}
-
-.nicholls-primary-navigation- ul ul a {
-	width: auto;
-}
-
-.nicholls-primary-navigation- .menu-item a {
-	padding: 0 .4em; /* variable width */
-	font-weight: 700;
-}
-
-
-/* primary & secondary */
-
-.nicholls-primary-navigation- ul li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.nicholls-primary-navigation- ul li a:link,
-.nicholls-primary-navigation- ul li a:active,
-.nicholls-primary-navigation- ul li a:visited {
-	color: #fff;
-}
-
-.nicholls-primary-navigation- ul li a:hover {
-	color: #fff;
-}
-
-.nicholls-secondary-navigation- ul li a,
-.nicholls-secondary-navigation- ul li a:link,
-.nicholls-secondary-navigation- ul li a:active,
-.nicholls-secondary-navigation- ul li a:visited {
-	color: #999;
-	text-decoration: none;
-}
-
-.nicholls-secondary-navigation- ul li a:hover {
-	color: #999;
-}
-
-/* Call to Action Buttons */
-
-.nicholls-cta-secondary {
-	display: block;
-	float: left;
-	margin-top: 2em;
-}
-
-.nicholls-cta-primary {
-	display: block;
-	float: right;
-	margin-top: 2em;
-}
-
-.nicholls-cta-secondary a {
-	display: block;
-	background-color: #999;
-	clear: both;
-
-	border-bottom-right-radius: 1.5em;
-
-}
-
-.nicholls-cta-primary a {
-	display: block;
-	background-color: #cc3333;
-	margin-top: -2em;
-
-	border-bottom-left-radius: 1.5em;
-
-}
-
-
-.nicholls-cta .button {
-	width: 16em;
-	padding: .4em 0;
-	margin: 0;
-	font-weight: 900;
-	font-size: 110%;
-}
-
-.nicholls-cta .nicholls-cta-request-info {
-	margin-bottom: .6em;
-}
-
-.nicholls-cta a,
-.nicholls-cta a:link,
-.nicholls-cta a:active,
-.nicholls-cta a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-.nicholls-cta a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-
-
-/* Footer */
-
-.nicholls-footer-wrapper- {
-	background-color: #000;
-	color: #cccccc;
-}
-
-.nicholls-footer-column {
-	width: 30%;
-	float: left;
-	font-size: 90%;
-	line-height: 1.2em;
-	padding-top: 1em;
-}
-
-.nicholls-footer-column div,
-.nicholls-footer-column ul,
-.nicholls-footer-column ol {
-	margin: 0;
-	padding: 0;
-}
-
-.nicholls-footer-col-info {
-  width: 34%;
-}
-
-.nicholls-footer-col-social-media {
-	width: 24%;
-}
-
-.nicholls-footer-col-nav {
-}
-
-.nicholls-info-footer {
-	white-space: nowrap;
-}
-
-.nicholls-info-copyright {
-	clear: both;
-	font-size: 82%;
-	text-align: center;
-	margin: .2em 0;
-}
-
-/* Louisiana map */
-
-.nicholls-la-state-map {
-	width: auto;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	float: left;
-	width: 9.6em;
-	height: 10em;
-}
-
-.nicholls-la-state-map a {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: url( 'nicholls/images/louisiana-map-thibodaux.png' );
-	background-image: url( 'nicholls/images/louisiana-map-thibodaux.svg' ),
-	linear-gradient(transparent, transparent);
-
-	display: block;
-	font-size: 4.6rem;
-	text-indent: -9999px;
-	width: 2em;
-	height: 2em;
-
-	margin: 0 auto;
-
-	/* IE8 background-size polyfil */
-	-ms-behavior: url('src/ie/background-size-polyfill-gh-pages/backgroundsize.min.htc');
-}
-
-/* Footer - Information */
-
-.nicholls-phone-number {
-	display: block;
-	float: left;
-}
-
-.nicholls-address {
-	display: block;
-	float: left;
-	white-space: nowrap;
-	font-size: 82%;
-}
-
-/* Footer Info Navigation */
-
-.nicholls-footer-info-navigation {
-	display: block;
-	float: left;
-}
-
-.nicholls-footer-info-navigation ul {
-	list-style-type: none;
-	list-style-position: inside;
-	list-style-image: none;
-
-	margin: 0;
-	padding: 0;
-
-	/* see http://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css */
-	width: 100%;
-	display: block;
-
-	/* display: block; */ /* IE6/7 haslayout trip-switch */
- }
-
-.nicholls-footer-info-navigation ul {
-	/* display: inline-block; */ /* IE6/7 haslayout trip-switch */
-}
-
-.nicholls-footer-info-navigation ul li {
-	display: block;
-	float: left;
-	padding: 0 .2em;
-	margin: 0;
-
-	width: auto;
-	text-align: center;
-
-}
-
-.nicholls-footer-info-navigation ul li:after {
-	content: "|";
-	margin-left: .2em;
-}
-
-.nicholls-footer-info-navigation ul li:last-child:after {
-	content: "";
-	margin-left: 0;
-}
-
-.nicholls-footer-info-navigation ul li a,
-.nicholls-footer-info-navigation ul li a:link,
-.nicholls-footer-info-navigation ul li a:active,
-.nicholls-footer-info-navigation ul li a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-.nicholls-footer-info-navigation ul li a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-/* Footer Links Menu */
-
-.nicholls-footer-menu ul {
-	list-style-type: none;
-	list-style-position: inside;
-	list-style-image: none;
-	display: block; /* IE6/7 haslayout trip-switch */
-}
-
-.nicholls-footer-menu ul li {
-	width: auto;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
-
-/* Footer - Social Media Icons */
-
-footer .nicholls-social-media ul {
-	 list-style-type: none;
-	 list-style-position: inside;
-	 list-style-image: none;
-}
-
-@include nicholls-icon-footer-social( 'facebook' );
-@include nicholls-icon-footer-social( 'instagram' );
-@include nicholls-icon-footer-social( 'twitter' );
-@include nicholls-icon-footer-social( 'linkedin' );
-@include nicholls-icon-footer-social( 'youtube' );
-
-.nicholls-footer-menu {
-	font-size: 90%;;
-}
-
-.nicholls-footer-menu ul li a,
-.nicholls-footer-menu ul li a:link,
-.nicholls-footer-menu ul li a:active,
-.nicholls-footer-menu ul li a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-.nicholls-footer-menu ul li a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.nicholls-footer-menu ul, .nicholls-footer-menu-column ul {
-    margin: 0;
-    padding: 0;
-}
-
-.nicholls-footer-menu-column {
-	width: 49%;
-	float: left;
-}
-
-/* START - Nicholls WordPress Styles */
-
-.site-title {
-
-	text-align: left;
-	font-size: 120%;
-	font-weight: 900;
-	margin: 0;
-	padding: .6em;
-
-	/* Fallback for web browsers that don't support RGBa */
-	background-color: rgb(0, 0, 0);
-	/* RGBa with 0.6 opacity */
-	background-color: rgba(0, 0, 0, 0.6);
-	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-}
-
-.site-title a,
-.site-title a:active,
-.site-title a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-.site-title a:hover {
-	text-decoration: underline;
-}
-
-.site-description {
-	margin: 0;
-	padding: .6em;
-	text-align: left;
-	color: #fff;
-
-	/* Fallback for web browsers that don't support RGBa */
-	background-color: rgb(0, 0, 0);
-	/* RGBa with 0.6 opacity */
-	background-color: rgba(0, 0, 0, 0.6);
-	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-}
-/* Debug */
-
-/* Compatibility: IE8, etc */
-
-.lt-ie9 .nicholls-site-title a {
-	background: url( 'nicholls/images/logo/Nicholls-N-Sword-w-text-ie8.png' ) no-repeat center 20% scroll;
 }
