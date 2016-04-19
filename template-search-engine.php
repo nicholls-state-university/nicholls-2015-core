@@ -6,7 +6,7 @@ Template Name: Search Engine - Google Hosted
 // Make sure this page is not cached.
 define( 'DONOTCACHEPAGE', 1 );
 
-/** 
+/**
 * Nicholls Full Page
 *
 * Filter function to be used to disable sidebar widgets on page templates.
@@ -15,11 +15,6 @@ define( 'DONOTCACHEPAGE', 1 );
 * @since 0.1
 */
 add_filter( 'sidebars_widgets', 'nicholls_core_widget_disable_filter' );
-function nicholls_core_widget_disable_filter( $widget_groups ) {
-	$widget_groups['primary'] = array();
-	$widget_groups['secondary'] = array();
-	return $widget_groups;
-}
 
 // Move the titles around - from nicholls_move_title()
 function nicholls_move_search_title() {
@@ -49,7 +44,7 @@ function nicholls_google_search_engine_js() {
 }
 add_action( 'wp_head', 'nicholls_google_search_engine_js');
 
-get_header(); 
+get_header();
 
 ?>
 
@@ -68,14 +63,14 @@ get_header();
 				?>
 
 			<?php endwhile; // End of the loop. ?>
-										
+
 		<form method="get" id="searchform" action="<?php echo esc_url( get_permalink() ); ?>">
 			<label for="s" class="assistive-text"><?php _e( 'Search', 'nicholls_theme_core' ); ?></label>
 			<input type="text" class="field" name="q" id="q" placeholder="<?php esc_attr_e( 'Search', 'nicholls_theme_core' ); ?>" />
 			<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'nicholls_theme_core' ); ?>" />
 		</form>
-		
-	
+
+
 <?php
 $test_q_unallowed = array( 'Search...', 'nicholls', 'Nicholls' );
 $test_q = trim( $_REQUEST['q'] );

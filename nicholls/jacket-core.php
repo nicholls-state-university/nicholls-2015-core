@@ -1639,7 +1639,7 @@ require_once( NICHOLLS_CORE_DIR . '/nicholls/php/shortcode-shortcode.php' );
 *
 * Function to insert Google Analytics tracking javascript preferably in header
 *
-* @since 0.4
+* @since 0.1
 */
 function nicholls_js_google_analytics() {
 ?>
@@ -1656,3 +1656,16 @@ function nicholls_js_google_analytics() {
 <?php
 }
 add_action( 'wp_head', 'nicholls_js_google_analytics' );
+
+/**
+* Nicholls Filter - Remove Sidebar Widgets
+*
+* Function to remove all sidebar widgets so the page will be full width. 
+*
+* @since 0.1
+*/
+function nicholls_core_widget_disable_filter( $widget_groups ) {
+	$widget_groups['primary'] = array();
+	$widget_groups['secondary'] = array();
+	return $widget_groups;
+}
