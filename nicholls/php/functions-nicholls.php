@@ -26,7 +26,7 @@ function nicholls_form_google_search() {
 */
 function nicholls_get_form_google_search() {
 
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'text', 'name' => 'q', 'class' => 'input-q-', 'value' => 'Search...', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
+	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'text', 'name' => 'q', 'class' => 'input-q-', 'value' => '', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
 	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'sort', 'value' => 'date:D:L:d1', 'return' => true ) );
 	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'output', 'value' => 'xml_no_dtd', 'return' => true ) );
 	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'oe', 'value' => 'UTF-8', 'return' => true ) );

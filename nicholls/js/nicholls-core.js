@@ -51,17 +51,17 @@ jQuery(document).ready( function() {
 			type: 'inline',
 			preloader: false,
 			midClick: true,
-			focus: '#name',
 			src: '#form-gs-container'
 		},
 		callbacks: {
 			beforeOpen: function() {
 				jQuery('#form-gs-container').removeClass('hide');
 			},
-		},
+			open: function() {
+				this.st.focus = '#q';
+			}
+		}
 	});
-
-
 
 /**
 	// If you don't care about changing the height when the window resizes then you can use the following simplified version instead:
@@ -91,24 +91,8 @@ jQuery(document).ready( function() {
   });
 */
 
-	// Search Form Styling and Field Value Clearing
-	jQuery('.input-q-').each(function() {
-		var default_value = this.value;
-		jQuery(this).focus(function() {
-			if(this.value == default_value) {
-				this.value = '';
-			}
-		});
-		jQuery(this).blur(function() {
-			if(this.value == '') {
-				this.value = default_value;
-			}
-		});
-	});
-
 /*
 	if ( jQuery('html').hasClass('lt-ie8') ) {
-
 		jQuery(window).responsinav({ breakpoint: 977 });
 	}
 */
