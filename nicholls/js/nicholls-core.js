@@ -32,7 +32,7 @@ jQuery(document).ready( function() {
 				var classList = trigger.attr('class').split(/\s+/);
 				var test_search = jQuery.inArray('slicknav_item', classList);
 
-				console.log( test_search );
+				// console.log( test_search );
 
 				if ( test_search != 0 ) {
 					jQuery('#nicholls-ui-mobile').removeClass('menu-active');
