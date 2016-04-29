@@ -79,6 +79,11 @@ $test_q = trim( $_REQUEST['q'] );
 <?php if ( in_array( $test_q, $test_q_unallowed ) ): ?>
 		<!-- Place this tag where you want the search results to render -->
 		<gcse:searchresults-only autoSearchOnLoad="false"></gcse:searchresults-only>
+
+<?php elseif( strlen( $test_q ) < 2 || !isset( $test_q ) ): ?>
+	  <!-- Place this tag where you want the search results to render -->
+	  <gcse:searchresults-only autoSearchOnLoad="false"></gcse:searchresults-only>
+
 <?php else: ?>
 		<!-- Place this tag where you want the search results to render -->
 		<gcse:searchresults-only></gcse:searchresults-only>
