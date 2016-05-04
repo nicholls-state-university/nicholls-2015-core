@@ -6,7 +6,7 @@ Template Name: N-App - Remove header, No Sidebars
 /**
 * N-APP Template
 *
-* Special page template for embeding pages inside mobile apps. 
+* Special page template for embeding pages inside mobile apps.
 * We remove some header graphics.
 *
 */
@@ -69,10 +69,8 @@ $n_app = $_GET['n-app'];
 	</footer><!-- #colophon -->
 **/ ?>
 </div><!-- #page -->
-<?php get_template_part( 'nicholls/footer', 'core' ); ?>
 <?php wp_footer(); ?>
 
 </body>
 </html>
 <?php endif; // n-app query string check ?>
-		
