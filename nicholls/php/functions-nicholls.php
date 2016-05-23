@@ -43,6 +43,6 @@ function nicholls_get_form_google_search() {
 		'return' => true
 	) );
 
-	return jacket_core_form( 'gs', 'http://www.nicholls.edu/search', 'get', $form_google_search_content, true );
+	return jacket_core_form( 'gs', '//www.nicholls.edu/search', 'get', $form_google_search_content, true );
 
 }

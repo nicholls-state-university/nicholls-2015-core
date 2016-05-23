@@ -20,16 +20,16 @@
 				</ul>
 			</div>
 		</nav><!-- #site-secondary-navigation -->
-		
+
 		<div class="nicholls-cta-secondary nicholls-cta">
 			<a class="button nicholls-cta-request-info" href="[secondary-cta] Request Info">Request Information</a>
 			<a class="button nicholls-cta-tours" href="[secondary-cta] Request Info">Tour Campus</a>
 		</div>
-	
+
 		<div class="nicholls-site-branding">
-			<div class="nicholls-site-title"><a href="http://web2.nicholls.edu/test/" rel="home">Testing site</a></div>
+			<div class="nicholls-site-title"><a href="//www.nicholls.edu/" rel="home">Testing site</a></div>
 		</div><!-- .nicholls-site-branding -->
-		
+
 		<div class="nicholls-cta-primary nicholls-cta">
 			<a class="button nicholls-cta-apply" href="[primary-cta] Apply">Apply Now</a>
 		</div>

@@ -10,39 +10,39 @@
 				<div class="menu">
 					<ul>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/parents">Parents</a>
+							<a href="//www.nicholls.edu/parents">Parents</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/current-students">Current Students</a>
+							<a href="//www.nicholls.edu/current-students">Current Students</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
+							<a href="//www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
+							<a href="//www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
 						</li>
 					</ul>
 				</div>
 				<div class="menu-search">
 					<?php nicholls_form_google_search(); ?>
-					<a id="n-button-search" class="n-button-search-" href="http://www.nicholls.edu/search">Search Nicholls</a>
+					<a id="n-button-search" class="n-button-search-" href="//www.nicholls.edu/search">Search Nicholls</a>
 				</div>
 			</nav><!-- #site-secondary-navigation -->
 		</div>
 
 		<div class="nicholls-cta-secondary nicholls-cta">
-			<a class="button nicholls-cta-request-info" href="http://www.nicholls.edu/request-info/">Request Information</a>
-			<a class="button nicholls-cta-tours" href="http://www.nicholls.edu/tours">Tour Campus</a>
+			<a class="button nicholls-cta-request-info" href="//www.nicholls.edu/request-info/">Request Information</a>
+			<a class="button nicholls-cta-tours" href="//www.nicholls.edu/tours">Tour Campus</a>
 		</div>
 
 		<div id="nicholls-ui-mobile"></div>
 
 		<div class="nicholls-site-branding">
-			<div class="nicholls-site-title"><a href="http://www.nicholls.edu/" rel="home">Testing site</a></div>
+			<div class="nicholls-site-title"><a href="//www.nicholls.edu/" rel="home">Testing site</a></div>
 		</div><!-- .nicholls-site-branding -->
 
 		<div class="nicholls-cta-primary nicholls-cta">
-			<a class="button nicholls-cta-apply" href="http://www.nicholls.edu/apply/">Apply Now</a>
+			<a class="button nicholls-cta-apply" href="//www.nicholls.edu/apply/">Apply Now</a>
 		</div>
 
 		<div id="nicholls-primary-navigation-wrapper">
@@ -50,19 +50,19 @@
 				<div class="menu">
 					<ul>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/programs/">Programs</a>
+							<a href="//www.nicholls.edu/programs/">Programs</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/admission/">Admissions</a>
+							<a href="//www.nicholls.edu/admission/">Admissions</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/campus-life/">Student Life</a>
+							<a href="//www.nicholls.edu/campus-life/">Student Life</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://geauxcolonels.com">Athletics</a>
+							<a href="//geauxcolonels.com">Athletics</a>
 						</li>
 						<li class="menu-item">
-							<a href="http://www.nicholls.edu/about/">About Us</a>
+							<a href="//www.nicholls.edu/about/">About Us</a>
 						</li>
 					</ul>
 				</div>
