@@ -59,7 +59,7 @@
 							<a href="//www.nicholls.edu/campus-life/">Student Life</a>
 						</li>
 						<li class="menu-item">
-							<a href="//geauxcolonels.com">Athletics</a>
+							<a href="http://geauxcolonels.com">Athletics</a>
 						</li>
 						<li class="menu-item">
 							<a href="//www.nicholls.edu/about/">About Us</a>
