@@ -54,7 +54,7 @@
 					<li><a class="icon-inline-small-mail" href="//www.nicholls.edu/student-email/">Student Email</a></li>
 					<li><a class="icon-inline-small-mail" href="//mail.google.com/a/nicholls.edu">Faculty &amp; Staff Email</a></li>
 					<li><a class="icon-inline-small-document" href="//banner.nicholls.edu/">Banner</a></li>
-					<li><a class="icon-inline-small-document" href="//moodle.nicholls.edu/moodle/">Moodle</a></li>
+					<li><a class="icon-inline-small-document" href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
 				</ul>
 			</div>
 
