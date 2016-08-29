@@ -2102,6 +2102,25 @@ a.button-width-auto {
 	background: #cc3333
 }
 
+.nicholls-emergency-notice-wrapper .notice {
+	background: #fff;
+	color: #000;
+}
+
+.nicholls-emergency-notice-wrapper .notice h2 {
+	color: #cc3333;
+}
+
+.nicholls-emergency-notice-wrapper .notice a {
+	color: #cc3333;
+	text-decoration: underline;
+}
+
+.nicholls-emergency-notice-wrapper .notice a:hover {
+	color: #cc3333;
+	text-decoration: none;
+}
+
 /* END: Plugin - Nicholls Emergency */
 
 /* START: Nicholls Faculty Staff plugin */
@@ -2168,7 +2187,7 @@ a.button-width-auto {
 
 .nicholls-fs-bio {
 	clear: both;
-	padding-top: .5em;	
+	padding-top: .5em;
 }
 
 .nicholls-fs-form-message- textarea {
