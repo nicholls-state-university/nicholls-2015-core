@@ -44,8 +44,6 @@ jQuery(document).ready( function() {
 	// Set Transparency
 	jQuery('.header-').addClass('transparent-black-50');
 
-	jQuery('#form-gs-container').addClass('hide');
-
 	jQuery('.n-button-search-').magnificPopup({
 		items: {
 			type: 'inline',

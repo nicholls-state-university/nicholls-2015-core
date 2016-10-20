@@ -25,24 +25,20 @@ function nicholls_form_google_search() {
 * @since 0.4
 */
 function nicholls_get_form_google_search() {
-
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'text', 'name' => 'q', 'class' => 'input-q-', 'value' => '', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'sort', 'value' => 'date:D:L:d1', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'output', 'value' => 'xml_no_dtd', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'oe', 'value' => 'UTF-8', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'ie', 'value' => 'UTF-8', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'client', 'value' => 'default_frontend', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'proxystylesheet', 'value' => 'default_frontend', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'numgm', 'value' => '5', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array( 'type' => 'hidden', 'name' => 'site', 'value' => 'default_collection', 'return' => true ) );
-	$form_google_search_content .= jacket_core_form_input( array(
-		'type' => 'submit',
-		'name' => 'search',
-		'value' => 'search',
-		'tag_content' => 'Search',
-		'return' => true
-	) );
-
-	return jacket_core_form( 'gs', '//www.nicholls.edu/search', 'get', $form_google_search_content, true );
-
+?>
+<div id="form-gs-container" class="form-gs-container- hide">
+	<form id="gs" name="gs" enctype="application/x-www-form-urlencoded" action="//www.nicholls.edu/search" method="get">
+		<input id="q" name="q" class="input-q-" type="text" value=""/>
+		<input id="sort" name="sort" class="input-sort-" type="hidden" value="date:D:L:d1"/>
+		<input id="output" name="output" class="input-output-" type="hidden" value="xml_no_dtd"/>
+		<input id="oe" name="oe" class="input-oe-" type="hidden" value="UTF-8"/>
+		<input id="ie" name="ie" class="input-ie-" type="hidden" value="UTF-8"/>
+		<input id="client" name="client" class="input-client-" type="hidden" value="default_frontend"/>
+		<input id="proxystylesheet" name="proxystylesheet" class="input-proxystylesheet-" type="hidden" value="default_frontend"/>
+		<input id="numgm" name="numgm" class="input-numgm-" type="hidden" value="5"/>
+		<input id="site" name="site" class="input-site-" type="hidden" value="default_collection"/>
+		<input id="search" name="search" class="input-search-" type="submit" value="search"/>
+	</form>
+</div>
+<?php
 }
