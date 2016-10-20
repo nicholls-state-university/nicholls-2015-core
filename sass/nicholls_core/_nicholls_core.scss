@@ -2228,6 +2228,47 @@ a.button-width-auto {
 
 /* END: Nicholls Faculty Staff plugin */
 
+/* START: Plugin - TablePress */
+
+/* Row background colors */
+.tablepress thead th,
+.tablepress tfoot th {
+	background-color: #cc3333;
+	color: #fff;
+}
+.tablepress .odd td {
+	background-color: #f9f9f9;
+}
+.tablepress .even td {
+	background-color: #ffffff;
+}
+.tablepress .row-hover tr:hover td {
+	background-color: #D6D6D6;
+}
+
+.tablepress .sorting:hover,
+.tablepress .sorting_asc,
+.tablepress .sorting_desc {
+	background-color: #000;
+}
+
+.degree-page-links {
+    background: #000;
+    color:#fff;
+    text-align: center;
+    padding: .8em;
+}
+
+.degree-page-links a, .degree-page-links a:visited,.degree-page-links a:active {
+    color: #fff;
+}
+
+.degree-page-links a:hover {
+    color: #EDEDED;
+}
+
+/* END: Plugin - TablePress */
+
 /* START: Plugin - wp-socializer */
 
 .wp-socializer ul, .wp-socializer li{
