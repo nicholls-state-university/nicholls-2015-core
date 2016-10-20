@@ -443,93 +443,6 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	text-decoration: none;
 }
 
-/* secondary */
-
-.nicholls-secondary-navigation- {
-	width: auto;
-	margin: 0 auto;
-	position: relative;
-	float: none;
-	z-index: 100;
-	text-align: left;
-}
-
-.nicholls-secondary-navigation- .menu {
-	display: inline-block; /* centers modern browsers */
-	margin: 0 auto; /* centers modern browsers */
-	text-align: center; /* centers IE6/7 */
-	float: left;
-}
-
-.nicholls-secondary-navigation- .menu-search {
-	display: inline-block; /* centers modern browsers */
-	margin: 0 auto; /* centers modern browsers */
-	text-align: center; /* centers IE6/7 */
-	float: right;
-	border-bottom-right-radius: 1.5em;
-	border-right: 1px solid #999;
-	border-bottom-left-radius: 1.5em;
-	border-bottom: 1px solid #999;
-	border-left: 1px solid #999;
-	width: 2em;
-}
-
-.nicholls-secondary-navigation- .menu-search a,
-.nicholls-secondary-navigation- .menu-search a:link,
-.nicholls-secondary-navigation- .menu-search a:hover,
-.nicholls-secondary-navigation- .menu-search a:active,
-.nicholls-secondary-navigation- .menu-search a:visited {
-	border: none;
-	text-decoration: none;
-	font-size: 0 !important;
-	display: block;
-}
-
-/* Search Box */
-
-.mfp-close-btn-in .mfp-close {
-	color: #ccc !important;
-}
-
-.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
-	 list-style-type: none;
-	 list-style-position: inside;
-	 list-style-image: none;
-	 display: block; /* IE6/7 haslayout trip-switch */
- }
-
-.nicholls-secondary-navigation- ul {
-	display: inline-block; /* IE6/7 haslayout trip-switch */
-	margin: 0;
-	padding: 0;
-}
-
-.nicholls-secondary-navigation- ul li {
-	display: inline;
-	padding: .2em;
-
-	border-bottom: 1px solid #999;
-}
-
-.nicholls-secondary-navigation- ul li:first-child {
-	border-bottom-left-radius: 1.5em;
-	border-bottom: 1px solid #999;
-	border-left: 1px solid #999;
-}
-
-.nicholls-secondary-navigation- ul li:last-child {
-	border-bottom-right-radius: 1.5em;
-	border-bottom: 1px solid #999;
-	border-right: 1px solid #999;
-}
-
-.nicholls-secondary-navigation- ul li a {
-	display: inline-block;
-	padding: 0 1em .4em 1em;
-	font-size: 80%;
-	font-weight: 600;
-}
-
 /* primary */
 
 .nicholls-primary-navigation- {
@@ -613,32 +526,211 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* primary & secondary */
 
-.nicholls-primary-navigation- ul li a {
+.nicholls-primary-navigation- a,
+.nicholls-primary-navigation- a:link,
+.nicholls-primary-navigation- a:active,
+.nicholls-primary-navigation- a:visited {
 	color: #fff;
 	text-decoration: none;
 }
 
-.nicholls-primary-navigation- ul li a:link,
-.nicholls-primary-navigation- ul li a:active,
-.nicholls-primary-navigation- ul li a:visited {
-	color: #fff;
+.nicholls-primary-navigation- a:hover {
+	text-decoration: underline;
 }
 
-.nicholls-primary-navigation- ul li a:hover {
-	color: #fff;
+/* secondary */
+
+.nicholls-secondary-navigation- {
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	float: none;
+	z-index: 100;
+	text-align: left;
 }
 
-.nicholls-secondary-navigation- ul li a,
-.nicholls-secondary-navigation- ul li a:link,
-.nicholls-secondary-navigation- ul li a:active,
-.nicholls-secondary-navigation- ul li a:visited {
+.nicholls-secondary-navigation- .menu {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+	float: left;
+}
+
+.nicholls-secondary-navigation- ul, .nicholls-secondary-navigation- ul ul {
+	 list-style-type: none;
+	 list-style-position: inside;
+	 list-style-image: none;
+	 display: block; /* IE6/7 haslayout trip-switch */
+ }
+
+.nicholls-secondary-navigation- ul {
+	display: inline-block; /* IE6/7 haslayout trip-switch */
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-secondary-navigation- ul li {
+	display: inline;
+	padding: .2em;
+
+	border-bottom: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- ul li:first-child {
+	border-bottom-left-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- ul li:last-child {
+	border-bottom-right-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+.nicholls-secondary-navigation- a,
+.nicholls-secondary-navigation- a:link,
+.nicholls-secondary-navigation- a:active,
+.nicholls-secondary-navigation- a:visited {
+	display: inline-block;
+	padding: 0 1em .4em 1em;
+	font-size: 80%;
+	font-weight: 600;
 	color: #999;
 	text-decoration: none;
 }
 
-.nicholls-secondary-navigation- ul li a:hover {
+.nicholls-secondary-navigation- a:hover {
 	color: #999;
 }
+
+/* Search - START */
+
+.nicholls-secondary-navigation- a.n-button-search-,
+.nicholls-secondary-navigation- a.n-button-search-:link,
+.nicholls-secondary-navigation- a.n-button-search-:hover,
+.nicholls-secondary-navigation- a.n-button-search-:active,
+.nicholls-secondary-navigation- a.n-button-search-:visited {
+	border: none;
+	text-decoration: none;
+	display: block;
+	outline: 0;
+	text-align: left;
+}
+
+.nicholls-secondary-navigation- a.n-button-search- {
+	display: block;
+
+	background-image: url("nicholls/images/icons/general/search-white.png");
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 2em;
+	height :22px;
+	margin-left: 1em;
+}
+
+.nicholls-secondary-navigation- .menu-search {
+	display: inline-block; /* centers modern browsers */
+	margin: 0 auto; /* centers modern browsers */
+	text-align: center; /* centers IE6/7 */
+	float: right;
+	border-bottom-right-radius: 1.5em;
+	border-right: 1px solid #999;
+	border-bottom-left-radius: 1.5em;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 6em;
+	text-align: center;
+}
+
+/* Search Box */
+
+.mfp-close-btn-in .mfp-close {
+	color: #ccc !important;
+}
+
+/* Search Form */
+
+.form-gs-container- fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-gs-container- label {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.form-gs-container- .input-q-:focus,
+.form-gs-container- .input-q-:hover,
+.form-gs-container- .input-q-:active {
+	color: #fff;
+}
+
+.form-gs-container- .input-q- {
+	border: none;
+	margin: 0;
+	padding: .2em !important;
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form-gs-container- input {
+	font-size: 86%;
+	width: 7em;
+	border: none;
+	box-shadow: none;
+}
+
+.form-gs-container- input:hover,
+.form-gs-container- input:focus {
+	border: none;
+}
+
+.form-gs-container- form input[type=submit] {
+	background : url("nicholls/images/icons/general/search-white.png") no-repeat center center;
+	background-color: #000;
+	width : 22px;
+	height :22px;
+	color : transparent;
+	font-size : 0
+}
+
+.mfp-container .form-gs-container- {
+	width: 20em;
+	height: 4em;
+	background-color: #222;
+	margin: 0 auto;
+	padding: .8em;
+	border: 1px solid #ccc;
+	border-radius: 1.5em;
+}
+
+.mfp-container .form-gs-container- .input-q- {
+	background: #666;
+	border: 1px solid #ccc;
+	width: 12em;
+}
+
+.mfp-container .form-gs-container- #gs {
+	width: 100%;
+}
+
+.mfp-container .form-gs-container- .input-search-,
+.mfp-container .form-gs-container- .button-search- {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 5px;
+}
+
+/* Search - END */
+
 
 /* Call to Action Buttons */
 
@@ -1672,109 +1764,6 @@ input:focus, textarea:focus {
 }
 
 /* END - Custom Classes */
-
-/* Search - START */
-
-.form-gs-container- {
-
-}
-
-.form-gs-container- fieldset {
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-
-.form-gs-container- label {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-}
-
-.form-gs-container- .input-q-:focus,
-.form-gs-container- .input-q-:hover,
-.form-gs-container- .input-q-:active {
-	color: #fff;
-}
-
-.form-gs-container- .input-q- {
-	border: none;
-	margin: 0;
-	padding: .2em !important;
-	background-color: transparent;
-	color: #fff;
-	font-weight: bold;
-}
-
-.form-gs-container- input {
-	font-size: 86%;
-	width: 7em;
-	border: none;
-	box-shadow: none;
-}
-
-.form-gs-container- input:hover,
-.form-gs-container- input:focus {
-	border: none;
-}
-
-.form-gs-container- form input[type=submit] {
-
-	background : url("nicholls/images/icons/general/search-white.png") no-repeat center center;
-	background-color: #000;
-	width : 22px;
-	height :22px;
-	color : transparent;
-	font-size : 0
-}
-
-.n-button-search- {
-	display: block;
-
-	background-image: url("nicholls/images/icons/general/search-white.png");
-	background-color: transparent;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	margin: 0;
-	padding: 0;
-	text-indent: -9999px;
-
-	width : 22px;
-	height :22px;
-	color : transparent;
-	font-size : 0;
-}
-
-.mfp-container .form-gs-container- {
-	width: 20em;
-	height: 4em;
-	background-color: #222;
-	margin: 0 auto;
-	padding: .8em;
-	border: 1px solid #ccc;
-	border-radius: 1.5em;
-}
-
-.mfp-container .form-gs-container- .input-q- {
-	background: #666;
-	border: 1px solid #ccc;
-	width: 12em;
-}
-
-.mfp-container .form-gs-container- #gs {
-	width: 100%;
-}
-
-.mfp-container .form-gs-container- .input-search-,
-.mfp-container .form-gs-container- .button-search- {
-	display: inline-block;
-	float: right;
-	position: relative;
-	top: 5px;
-}
-
-/* Search - END */
 
 /* START - Widgets */
 
@@ -2914,6 +2903,27 @@ h1, h2, h3, h4, h5, h6 {
 		display: none;
 	}
 
+	.menu-search {
+		margin: .2em .2em 0 0;
+	}
+
+	.menu-search a.n-button-search- {
+		display: block;
+
+		background-image: url("nicholls/images/icons/general/search-white.png");
+		background-color: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		width :22px;
+		height :22px;
+		margin: 0;
+		padding: 0;
+		text-indent: -9999px;
+		color : transparent;
+		font-size : 0;
+	}
+
 	.site, .site-header, .nicholls-site-header {
 		@include container(23);
 	}
@@ -3145,6 +3155,27 @@ h1, h2, h3, h4, h5, h6 {
 
 	#nicholls-secondary-navigation-wrapper {
 		display: none;
+	}
+
+	.menu-search {
+		margin: .2em .2em 0 0;
+	}
+
+	.menu-search a.n-button-search- {
+		display: block;
+
+		background-image: url("nicholls/images/icons/general/search-white.png");
+		background-color: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		width :22px;
+		height :22px;
+		margin: 0;
+		padding: 0;
+		text-indent: -9999px;
+		color : transparent;
+		font-size : 0;
 	}
 
 	.site, .site-header, .nicholls-site-header {
@@ -3392,6 +3423,27 @@ h1, h2, h3, h4, h5, h6 {
 
 	#nicholls-secondary-navigation-wrapper {
 		display: none;
+	}
+
+	.menu-search {
+		margin: .2em .2em 0 0;
+	}
+
+	.menu-search a.n-button-search- {
+		display: block;
+
+		background-image: url("nicholls/images/icons/general/search-white.png");
+		background-color: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		width :22px;
+		height :22px;
+		margin: 0;
+		padding: 0;
+		text-indent: -9999px;
+		color : transparent;
+		font-size : 0;
 	}
 
 	.site, .site-header, .nicholls-site-header {

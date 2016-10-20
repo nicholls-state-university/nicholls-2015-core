@@ -25,7 +25,7 @@
 				</div>
 				<div class="menu-search">
 					<?php nicholls_form_google_search(); ?>
-					<a id="n-button-search" class="n-button-search-" href="//www.nicholls.edu/search">Search Nicholls</a>
+					<a id="n-button-search" class="n-button-search-" href="//www.nicholls.edu/search">Search</a>
 				</div>
 			</nav><!-- #site-secondary-navigation -->
 		</div>
