@@ -614,6 +614,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	border: none;
 	text-decoration: none;
 	display: block;
+	/* remove dotted outline on <a> tags. */
 	outline: 0;
 	text-align: left;
 }
