@@ -451,8 +451,15 @@ function jacket_core_custom_header_style() {
    $h_width = apply_filters( 'jacket_core_custom_header_css_background_width',  get_custom_header()->width );
 
    if ( !empty( $h_height ) ) $css_txt .= "\n height: " . $h_height . 'px;';
-   if ( !empty( $h_width ) ) $css_txt .= "\n width: " . $h_width . 'px;';
 
+/*
+	ISSUE::
+	Below Commented because we want the header to be more responsive.
+	This will keep custom header image from pushing outside of
+	the containing element
+
+	if ( !empty( $h_width ) ) $css_txt .= "\n width: " . $h_width . 'px;';
+*/
    if ( !empty( $jacket_core->custom_header['css_bg_color'] ) ) $css_txt .= "\n background-color: " . $jacket_core->custom_header['css_bg_color'] . ';';
 
    if ( !empty( $css_image ) ) {
