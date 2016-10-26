@@ -2231,26 +2231,31 @@ a.button-width-auto {
 
 /* START: Plugin - TablePress */
 
+/*
+Using !important is stupid, try better nextime.
+See about makeing a late-blooming Stylesheet.
+*/
+
 /* Row background colors */
 .tablepress thead th,
 .tablepress tfoot th {
-	background-color: #cc3333;
-	color: #fff;
+	background-color: #cc3333 !important;
+	color: #fff !important;
 }
 .tablepress .odd td {
-	background-color: #f9f9f9;
+	background-color: #f9f9f9 !important;
 }
 .tablepress .even td {
-	background-color: #ffffff;
+	background-color: #ffffff !important;
 }
 .tablepress .row-hover tr:hover td {
-	background-color: #D6D6D6;
+	background-color: #D6D6D6 !important;
 }
 
 .tablepress .sorting:hover,
 .tablepress .sorting_asc,
 .tablepress .sorting_desc {
-	background-color: #000;
+	background-color: #000 !important;
 }
 
 .degree-page-links {
