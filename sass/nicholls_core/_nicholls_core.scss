@@ -2623,6 +2623,65 @@ div.wpcf7 {
 
 /* END: Plugin - Nicholls Slider - Homepage */
 
+/* Start: n-box decorative icon boxes */
+
+.n-box-container {
+	margin-top: 1.8em;
+}
+
+.n-box {
+	background-color: #EFEFEF;
+	margin: 1em .6em 2em .6em;
+	border: 1px solid #E0E0E0;
+	border-radius: 25px;
+}
+
+.n-box-icon {
+	background-color: transparent;
+	text-align: center;
+}
+
+.n-box-icon img {
+	margin-top: -1.8em;
+}
+
+.n-box-info {
+	width: 100%;
+	margin-top: -.5em;
+	margin-bottom: 1em;
+}
+
+.n-box-info .n-box-title {
+	margin: .4em 0 0 0;
+	max-width: 100%;
+	padding: .4em .8em;
+	background-color: #cc3333;
+	color: #fff;
+	text-align: center;
+}
+
+.n-box-info .n-box-title a,
+.n-box-info .n-box-title a:link,
+.n-box-info .n-box-title a:active,
+.n-box-info .n-box-title a:visited {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 104%;
+}
+
+.n-box-info .n-box-title a:hover {
+	text-decoration: underline;
+}
+
+.n-box-info .n-box-content {
+	margin: auto;
+	max-width: 90%;
+	padding: .5em 0 0 0;
+}
+
+/* End: n-box decorative icon boxes */
+
 /* START Hidden Elements */
 .hide, .accessibility-hide, .accessibility {
 	position: absolute !important;
