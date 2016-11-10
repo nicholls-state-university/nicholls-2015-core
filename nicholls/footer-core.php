@@ -55,6 +55,7 @@
 					<li><a class="icon-inline-small-mail" href="//mail.google.com/a/nicholls.edu">Faculty &amp; Staff Email</a></li>
 					<li><a class="icon-inline-small-document" href="//banner.nicholls.edu/">Banner</a></li>
 					<li><a class="icon-inline-small-document" href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
+					<li><a class="icon-inline-small-document" href="https://nicholls.gradesfirst.com/">Grades First</a></li>
 					<li><a class="icon-inline-small-document" href="//www.nicholls.edu/library/">Library</a></li>
 				</ul>
 			</div>
