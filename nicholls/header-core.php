@@ -10,9 +10,6 @@
 				<div class="menu">
 					<ul>
 						<li class="menu-item">
-							<a href="//www.nicholls.edu/parents">Parents</a>
-						</li>
-						<li class="menu-item">
 							<a href="//www.nicholls.edu/current-students">Current Students</a>
 						</li>
 						<li class="menu-item">
@@ -20,6 +17,9 @@
 						</li>
 						<li class="menu-item">
 							<a href="//www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
+						</li>
+						<li class="menu-item">
+							<a href="//www.nicholls.edu/online">Nicholls Online</a>
 						</li>
 					</ul>
 				</div>

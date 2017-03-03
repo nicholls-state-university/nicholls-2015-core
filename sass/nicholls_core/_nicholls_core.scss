@@ -571,7 +571,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 .nicholls-secondary-navigation- ul li {
 	display: inline;
-	padding: .2em;
+	padding: .2em 0;
 
 	border-bottom: 1px solid #999;
 }
@@ -580,12 +580,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	border-bottom-left-radius: 1.5em;
 	border-bottom: 1px solid #999;
 	border-left: 1px solid #999;
+	padding-left: .3em;
 }
 
 .nicholls-secondary-navigation- ul li:last-child {
 	border-bottom-right-radius: 1.5em;
 	border-bottom: 1px solid #999;
 	border-right: 1px solid #999;
+	padding-right: .3em;
 }
 
 .nicholls-secondary-navigation- a,
@@ -593,7 +595,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-secondary-navigation- a:active,
 .nicholls-secondary-navigation- a:visited {
 	display: inline-block;
-	padding: 0 1em .4em 1em;
+	padding: 0 .7em .4em .7em;
 	font-size: 80%;
 	font-weight: 600;
 	color: #999;
@@ -2804,6 +2806,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Layout - Large Screen breakpoint is 1166 */
 @include susy-breakpoint( 80em, 37 ) {
+
+	/* Allow more padding on bigger screen */
+	.nicholls-secondary-navigation- ul li {
+		padding: .2em .2em;
+	}
 
 	.site, .site-header, .nicholls-site-header {
 		@include container(37);
