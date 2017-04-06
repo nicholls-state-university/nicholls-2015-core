@@ -40,7 +40,7 @@ add_action( 'after_setup_theme', 'nicholls_homepage_init' );
 			<div id="n-home-section-primary" class="n-home-section-primary-">
 
 				<?php echo n_homepage_slider_get_slider( 'photo' ); ?>
-				<?php n_homepage_slider_get_slider_calendar(); ?>
+				<?php if ( function_exists( 'nicholls_homepage_calendar_feed' ) ) nicholls_homepage_calendar_feed(); ?>
 
 			</div>
 
