@@ -65,7 +65,7 @@
 					<li><a class="icon-inline-small-question" href="//www.nicholls.edu/site-map/">Website Directory</a></li>
 					<li><a class="icon-inline-small-question" href="//www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 					<li><a class="icon-inline-small-ada" href="//www.nicholls.edu/ada/">ADA Information</a></li>
-					<li><a class="icon-inline-small-emergency" href="//emergency.nicholls.edu/">Emergency Preparedness</a></li>
+					<li><a class="icon-inline-small-emergency" href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
 					<li><a class="icon-inline-small-jobs" href="//www.nicholls.edu/human-resources/">Employment</a></li>
 				</ul>
 			</div>
