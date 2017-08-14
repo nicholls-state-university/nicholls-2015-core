@@ -2277,6 +2277,225 @@ See about makeing a late-blooming Stylesheet.
 
 /* END: Plugin - TablePress */
 
+/* START: Plugin - Elementor */
+
+.page-template-template-full-page-no-sidebars .elementor-element-populated {
+	padding: .4em 0 !important;
+}
+
+.elementor-container {
+	max-width: 100% !important;
+}
+
+/* Elementor - Custom Menus Start */
+
+.nav-lock-scroll {
+	overflow: hidden;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 900;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul {
+	display: block;
+	position: relative;
+	zoom: 1;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:hover,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:active,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:visited {
+	display: block;
+	position: relative;
+}
+
+@media only screen and (min-width: 96px) {
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
+	display: block;
+	position: relative;
+	bottom: auto;
+	overflow: visible;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li {
+	position: relative;
+	white-space: nowrap;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div > ul > li {
+	display: inline-block;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul {
+	display: block;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 901;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul > li{
+	border-bottom: 1px solid #ccc;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul {
+	top: 5px;
+	left: 95%;
+	z-index: 902;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul {
+	z-index: 903;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul ul {
+	z-index: 904;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul li > ul {
+	left: auto;
+	right: 100%;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > ul {
+	display: block;
+}
+
+}
+
+@media only screen and (max-width: 959px) {
+
+.nav-no-js .nav-button:hover + .nav,
+.nav-no-js .nav:hover,
+.nav-no-js .nav-button:hover + .elementor-widget-wp-widget-nav_menu .elementor-widget-container div + .nav-close,
+.nav-no-js .nav:hover + .nav-close {
+	display: block;
+}
+
+}
+
+/* Elementor - Custom Menu - layout */
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
+	padding-top: 2rem;
+	line-height: 2rem;
+	background: #cc3333;
+	color: #fff;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul {
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul {
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul {
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul {
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul ul {
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li {
+	cursor: pointer;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > a,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li.nav-active > a {
+	color: #fff;
+	background: #cc3333;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > ul {
+	margin-left: 10px;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > a {
+	padding-right: 30px !important;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:hover,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:active,
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:visited {
+	padding: 0 15px 1px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > a:after {
+	position: absolute;
+	display: block;
+	right: 10px;
+	top: 1px;
+	content: "\232A";
+}
+
+@media only screen and (min-width: 960px) {
+
+.nav-button {
+	display: none;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
+	padding: 0 !important;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div > ul > li {
+	border-top: none;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li > ul {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul li:first-child {
+	border-top: none;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > ul {
+	margin: 0;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div > ul > .nav-submenu > a:after {
+	content: "\232A";
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > a:after {
+	content: "\232A";
+}
+
+}
+
+/* Elementor - Custom Menus Start */
+
+/* END: Plugin - Elementor */
+
 /* START: Plugin - wp-socializer */
 
 .wp-socializer ul, .wp-socializer li{
