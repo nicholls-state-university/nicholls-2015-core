@@ -2279,13 +2279,61 @@ See about makeing a late-blooming Stylesheet.
 
 /* START: Plugin - Elementor */
 
-.page-template-template-full-page-no-sidebars .elementor-element-populated {
-	padding: .4em 0 !important;
-}
-
 .elementor-container {
 	max-width: 100% !important;
 }
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-section {
+	clear: both;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .entry-content {
+	margin: 0 !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header .content-area,
+.page-template-template-elementor-page-no-sidebars-no-header .hentry,
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .content-area,
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .hentry  {
+	margin: 0;
+	padding: 0;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header .elementor-element-populated,
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-element-populated {
+	padding: 0 !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header .elementor-element-populated .elementor-row,
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-element-populated .elementor-row {
+	padding: .4em 0 .4em 0 !important;
+	clear: both;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header .elementor-element-populated .elementor-element {
+	padding: 0 .4em 0 .4em !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-heading {
+	clear: both;
+	padding: 0 .4em !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-text-editor {
+	margin: 1em;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-heading-title {
+	clear: both;
+	padding: 0 .4em !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-icon-list {
+	clear: both;
+	padding: 0 .4em !important;
+}
+
+.elementor-widget-icon-list {}
 
 /* Elementor - Custom Menus Start */
 
