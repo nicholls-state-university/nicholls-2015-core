@@ -2475,7 +2475,6 @@ See about makeing a late-blooming Stylesheet.
 	cursor: pointer;
 }
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > a,
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div li.nav-active > a {
 	color: #fff;
 	background: #cc3333;
@@ -2496,6 +2495,11 @@ See about makeing a late-blooming Stylesheet.
 	padding: 0 15px 1px;
 	color: #fff;
 	text-decoration: none;
+}
+
+.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > a {
+	color: #fff;
+	background: #444;
 }
 
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > a:after {
