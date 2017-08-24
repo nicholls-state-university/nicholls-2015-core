@@ -2321,17 +2321,14 @@ See about makeing a late-blooming Stylesheet.
 
 .page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-text-editor {
 	margin: 1em;
+	color: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit;
 }
 
 .page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-heading-title {
 	clear: both;
 	padding: 0 .4em !important;
-}
-
-.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-text-editor {
-	color: inherit !important;
-	font-family: inherit !important;
-	font-weight: inherit;
 }
 
 .page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-icon-list {
