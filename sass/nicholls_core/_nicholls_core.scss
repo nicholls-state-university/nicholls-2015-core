@@ -2287,8 +2287,27 @@ See about makeing a late-blooming Stylesheet.
 	clear: both;
 }
 
+.elementor-6 .elementor-element.elementor-element-2p2llu0 .elementor-heading-title,
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-heading {
+	font-size: inherit !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-heading {
+	font-size: 120%;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-heading-title {
+	font-size: 240%;
+}
+
 .page-template-template-elementor-page-no-sidebars-no-header-no-title .entry-content {
 	margin: 0 !important;
+	line-height: 1.2em;
+	font-size: 100%;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .entry-content p {
+	margin-bottom: 0 !important;
 }
 
 .page-template-template-elementor-page-no-sidebars-no-header .content-area,
@@ -2338,6 +2357,10 @@ See about makeing a late-blooming Stylesheet.
 
 .page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-6 .elementor-element.elementor-element-w9u4fc1 {
 	margin-top: 0 !important;
+}
+
+.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-image-carousel-caption {
+	padding: .6em 1em;
 }
 
 /* Elementor - Custom Menus Start */
@@ -3709,6 +3732,19 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(17);
 	}
 	/* END: Plugin - Nicholls Emergency */
+
+	/* START: Plugin - Elementor */
+
+	.culinary-header .culinary-logo .elementor-image{
+		text-align: center;
+	}
+
+	.culinary-header .culinary-logo img {
+		width: 20%;
+	}
+
+	/* END: Plugin - Elementor */
+
 }
 
 /* Layout - Phone Screen Portrait breakpoint is  */
@@ -3962,6 +3998,28 @@ h1, h2, h3, h4, h5, h6 {
 		@include container(11);
 	}
 	/* END: Plugin - Nicholls Emergency */
+
+	/* START: Plugin - Elementor */
+
+	.culinary-header .culinary-logo .elementor-image{
+		text-align: center;
+	}
+
+	.culinary-header .culinary-logo img {
+		width: 20%;
+	}
+
+	.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-widget-heading {
+		font-size: 60%;
+	}
+
+	.page-template-template-elementor-page-no-sidebars-no-header-no-title .elementor-text-editor {
+		font-size: 60%;
+		line-height: 1.1em;
+	}
+
+	/* END: Plugin - Elementor */
+
 }
 
 
