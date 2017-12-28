@@ -51,7 +51,7 @@ function custom_query_shortcode($atts) {
 
 	$the_query_custom = new WP_Query( $qs_query_arr );
 	$more = $the_query_arr['qs_more'];
-	$the_query_custom->in_the_loop = true;
+	//$the_query_custom->in_the_loop = true;
 
 	if ( $the_query_custom->have_posts() ) {
 
@@ -79,7 +79,7 @@ function custom_query_shortcode($atts) {
 
 			$the_query_custom->the_post();
 
-			setup_postdata( $the_query_custom->post );
+			//setup_postdata( $the_query_custom->post );
 
 			// Thumbnail
 			$thumbnail = '';
@@ -107,14 +107,17 @@ function custom_query_shortcode($atts) {
 			$content = '';
 			if ( !empty( $the_query_arr['qs_content'] ) || $the_query_arr['qs_content'] != 0 ) {
 
-				$this_content = get_the_content();
+				$content_post = get_post( $the_query_custom->post->ID );
+				$this_content = $content_post->post_content;
+				$this_content = apply_filters('the_content', $this_content);
+
 				$this_content = strip_shortcodes( $this_content );
 				// Strip http:// urls incase of oembeds
 				$this_content = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $this_content);
 				$this_content = strip_tags( $this_content );
 				$this_content_length = intval( $the_query_arr['qs_content'] );
 				// Trim to word length.
-				$this_content = wp_trim_words( $this_content, $this_content_length );
+				$this_content = wp_trim_words( $this_content, $this_content_length );				
 
 				$content = jacket_core_html_tag( array(
 					'tag' => 'div',
@@ -122,12 +125,14 @@ function custom_query_shortcode($atts) {
 					'tag_content' => $this_content . '...',
 					'return' => true
 				) );
-
+				
 			} else {
 
 				$more = 0;
 
-				$this_content = get_the_content( 'Read more &raquo;' );
+				$content_post = get_post( $the_query_custom->post->ID );
+				$this_content = $content_post->post_content;
+				$this_content = apply_filters('the_content', $this_content);
 
 				$content = jacket_core_html_tag( array(
 					'tag' => 'div',
@@ -137,11 +142,6 @@ function custom_query_shortcode($atts) {
 				) );
 
 			}
-
-
-
-
-
 
 			// Title
 			$temp_title = get_the_title( $the_query_custom->post->ID );
@@ -216,6 +216,8 @@ function custom_query_shortcode($atts) {
 		) );
 
 	}
+	
+	wp_reset_postdata();
 
 	return $output;
 }
