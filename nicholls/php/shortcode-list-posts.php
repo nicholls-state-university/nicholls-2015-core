@@ -86,7 +86,7 @@ function custom_query_shortcode($atts) {
 			if ( isset( $the_query_arr['qs_thumbnail'] ) ) {
 
 				if ( !empty( $the_query_arr['qs_thumbnail'] ) ) {
-					list( $t_height, $t_width ) = split( 'x', $the_query_arr['qs_thumbnail'] );
+					list( $t_height, $t_width ) = explode( 'x', $the_query_arr['qs_thumbnail'] );
 					if ( empty( $t_height ) ) $t_height = $t_width;
 					if ( empty( $t_width ) ) $t_width = $t_height;
 
@@ -117,7 +117,7 @@ function custom_query_shortcode($atts) {
 				$this_content = strip_tags( $this_content );
 				$this_content_length = intval( $the_query_arr['qs_content'] );
 				// Trim to word length.
-				$this_content = wp_trim_words( $this_content, $this_content_length );				
+				$this_content = wp_trim_words( $this_content, $this_content_length );
 
 				$content = jacket_core_html_tag( array(
 					'tag' => 'div',
@@ -125,7 +125,7 @@ function custom_query_shortcode($atts) {
 					'tag_content' => $this_content . '...',
 					'return' => true
 				) );
-				
+
 			} else {
 
 				$more = 0;
@@ -193,7 +193,7 @@ function custom_query_shortcode($atts) {
 			$t_replace = array( '<div>', '</div>', $title, $thumbnail, $date, $content );
 			$t_result = str_replace( $t_search, $t_replace, $the_query_arr['qs_template'] );
 
-			$output .= $t_result . $ttest;
+			$output .= $t_result;
 
 			$output .= jacket_core_html_tag( array(
 				'tag' => 'li',
@@ -216,7 +216,7 @@ function custom_query_shortcode($atts) {
 		) );
 
 	}
-	
+
 	wp_reset_postdata();
 
 	return $output;

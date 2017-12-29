@@ -8,11 +8,16 @@
 if ( !class_exists('WP_Widget_Nicholls_Department') ) {
 	class WP_Widget_Nicholls_Department extends WP_Widget {
 
-		function WP_Widget_Nicholls_Department() {
+		public function __construct() {
 			$widget_ops = array('classname' => 'nicholls-department-widget', 'description' => 'Nicholls Department Information' );
 			$control_ops = array('width' => 400, 'height' => 350);
 			$this->WP_Widget('nicholls_department_info', 'Nicholls Department Information', $widget_ops, $control_ops);
 		}
+
+		# Attempt to stop some error warndings and make compatible with PHP 7.
+		public function WP_Widget_Nicholls_Department() {
+      self::__construct();
+    }
 
 		function widget( $args, $instance ) {
 			extract($args);
