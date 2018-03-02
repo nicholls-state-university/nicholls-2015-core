@@ -17,6 +17,7 @@
 * @since 1.0
 * @echo string
 */
+
 function custom_query_shortcode($atts) {
 	global $more, $wp_query, $posts, $post;
 
@@ -83,24 +84,22 @@ function custom_query_shortcode($atts) {
 
 			// Thumbnail
 			$thumbnail = '';
-			if ( isset( $the_query_arr['qs_thumbnail'] ) ) {
 
-				if ( !empty( $the_query_arr['qs_thumbnail'] ) ) {
-					list( $t_height, $t_width ) = explode( 'x', $the_query_arr['qs_thumbnail'] );
-					if ( empty( $t_height ) ) $t_height = $t_width;
-					if ( empty( $t_width ) ) $t_width = $t_height;
+			if ( !empty( $the_query_arr['qs_thumbnail'] ) ) {
+				list( $t_height, $t_width ) = explode( 'x', $the_query_arr['qs_thumbnail'] );
+				if ( empty( $t_height ) ) $t_height = $t_width;
+				if ( empty( $t_width ) ) $t_width = $t_height;
 
-					if ( is_numeric( $t_height ) && is_numeric( $t_width ) )
-						$t_size = array( $t_height, $t_width );
-					else
-						$t_size = $the_query_arr['qs_thumbnail'];
+				if ( is_numeric( $t_height ) && is_numeric( $t_width ) )
+					$t_size = array( $t_height, $t_width );
+				else
+					$t_size = $the_query_arr['qs_thumbnail'];
 
-					$thumbnail = fnbx_get_the_post_thumbnail( $the_query_custom->post->ID, $t_size );
+				$thumbnail = fnbx_get_the_post_thumbnail( $the_query_custom->post->ID, $t_size );
 
-				} else {
+			} else {
 
-					$thumbnail = fnbx_get_the_post_thumbnail();
-				}
+				$thumbnail = fnbx_get_the_post_thumbnail();
 			}
 
 			// Content

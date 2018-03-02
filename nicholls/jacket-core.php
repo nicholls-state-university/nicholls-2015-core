@@ -391,10 +391,19 @@ function fnbx_get_the_post_thumbnail( $post_id = NULL, $size = 'post-thumbnail',
 	$post_id = ( NULL === $post_id ) ? $id : $post_id;
 
 	add_filter( 'post_thumbnail_html', 'fnbx_post_thumbnail_html', 1, 4);
-	$t_image = get_the_post_thumbnail( $post_id, $size, $attr );
+
+  $featured_img_id = get_post_thumbnail_id( $post_id );
+  $t_image = wp_get_attachment_image( $featured_img_id, $size, $attr);
+  $output = jacket_core_html_tag( array(
+    'tag' => 'div',
+    'class' => 'post-featured-image',
+    'tag_content' => $t_image,
+    'return' => true
+  ) );
+
 	remove_filter( 'post_thumbnail_html', 'fnbx_post_thumbnail_html' );
 
-	return $t_image;
+	return $output;
 }
 
 
@@ -1660,7 +1669,7 @@ add_action( 'wp_head', 'nicholls_js_google_analytics' );
 /**
 * Nicholls Filter - Remove Sidebar Widgets
 *
-* Function to remove all sidebar widgets so the page will be full width. 
+* Function to remove all sidebar widgets so the page will be full width.
 *
 * @since 0.1
 */
