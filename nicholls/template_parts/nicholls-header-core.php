@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="nicholls-site-branding">
-			<div class="nicholls-site-title"><a href="//web2.nicholls.edu/test/" rel="home">Testing site</a></div>
+			<div class="nicholls-site-title"><a href="//web2.nicholls.edu/test/" rel="home">Nicholls State University</a></div>
 		</div><!-- .nicholls-site-branding -->
 
 		<div class="nicholls-cta-primary nicholls-cta">
