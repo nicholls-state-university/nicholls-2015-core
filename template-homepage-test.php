@@ -14,22 +14,6 @@ Template Name: Homepage TEST Template
 global $n_homepage_slider_active;
 $n_homepage_slider_active = true;
 
-/**
-* Nicholls Theme Home init action
-*
-* Initialize the home.php template display differently for this view
-*
-*/
-function nicholls_homepage_init() {
-
-	// Google Webmaster Tools verification
-	add_action( 'wp_head', 'nicholls_google_verify' );
-
-	// if ( function_exists( 'nicholls_google_analytics' ) ) add_action( 'fnbx_wp_head_after', 'nicholls_google_analytics' );
-
-}
-add_action( 'after_setup_theme', 'nicholls_homepage_init' );
-
 ?>
 
 <?php get_header(); ?>
