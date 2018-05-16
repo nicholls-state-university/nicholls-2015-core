@@ -2279,6 +2279,20 @@ See about makeing a late-blooming Stylesheet.
 
 /* START: Plugin - Elementor */
 
+.elementor-default a, .elementor-default a:link {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+.elementor-default a:visited {
+	color: $link-color-visited;
+}
+
+.elementor-default a:hover {
+	color: $link-color-hover;
+	text-decoration: none;
+}
+
 .elementor-container {
 	max-width: 100% !important;
 }
