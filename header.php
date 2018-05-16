@@ -28,7 +28,7 @@
 
 <?php
 // Remove header for homepage template
-if ( !is_page_template( array( 'template-homepage.php', 'template-elementor-page-no-sidebars-no-header.php', 'template-elementor-page-no-sidebars-no-header-no-title.php' ) ) ) :
+if ( !is_page_template( array( 'template-homepage.php', 'template-homepage-test.php', 'template-elementor-page-no-sidebars-no-header.php', 'template-elementor-page-no-sidebars-no-header-no-title.php' ) ) ) :
 ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
