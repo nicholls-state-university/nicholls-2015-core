@@ -2279,7 +2279,7 @@ See about makeing a late-blooming Stylesheet.
 
 /* START: Plugin - Elementor */
 
-.elementor-default a, .elementor-default a:link {
+.elementor-default .site-content a, .elementor-default .site-content a:link {
 	color: $link-color;
 	text-decoration: underline;
 }
@@ -2288,7 +2288,11 @@ See about makeing a late-blooming Stylesheet.
 	color: $link-color-visited;
 }
 
-.elementor-default a:hover {
+.elementor-default .site-content a:visited {
+	color: $link-color-visited;
+}
+
+.elementor-default .site-content a:hover {
 	color: $link-color-hover;
 	text-decoration: none;
 }
