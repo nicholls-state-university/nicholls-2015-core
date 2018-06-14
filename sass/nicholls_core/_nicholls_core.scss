@@ -16,7 +16,6 @@ $susy: (
 	columns: 26,
 	gutters: .74,
 	column-width: 1.2em,
-	// advanced
 	math: static
 );
 
@@ -997,6 +996,14 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	padding: 0;
 }
 
+.nicholls-footer-menu ul li .icon-inline-small-give,
+.nicholls-footer-menu ul li .icon-inline-small-give:link,
+.nicholls-footer-menu ul li .icon-inline-small-give:hover,
+.nicholls-footer-menu ul li .icon-inline-small-give:active,
+.nicholls-footer-menu ul li .icon-inline-small-give:visited {
+	color: #33cc33;
+}
+
 /* Footer - Social Media Icons */
 
 footer .nicholls-social-media ul {
@@ -1122,6 +1129,7 @@ display: table;
 @include nicholls-icon-inline-small( 'ada' );
 @include nicholls-icon-inline-small( 'emergency' );
 @include nicholls-icon-inline-small( 'jobs' );
+@include nicholls-icon-inline-small( 'give' );
 
 /* END - Utilities */
 

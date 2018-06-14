@@ -67,6 +67,7 @@
 					<li><a class="icon-inline-small-ada" href="//www.nicholls.edu/ada/">ADA Information</a></li>
 					<li><a class="icon-inline-small-emergency" href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
 					<li><a class="icon-inline-small-jobs" href="//www.nicholls.edu/human-resources/">Employment</a></li>
+					<li><a class="icon-inline-small-give" href="http://www.nichollsfoundation.org">Give to Nicholls</a></li>
 				</ul>
 			</div>
 
