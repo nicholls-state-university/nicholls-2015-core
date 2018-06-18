@@ -43,6 +43,7 @@
 
 		<div class="nicholls-cta-primary nicholls-cta">
 			<a class="button nicholls-cta-apply" href="//www.nicholls.edu/apply/">Apply Now</a>
+			<a class="button nicholls-cta-donate" href="//www.nichollsfoundation.org/" target="_blank">Donate</a>			
 		</div>
 
 		<div id="nicholls-primary-navigation-wrapper">
