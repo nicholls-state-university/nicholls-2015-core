@@ -351,6 +351,13 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	background-color: #000;
 }
 
+.nicholls-header-wrapper- a,
+.nicholls-header-wrapper- a:link,
+.nicholls-header-wrapper- a:active,
+.nicholls-header-wrapper- a:visited {
+	color: #fff !important;
+}
+
 .nicholls-footer-wrapper- {
 	width: 100%;
 	background-color: #000;
@@ -549,15 +556,15 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 
 /* primary & secondary */
 
-.nicholls-primary-navigation- a,
-.nicholls-primary-navigation- a:link,
-.nicholls-primary-navigation- a:active,
-.nicholls-primary-navigation- a:visited {
-	color: #fff;
+.nicholls-primary-navigation- .menu-item > a,
+.nicholls-primary-navigation- .menu-item > a:link,
+.nicholls-primary-navigation- .menu-item > a:active,
+.nicholls-primary-navigation- .menu-item > a:visited {
+	color: #fff !important;
 	text-decoration: none;
 }
 
-.nicholls-primary-navigation- a:hover {
+.nicholls-primary-navigation- .menu-item a:hover {
 	text-decoration: underline;
 }
 
@@ -803,7 +810,7 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 .nicholls-cta a:link,
 .nicholls-cta a:active,
 .nicholls-cta a:visited {
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 }
 
@@ -835,15 +842,12 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	text-shadow: none;
 }
 
-<<<<<<< HEAD
-.nicholls-primary-navigation- a,
-.nicholls-primary-navigation- a:link,
-.nicholls-primary-navigation- a:hover,
-.nicholls-primary-navigation- a:active,
-.nicholls-primary-navigation- a:visited {
-	color: #fff;
-=======
->>>>>>> f675458e776493f0fd9f56ac4f4d0a3c4466f93b
+.nicholls-primary-navigation- .menu-item a,
+.nicholls-primary-navigation- .menu-item a:link,
+.nicholls-primary-navigation- .menu-item a:hover,
+.nicholls-primary-navigation- .menu-item a:active,
+.nicholls-primary-navigation- .menu-item a:visited {
+	color: #fff !important;
 }
 
 .nicholls-cta a,
@@ -2459,7 +2463,7 @@ See about makeing a late-blooming Stylesheet.
 .elementor-widget-wp-widget-nav_menu li a:hover,
 .elementor-widget-wp-widget-nav_menu li a:active,
 .elementor-widget-wp-widget-nav_menu li a:visited {
-	color: #fff;
+	color: #fff !important;
 }
 
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
@@ -2489,6 +2493,7 @@ See about makeing a late-blooming Stylesheet.
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div a:visited {
 	display: block;
 	position: relative;
+	color: #fff;
 }
 
 @media only screen and (min-width: 96px) {
@@ -2605,6 +2610,14 @@ See about makeing a late-blooming Stylesheet.
 
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div .menu-item-has-children > a {
 	padding-right: 30px !important;
+}
+
+.elementor-widget-wrap > .menu-item a,
+.elementor-widget-wrap > .menu-item a:hover,
+.elementor-widget-wrap > .menu-item a:active,
+.elementor-widget-wrap > .menu-item a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div a,
