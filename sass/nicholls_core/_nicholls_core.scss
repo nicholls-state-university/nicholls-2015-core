@@ -835,12 +835,15 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	text-shadow: none;
 }
 
+<<<<<<< HEAD
 .nicholls-primary-navigation- a,
 .nicholls-primary-navigation- a:link,
 .nicholls-primary-navigation- a:hover,
 .nicholls-primary-navigation- a:active,
 .nicholls-primary-navigation- a:visited {
 	color: #fff;
+=======
+>>>>>>> f675458e776493f0fd9f56ac4f4d0a3c4466f93b
 }
 
 .nicholls-cta a,
@@ -2351,10 +2354,6 @@ See about makeing a late-blooming Stylesheet.
 .elementor-default .site-content a, .elementor-default .site-content a:link {
 	color: $link-color;
 	text-decoration: underline;
-}
-
-.elementor-default a:visited {
-	color: $link-color-visited;
 }
 
 .elementor-default .site-content a:visited {
