@@ -456,6 +456,30 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	line-height: 1em;
 }
 
+
+.nicholls-site-header a,
+.nicholls-site-header a:link,
+.nicholls-site-header a:active,
+.nicholls-site-header a:visited,
+.nicholls-primary-navigation-wrapper a,
+.nicholls-primary-navigation-wrapper a:link,
+.nicholls-primary-navigation-wrapper a:active,
+.nicholls-primary-navigation-wrapper a:visited
+.nicholls-secondary-navigation-wrapper a,
+.nicholls-secondary-navigation-wrapper a:link,
+.nicholls-secondary-navigation-wrapper a:active,
+.nicholls-secondary-navigation-wrapper a:visited,
+.nicholls-cta-primary a,
+.nicholls-cta-primary a:link,
+.nicholls-cta-primary a:active,
+.nicholls-cta-primary a:visited,
+.nicholls-cta-secondary a,
+.nicholls-cta-secondary a:link,
+.nicholls-cta-secondary a:active,
+.nicholls-cta-secondary a:visited {
+	color: #fff !important;
+}
+
 .nicholls-primary-navigation- .menu {
 	display: inline-block; /* centers modern browsers */
 	margin: 0 auto; /* centers modern browsers */
@@ -811,13 +835,29 @@ We will need to move breakpoint modifications into other breakpoint blocks as ne
 	text-shadow: none;
 }
 
+.nicholls-primary-navigation- a,
+.nicholls-primary-navigation- a:link,
+.nicholls-primary-navigation- a:hover,
+.nicholls-primary-navigation- a:active,
+.nicholls-primary-navigation- a:visited {
+	color: #fff;
+}
+
+.nicholls-cta a,
+.nicholls-cta a:link,
+.nicholls-cta a:hover,
+.nicholls-cta a:active,
+.nicholls-cta a:visited {
+	color: #fff;
+}
+
 .nicholls-cta .nicholls-cta-donate,
 .nicholls-cta .nicholls-cta-donate:link,
 .nicholls-cta .nicholls-cta-donate:hover,
 .nicholls-cta .nicholls-cta-donate:active,
 .nicholls-cta .nicholls-cta-donate:visited {
 	background: #fff;
-	color: #cc3333;
+	color: #cc3333 !important;
 }
 
 /* Nicholls Go To Navigation */
@@ -2416,6 +2456,13 @@ See about makeing a late-blooming Stylesheet.
 	overflow: hidden;
 }
 
+.elementor-widget-wp-widget-nav_menu li a,
+.elementor-widget-wp-widget-nav_menu li a:hover,
+.elementor-widget-wp-widget-nav_menu li a:active,
+.elementor-widget-wp-widget-nav_menu li a:visited {
+	color: #fff;
+}
+
 .elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
 	display: none;
 	position: fixed;
@@ -2447,60 +2494,60 @@ See about makeing a late-blooming Stylesheet.
 
 @media only screen and (min-width: 96px) {
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
-	display: block;
-	position: relative;
-	bottom: auto;
-	overflow: visible;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div {
+		display: block;
+		position: relative;
+		bottom: auto;
+		overflow: visible;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li {
-	position: relative;
-	white-space: nowrap;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li {
+		position: relative;
+		white-space: nowrap;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div > ul > li {
-	display: inline-block;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div > ul > li {
+		display: inline-block;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul {
-	display: block;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul {
+		display: block;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 901;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 901;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul > li{
-	border-bottom: 1px solid #ccc;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul > li{
+		border-bottom: 1px solid #ccc;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul {
-	top: 5px;
-	left: 95%;
-	z-index: 902;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul {
+		top: 5px;
+		left: 95%;
+		z-index: 902;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul {
-	z-index: 903;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul {
+		z-index: 903;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul ul {
-	z-index: 904;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul ul ul ul {
+		z-index: 904;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul li > ul {
-	left: auto;
-	right: 100%;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div ul ul li > ul {
+		left: auto;
+		right: 100%;
+	}
 
-.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > ul {
-	display: block;
-}
+	.elementor-widget-wp-widget-nav_menu .elementor-widget-container div li:hover > ul {
+		display: block;
+	}
 
 }
 
