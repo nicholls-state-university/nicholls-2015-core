@@ -75,7 +75,7 @@
 
 	</div>
 
-	<div class="nicholls-info-copyright">All content and images &copy;<?php echo date('Y'); ?> Nicholls State University - Website <a href="//www.nicholls.edu/disclaimer/">Policy &amp; Disclaimer</a> - Member of the <a href="//ulsystem.edu/">University of Louisiana System</a></div>
+	<div class="nicholls-info-copyright">All content and images &copy;<?php echo date('Y'); ?> Nicholls State University - Website <a href="//www.nicholls.edu/privacy/">Nicholls Privacy Statement</a> - Member of the <a href="//ulsystem.edu/">University of Louisiana System</a></div>
 
 	</footer>
 </div>
