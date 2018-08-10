@@ -2132,6 +2132,43 @@ a.button-width-auto {
 }
 
 /* END: List Posts */
+/* START: Plugin - Cookie Notice */
+
+#cookie-notice {
+	background: #000;
+}
+
+#cookie-notice span {
+	font-weight: 900;
+	color: #fff;
+	display: block;
+	clear: both;
+}
+
+#cookie-notice .cookie-notice-container a {
+	display: inline-block;
+	padding: 0.2em .2em;
+	margin: 0.4em;
+	border: 0.15em solid #CCCCCC;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #000000;
+	background-color: #d4d4d4;
+	text-align: center;
+	position: relative;
+	font-weight: 900;
+}
+
+#cookie-notice .cookie-notice-container a:hover {
+	border-color: #cc3333;
+	text-decoration: underline;
+}
+
+#cookie-notice .cookie-notice-container a:active {
+ background-color: #999999;
+}
+
+/* END: Plugin - Cookie Notice */
 
 /* START: Plugin - Nicholls Emergency */
 
@@ -2679,6 +2716,15 @@ See about makeing a late-blooming Stylesheet.
 }
 
 /* Elementor - Custom Menus Start */
+
+.elementor-tab-title {
+	color: #cc3333;
+	text-decoration: none;
+}
+
+.elementor-tab-title:hover {
+	text-decoration: underline;
+}
 
 /* END: Plugin - Elementor */
 
